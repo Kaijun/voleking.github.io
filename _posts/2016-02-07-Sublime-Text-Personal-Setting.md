@@ -82,6 +82,11 @@ tags:
 
 按下 ⌘B 和 ⇧⌘B 会分别在 Safari 和 Chrome 中打开当前 HTML，这样便可以快捷地预览设计中的页面。
 
+>Updated on April 25，2016
+
+build system 时 html 选 automatic 按 command + B 不行，必须选 html。而 c/c++ 则可以。
+大概是需要创建一个新的 .tmLanguage 文件，关联 .html / .htm 扩展名，再在 HTML.sublime-build 指定刚才创建好的 scopeName，比如 "selector": "source.html"。
+可以参考[这里](http://stackoverflow.com/questions/14136024/sublime-text-2-build-system-custom-selector)，暂时懒得研究( ・ˍ・)。
 
 ### Markdown
 同样安装 package ，具体见 Package 部分以及快捷键设置。
@@ -141,7 +146,17 @@ tags:
         <img src="http://7xqllw.com1.z0.glb.clouddn.com/post-sublime-text.jpg">
 </figure> 
 
+>Updated on April 25，2016
 
+上周换了新的功能更加丰富的 [Material Theme](http://equinusocio.github.io/material-theme/) (图片加载不出来的话可能是被 q 了，最近访问 Github 也越来越慢了)
+
+<figure>
+        <img src="https://camo.githubusercontent.com/1ff3f31c6a43cdf5f02e2d54a5afee6802abff23/687474703a2f2f657175696e75736f63696f2e6769746875622e696f2f6d6174657269616c2d7468656d652f6173736574732f6d756c74692e6a7067">
+</figure> 
+
+<figure class="half">
+        <img src="https://camo.githubusercontent.com/6e29c4974bd477a61274666886fcbd8ae2775024/687474703a2f2f692e696d6775722e636f6d2f4c566852396a712e706e67">
+</figure>
 
 # Key Bindings
 ```
