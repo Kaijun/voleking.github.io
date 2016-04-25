@@ -1,0 +1,105 @@
+# Site settings
+title: Sugarole
+SEOTitle: 天舒的博客 | Voleking Blog
+header-img: "img/home.jpg"
+email: voleking@foxmail.com
+description: "学生 Acmer 程序员 喜欢尝试 | 这里是 @Voleking 的个人博客，与你一起发现更大的世界。"
+keyword: "Sugarole, voleking, Voleking, Voleking Blog, 博客, 个人网站"
+url: "http://voleking.github.io"        # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: true
+#weibo_username:    voleking
+zhihu_username:     Voleking
+github_username:    Voleking
+twitter_username:   VolekingWong
+#facebook_username:  VolekingWong
+
+
+
+# Build settings
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+timezone: Asia/Shanghai
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter: rouge
+
+# Defaults for posts
+defaults:
+  -
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Voleking"
+      header-img: "/img/lantern.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: Voleking
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+
+# Google Analytics
+ga_track_id: 'UA-76845166-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "敲敲代码，学学设计，随意捣鼓。世界那么大，我想去看看。"
+sidebar-avatar: "http://7xqllw.com1.z0.glb.clouddn.com/avatar-person.jpg"     # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "读立写生",
+        href: "http://cnfeat.com/"
+    },
+    {
+        title: "Microdust",
+        href: "http://azeril.me"
+    },
+    {
+        title: "Hux Blog",
+        href: "http://huangxuan.me"
+    },
+    {
+        title: "孙耀珠",
+        href: "http://blog.yzyzsun.me"
+    }
+]
