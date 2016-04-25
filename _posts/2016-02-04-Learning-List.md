@@ -24,18 +24,21 @@ _Learning step by step._
 # ！！！ACM 算法  
 
 ## Reference  
+
 + 《Free Pascal 语言与基础算法》（复习基础算法）  
 + 《算法艺术与信息学竞赛:算法竞赛入门经典(第2版)》  
 + 《图灵程序设计丛书:挑战程序设计竞赛(第2版)》  
 
 ## Online Judge
+
 + [usaco](http://train.usaco.org/usacogate)（复习完基础算法大一下解决）
 + [HDU](http://acm.hdu.edu.cn)  
 + [Uva](https://uva.onlinejudge.org/index.php)（配合老刘的书）  
 + [Codefores](http://codeforces.com)（比赛练手速）   
 + [HUSTOJ](http://acm.hust.edu.cn)（Vjudge 很好用嘛）  
 
-#### 进阶
+#### 进阶  
+
 + [POJ](http://poj.org)  
 + [SGU](http://acm.sgu.ru)  
 + [SPOJ](http://www.spoj.com)  
