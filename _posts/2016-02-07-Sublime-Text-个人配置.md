@@ -15,7 +15,7 @@ tags:
 
 作为本人第一款上手的文本编辑器（目前也是唯一一个😅），Sublime Text 满足了我对于文本编辑器的大部分期望：精简、迅速、**跨品台**、插件丰富、**高度可定制化**。唯一的遗憾大概是从前年起开发者就一直放羊，最后一次更新还是去年三月。希望是在憋大招，又或者以后能开源。  
 
-个人觉得新手用 IDE 可以使其专注于语言本身，但像我这样有一定基础的又不满足于使用臃肿 IDE 来单文件编程。学习曲线低，容易上手（当时不选 Vim 其实是因为颜值太低🙈）的 Sublime Text 便成了我的选择。从最开始连 C 都不知如何编译输入到现在可以简单定制，博客笔记都在上面写。Sublime Text 让我卸了 MacDown，以后还有望卸了 Evernote，Github Desktop。
+个人觉得新手用 IDE 可以使其专注于语言本身，但像我这样有一定基础的又不满足于使用臃肿 IDE 来单文件编程。学习曲线低，容易上手（当时不选 Vim 其实是因为颜值太低🙈）的 Sublime Text 便成了我的选择。从最开始连 C 都不知如何编译输入到现在可以简单定制，博客笔记都在上面写。Sublime Text 让我卸了 MacDown，以后还有望卸了 Evernote(已卸)。
 
 这几天又配置了一遍（仅仅是因为一个小问题不爽卸了😢）网上介绍 Sublime text 文章千千万，不如自己写一遍。声明这篇文章是写给我的自己的，十分简略，环境是 Mac，当然如果能给你带来帮助我也是很开心的。
 
@@ -80,7 +80,7 @@ tags:
 }
 ```
 
-按下 ⌘B 和 ⇧⌘B 会分别在 Safari 和 Chrome 中打开当前 HTML，这样便可以快捷地预览设计中的页面。 
+按下 ⌘B 和 ⇧⌘B 会分别在 Safari 和 Chrome 中打开当前 HTML，这样便可以快捷地预览设计中的页面。
 
 
 ### Markdown
@@ -110,7 +110,7 @@ tags:
 + Codecs33：为了让ConvertToUTF8更好的工作  
 + [Emmet](http://docs.emmet.io)：原名 Zen Coding ，还没学前端～  
 + Evernote：用 Sublime Text 在 Evernote 上记笔记，要先授权。
-+ Git：集成 git 常用功能，待学 Git  
++ Git：集成 git 常用功能。 
 + Github Tools：待研究。  
 + MarkdownEditing：在 Sublime 中编辑 MarkDown 文件，并自动使用 Color Theme  
 + OmniMarkupPreviwer：在浏览器中即时预览 MarkDown 文件效果  
@@ -121,6 +121,7 @@ tags:
 + Table Editor：编辑 md 更加方便加入表格
 + Terminal：在当前目录打开 Terminal
 + Theme - Spacegray：好看的主题！！！
++ Material Theme：更丰富的主题！！！ 
 + WakaTime：记录 Coding 时间，装13用。需网上注册找到 API 输入
 
 刚使用 Sublime Text 各处找看起来狂拽酷炫吊炸天的 Package，最后都不会用或是没用。几次重新配置后断舍离了一番，只留下了一些要用或是符合我学习期望的。另外神器（Package Control）在手，要用再装嘛
