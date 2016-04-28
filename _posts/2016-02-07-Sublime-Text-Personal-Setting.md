@@ -82,7 +82,7 @@ tags:
 
 按下 ⌘B 和 ⇧⌘B 会分别在 Safari 和 Chrome 中打开当前 HTML，这样便可以快捷地预览设计中的页面。
 
->Updated on April 25，2016
+> Updated on April 25，2016
 
 build system 时 html 选 automatic 按 command + B 不行，必须选 html。而 c/c++ 则可以。
 大概是需要创建一个新的 .tmLanguage 文件，关联 .html / .htm 扩展名，再在 HTML.sublime-build 指定刚才创建好的 scopeName，比如 "selector": "source.html"。
@@ -146,7 +146,7 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
         <img src="http://7xqllw.com1.z0.glb.clouddn.com/post-sublime-text.jpg">
 </figure> 
 
->Updated on April 25，2016
+> Updated on April 25，2016
 
 上周换了新的功能更加丰富的 [Material Theme](http://equinusocio.github.io/material-theme/) (图片加载不出来的话可能是被 q 了，最近访问 Github 也越来越慢了)
 
@@ -201,6 +201,9 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
 
 虽然有些方案很麻烦，但用弄好了还是很爽的，对于我来说折腾也是一种乐趣。什么时候 Sublime Text 用顺了就是尝试 Vim 和 Emacs 的时候了。
 
+> Updated on April 25，2016
+
+开始转 Vim 以及接触 GNU Readline 了。
 
 # 参考文档
 
