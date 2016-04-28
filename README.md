@@ -2,19 +2,22 @@
 
 This is a blog created by Voleking. The blog is live at [Voleking](https://voleking.github.io/).
 
-## Feature want to add
+## Features want to add
 
-- [x] post head image with outside link
+- [x] Post head image with outside link
 - [x] License
-- [x] 数学公式显示
-- [ ] 代码高亮
-- [ ] back to top
-- [ ] draft
-- [ ] footer
+- [x] Mathjax Support
+- [x] draft
+- [ ] To-Do-List
+- [ ] Code Syntax Highlighting
+- [ ] 删除线
+- [ ] [Flowchart](http://adrai.github.io/flowchart.js/)
+- [ ] [Js-sequence-diagrams](http://bramp.github.io/js-sequence-diagrams/)
+- [ ] Back-to-Top
+- [ ] Footnote
 - [ ] Icon
-- [ ] 参考 rpsh/rpsh.github.io 任平生的学习笔记更改
+- [ ] 参考 rpsh/rpsh.github.io 任平生的学习笔记细节修改
 - [ ] 夜间模式
-- [ ] 作业部落支持内容移植
 
 ## Thanks 
 
