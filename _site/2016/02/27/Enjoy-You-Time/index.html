@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="学生 Acmer 程序员 喜欢尝试 | 这里是 @Voleking 的个人博客，与你一起发现更大的世界。">
+    <meta name="keyword"  content="Sugarole, voleking, Voleking, Voleking Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>告别“想太多，做不到”的瞎忙综合征 - 天舒的博客 | Voleking Blog</title>
+
+    <link rel="canonical" href="http://voleking.github.io/2016/02/27/Enjoy-You-Time/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+    
+    <!-- 一言 http://hitokoto.us/ -->
+    <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sugarole</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/http://7xqllw.com1.z0.glb.clouddn.com/post-time.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('http://7xqllw.com1.z0.glb.clouddn.com/post-time.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#时间管理" title="时间管理">时间管理</a>
+                        
+                        <a class="tag" href="/tags/#Reading Note" title="Reading Note">Reading Note</a>
+                        
+                    </div>
+                    <h1>告别“想太多，做不到”的瞎忙综合征</h1>
+                    
+                    
+                    <h2 class="subheading">《哪有没有时间这回事》小结</h2>
+                    
+                    <span class="meta">Posted by Voleking on February 27, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h1 id="section">时间不够用？</h1>
+
+<p>老实说，大学之前还真几乎没有觉得时间不够用过，毕竟作业什么的至少提前半个月就刷完了，小考小玩大考大玩也是各种浪，时常还洋洋得意于自己时间掌控能力。然而清楚的记得刚上大一前三个月简直分身乏术，每天像一个永不停歇的齿轮奔波于各项事物，晚上也常常因为各种事情拖到一两点才睡，第二天还有早课。与曾经想象的轻松愉悦的大学生活大相迳庭。不过朋友圈中「大学忙成狗」的吐槽以及「让我回到高三」的调侃一度给了我一个错误的信号，似乎这一切并不是我本身的问题，相反确实是从原先主要关注学习到现在关注生活方方面面的外部转变所导致的。</p>
+
+<p>可是别人口中闲暇的大学生活究竟去哪了呢？直到我无意读到《哪有没有时间这回事》才发现忙的假象从来都是我们自身的原因，而市面上反人性反自然的时间管理类丛书鲜有效果也自然可以理解，<strong>自然才是自律者最好的状态</strong>，而大学确实人生为数不多的拥有大块时间的阶段。</p>
+
+<p>下面是书中的一些主要内容的总结。如果不能吸引你捧读此书那一定是我的问题，强烈建议买来看两遍以上！</p>
+
+<h1 id="section-1">三种清单合理优化时间分配</h1>
+
+<h2 id="section-2">为什么日程表永远是挂在墙上的——日常任务清单</h2>
+
+<blockquote>
+  <p>我们规划的越认真细致，就越难以执行。</p>
+</blockquote>
+
+<p>一直很反感细分到小时的规划却又说不上原因，似乎我知道自己肯定做不到，所以一直对市面上时间管理类的书很是不屑。作者在书中给出了解释，「规划得越认真越细致就越难以执行越受挫。若尝试以小时为单位规划并试图执行就会发现，一通电话、一个会议、一会懈怠就可以轻易的摧毁整张时间表。考量的越少，变数越大，缺乏弹性，把工作任务安排在严苛的工作表中，一旦出现干扰由于“空隙太少”，就会影响到整张时间表。」然而事实上许多时间管理仍然充斥者时间表的想法，但毕竟柳比歇夫只有一个。</p>
+
+<p>相反书中给出了替代方案： <strong>日常任务清单</strong> （时间段清单）。按照 <strong>时间</strong>、<strong>地点</strong>、<strong>物品</strong>、<strong>环境</strong>、<strong>他人</strong>和<strong>身心状态</strong> 六要素理出那些每天都做或每周都做两三次的事情（以及希望做到的），成为我们的日常任务清单。</p>
+
+<ul>
+  <li>人脑并不能有效处理每天十几项事物，列出来有处于减少焦虑</li>
+  <li>不断优化</li>
+  <li>划开界限（这个时间段的事情就在这个时间段解决，绝不拖到下个时间段，让一天的混乱变得有层次秩序）</li>
+  <li>八分饱</li>
+  <li>仪式感（人为什么要过年呢？其实那天和其他日子没有什么不同，但就是者“辞旧迎新”的感觉，让人的状态好起来，憧憬并积极地面对未来）</li>
+</ul>
+
+<h2 id="section-3">避免贵人多忘事——碎片清单</h2>
+
+<blockquote>
+  <p>碎片时代，我们常常你以为自己被微信打败，被微博绑架，被杂物缠身，被碎片信息撕得粉碎，其实你是没懂碎片化时代的正确打开方式</p>
+</blockquote>
+
+<p>面对碎片化信息，我们的大脑极其脆弱，有效的方法就是借助外物——<strong>碎片清单</strong>，为大脑免于直接面对每天海量的信息、事情、想法等各种碎片的侵袭。</p>
+
+<ul>
+  <li>记什么：
+    <ol>
+      <li>信息：有价值的信息</li>
+      <li>事情：代办事项（想做或需做）</li>
+      <li>想法：想做什么、改变什么、尝试什么</li>
+    </ol>
+  </li>
+  <li>工具：手机——随身。推荐一款交互很赞颜值很高的小众 App：Swipes</li>
+  <li>When：念头产生后立刻记</li>
+  <li>How：内容简短，足够提醒想起即可</li>
+  <li>意义：减小压力、大脑焦虑，知道事情在那里，可以按自己的节奏找更合适的时间处理。「邮件我可以不立刻回，信息我也不必立刻回，提示我可以当时不管，这些干扰只是飞过来的碎片，通过碎片清单缓冲它们对我的冲击，使我可以按照自己的节奏找到更合适的时间处理它们」</li>
+  <li>处理：
+    <ul>
+      <li>可以不做吗？</li>
+      <li>可以以后做吗？</li>
+      <li>可以找人帮忙吗？</li>
+      <li>可以现在做吗？</li>
+      <li>有确切的时间点吗？</li>
+      <li>接下来做什么？</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-4">别让计划永远停留在计划——每日任务清单</h2>
+
+<p>从碎片清单跳出需要处理的事情放入每日任务清单。<br />
+执行计划：</p>
+
+<ol>
+  <li>时间段清单</li>
+  <li>任务清单</li>
+</ol>
+
+<h3 id="section-5">完成不了计划？</h3>
+
+<blockquote>
+  <p>执行力建立在对自己和任务都有充足了解和足够客观评价上</p>
+</blockquote>
+
+<p>所以 <strong>任务清单必须包含有效思考——具体做什么，步骤，耗时，而不能将碎片清单的事物直接移到任务清单上</strong></p>
+
+<blockquote>
+  <p>工作会自觉占满一个人所有可用时间。如果一个人给自己安排了充裕的时间去完成一项工作，他就会放慢节奏或者增加其他项目使用掉所有的时间。工作膨胀出来的复杂性回事工作显得很重要，在这种弹性很大的环境中，人并不会感到轻松；相反，人会应为工作拖沓，膨胀而苦闷、劳累，从而感到精疲力竭。</p>
+
+  <p>“完成xxx”是任务的结果而非过程。</p>
+</blockquote>
+
+<p><strong>于是有效的计划一定是包含了对于 <em>任务执行过程</em> 的思考</strong> ，通常，人们都倾向于在执行任务时才被迫思考过程，如此一来，执行任务时的负担就太重了。</p>
+
+<h3 id="section-6">任务优先级是个伪命题</h3>
+
+<ul>
+  <li>重要紧急</li>
+  <li>重要不紧急</li>
+  <li>不重要紧急</li>
+  <li>不重要不紧急<br />
+很多时候我们其实并不能分清。<br />
+做任务的顺序：自然就好。优先级是计算机程序的概念。<strong>不过要反思是否有始终选择完成简单事情优先的倾向。</strong></li>
+</ul>
+
+<p>「当我写这篇文章时，想起看了一半的电影，忍不住想要看几眼。如果我的脑子有那些要事有限的原则舒服着，此时我就会很难受——不看，难受；看了，也难受。觉得自己做了错事，觉得自己败给了自己的懒惰。但是要事没有这束缚，看了，高兴，就当作是写作过程给自己的小奖励；没看，我也高兴，这要我可以继续高效地写作，写完再看就是给自己更大的奖励。当我开心而不拧巴是，我就有可能管住自己，即使看了也能及时停止，回到写作中去」</p>
+
+<blockquote>
+  <p>愉悦、不拧巴，使自然才能更好的自律。</p>
+</blockquote>
+
+<h3 id="section-7">碎片化专注</h3>
+
+<p>总会有 dirty work，所以不必谈如何喜欢你的工作。<br />
+人玩游戏是很容易投入的，为什么？有目标，有规则，还有及时反馈（编程也是😄）。</p>
+
+<h4 id="section-8">什么算是专注？</h4>
+<p>是在电脑前面一动不动吗？常常见过不少这样的家伙，一上午屁股都不抬一下，但他们往往工作效率最低，谁知道他们坐在哪儿时脑子里想的是什么呢？<br />
+<strong>大脑思考过程没有中断</strong></p>
+
+<ul>
+  <li><strong>How</strong> ：事先消除刺激碎片，用纸笔思考，重复 专注→放空 的过程，直到专注不下去。
+    <ul>
+      <li>放空：不需要投入思考的动作，例如喝水、上洗手间、伸懒腰。</li>
+    </ul>
+  </li>
+  <li>
+    <p>解释：人碰到困难时就会焦虑，知难而上那是大道理，人本能上都是倾向于逃避自然、困难的，并且回自然地以最低成本且不自责的方式——想点别的来缓解焦虑。</p>
+  </li>
+  <li>更进一步：番茄工作法（最基础），禅修，冥想——关注内省自我。</li>
+</ul>
+
+<h1 id="section-9">早睡早起和收获的晚间</h1>
+
+<h3 id="section-10">我们为什么要早起？</h3>
+
+<p>因为：<br />
+    1. 早上可以把一天大半的事情完成。<br />
+    2. 高效率的早上可以带来愉悦的一天，也可以有更多的时间娱乐玩耍。<br />
+    3. 个人体会尝试一周就会发现好处，早上就把一天大部分事情完成的感觉真的很赞&lt;(￣︶￣)↗。 <br />
+### How to do it？</p>
+
+<p>首先要记住：<br />
+1. 睡眠要质量而不要时长。<br />
+2. 大约每个四个小时，人就会迎来一次低潮，这就是该休息的时候了。<strong>所以上午困了其实并不是我们早起导致的。</strong></p>
+
+<p>其实我们可以：<br />
+  <strong>用早睡倒逼早起</strong><br />
+  <strong>把最想做的事情放到早起后</strong><br />
+相信每个人都曾遇到过当天有事早上自动醒的情况，所以个人觉得早起只是想不想的问题。（kd栋那种人另说😄，书中有一种 wake &amp; up 的方法挺有意思的，但个人来说没必要，初高中每天六点习惯了）</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>午间可以做一些机械重复的体力活，或者碎片清单中的简单任务。  
+</code></pre>
+</div>
+
+<h3 id="section-11">晚上做什么？</h3>
+
+<ol>
+  <li>晚间抽出 2 个小时用来阅读、进修、思考或者与家人沟通。</li>
+  <li>晚上是用来放松和促进睡眠的，一天一定有更合适的时间去刷朋友圈，各种信息刺激在这个阶段都应该避免。</li>
+  <li>睡前准备第二天，进行任务安排。</li>
+  <li>当然从实际角度来讲，身为学生晚上可能更多的是写写作业学学习一类的。</li>
+</ol>
+
+<h3 id="section-12">杜绝“晚睡强迫症”</h3>
+
+<p>即使无所事事也不提前睡觉，总会不自觉地拖到夜深人静的某个时候才能睡着。<br />
+深层原因：出于对白天生活的无声抗议，晚睡族往往压力比较大，晚上需要依靠亢奋来缓解心理疲惫（还有习惯性晚睡）。</p>
+
+<h1 id="section-13">自我观察——记录耗时和打卡</h1>
+
+<h3 id="section-14">记录什么？</h3>
+
+<ol>
+  <li>学习柳比歇夫记录每天做事的耗时，越精确越好，可以帮助我们感知时间，从而更好的把握时间。</li>
+  <li>打卡——坚持某件事情时唯一需要坚持的事情
+    <ul>
+      <li>内容：
+        <ol>
+          <li>对事件的记录</li>
+          <li>对于思考和感受的记录</li>
+          <li>基于特定领域的记录</li>
+          <li>成长与成就</li>
+          <li>对于日程安排的记录</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>※至少每周回顾</strong></p>
+
+<h3 id="section-15">意义</h3>
+<p>打卡可以更加真实的反应自己的过去，有意识的记录自己，更为根本的目的是为了了解自己。频繁的回顾，深邃的思考方式，在总结过去为将来做准备。</p>
+
+<h1 id="section-16">习惯不是简单的重复</h1>
+
+<h4 id="section-17">习惯培养的阶段：</h4>
+<ol>
+  <li>探索尝试期（寻找适合自己的，用做什么替代）</li>
+  <li>行为固化期（没必要把每天的规矩定死）</li>
+  <li>稳定期</li>
+</ol>
+
+<p><strong>警惕那些“每天 5 分钟”解决问题的方法。</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>人知道一件事情应该做是一回事，做到了又是另一回事，能够在漫漫人生长路上坚持并且持续做到则是非常困难的事情。
+</code></pre>
+</div>
+
+<p><strong>长期积累所形成的差距令人望尘莫及。</strong></p>
+
+<blockquote>
+  <p>人总是高估了自己一年所能作出的成就，而低估自己十年所能取得的成就。所有巨大的成就都是由时间来放大的。做你应做的事，由时间来放大。</p>
+</blockquote>
+
+<h3 id="section-18">聚焦可操作的行为</h3>
+
+<h4 id="section-19">概念具体化</h4>
+
+<p>把目标转化为具体行为，例如：</p>
+
+<ul>
+  <li>锻炼身体 → 平板支撑</li>
+  <li>读书学习 → 尝试总结</li>
+</ul>
+
+<h4 id="section-20">创造行为发生的条件</h4>
+
+<ol>
+  <li>确定时间<br />
+“有空的时候就做”这话等于没说，“有空”是个假象的状态，这么忙碌的时代谁觉得自己有空呢？真有空的时候有无数的事情在争抢你想要培养习惯的时间，看看手机、喝杯咖啡、和朋友聊聊、上上网或者发发呆。所以把习惯插入到时间段中，或者与其他事情建立多古诺般联系，让已有的事情成为习惯的触发器。</li>
+  <li>抵制诱惑<br />
+抵制诱惑的最好方法就是不去接触。我们无法不做什么，「听说过粉色的大象吗？说的就是越压抑你就越想。不做某事就要找到一个更为积极的行为去替代，比如你要坚持的是读书，而不是不看手机，因为不看手机这事儿你压根坚持不住。」</li>
+  <li>其他
+    <ol>
+      <li>舒适的环境</li>
+      <li>有趣的物品</li>
+      <li>轻松的身心状态</li>
+    </ol>
+  </li>
+</ol>
+
+<h4 id="section-21">不断调整</h4>
+
+<p><strong>习惯并非简单的重复，每天背 50 个单词是件很愚蠢的事情。</strong>我们需要的是不断根据实际情况进行微调整。其实概率思维是人类认识的死穴，人们都害怕不确定性。于是一天的没能坚持导致前功尽弃的例子比比皆是。所以“三天打鱼，两天晒网”其实很不错。</p>
+
+<h1 id="section-22">后记</h1>
+
+<p>大学以前从没有认真思考过时间管理这些内容，以前总是很是不屑的。现在发现有些东西做不做，怎么看待差别真的很大，按李笑来（《把时间当朋友》作者）的说法心智提升了？另外貌似读书总结的速度跟不上阅读的速度，而且后面的总结逻辑还是挺混乱的，最开始只是把有感触的句子堆积了一番，第二次才简单理了理。还是有待提高啊</p>
+
+
+                <hr>
+
+                <!-- License -->
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" align="left" /></a>
+                <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC A-S 4.0 International License</a>.
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/2016/02/27/Enjoy-You-Time"
+                    data-title="告别“想太多，做不到”的瞎忙综合征"
+                    data-url="http://voleking.github.io/2016/02/27/Enjoy-You-Time/"
+                    data-images="http://voleking.github.io/http://7xqllw.com1.z0.glb.clouddn.com/post-time.jpg"
+                    data-content="时间不够用？
+
+老实说，大学之前还真几乎没有觉得时间不够用过，毕竟作业什么的至少提前半个月就刷完了，小考小玩大考大玩也是各种浪，时常还洋洋得意于自己时间掌... | 天舒的博客 | Voleking Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end -->
+                
+
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/02/18/%E6%90%9EACM%E7%9A%84%E4%BD%A0%E4%BC%A4%E4%B8%8D%E8%B5%B7/" data-toggle="tooltip" data-placement="top" title="搞 ACM 的你伤不起">
+                        Previous<br>
+                        <span>搞 ACM 的你伤不起</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2016/03/21/Make-Friends-With-Time/" data-toggle="tooltip" data-placement="top" title="不一样的鸡汤">
+                        Next<br>
+                        <span>不一样的鸡汤</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/2016/02/27/Enjoy-You-Time"
+                        data-title="告别“想太多，做不到”的瞎忙综合征"
+                        data-url="http://voleking.github.io/2016/02/27/Enjoy-You-Time/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container 
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags 
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#ICPC" title="ICPC" rel="2">
+                                    ICPC
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#Reading Note" title="Reading Note" rel="2">
+                                    Reading Note
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog 
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://cnfeat.com/">读立写生</a></li>
+                    
+                        <li><a href="http://azeril.me">Microdust</a></li>
+                    
+                        <li><a href="http://huangxuan.me">Hux Blog</a></li>
+                    
+                        <li><a href="http://blog.yzyzsun.me">孙耀珠</a></li>
+                    
+                </ul>
+                
+            </div>
+            -->
+        </div>
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'Voleking';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/VolekingWong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Sugarole 2016
+                    <br>
+                    Theme © <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- Highlight.js -->
+<script>
+    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+        hljs.initHighlightingOnLoad();
+    })
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        // var $nav = document.querySelector("nav");
+        // if($nav) FastClick.attach($nav);
+
+        // global FastClick!!
+        FastClick.attach(document.body);    
+    })
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-76845166-1';
+    var _gaDomain = 'auto';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

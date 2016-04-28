@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="学生 Acmer 程序员 喜欢尝试 | 这里是 @Voleking 的个人博客，与你一起发现更大的世界。">
+    <meta name="keyword"  content="Sugarole, voleking, Voleking, Voleking Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>不一样的鸡汤 - 天舒的博客 | Voleking Blog</title>
+
+    <link rel="canonical" href="http://voleking.github.io/2016/03/21/Make-Friends-With-Time/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+    
+    <!-- 一言 http://hitokoto.us/ -->
+    <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sugarole</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="//img/lantern.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/lantern.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#Reading Note" title="Reading Note">Reading Note</a>
+                        
+                    </div>
+                    <h1>不一样的鸡汤</h1>
+                    
+                    
+                    <h2 class="subheading">《把时间当朋友》</h2>
+                    
+                    <span class="meta">Posted by Voleking on March 21, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h1 id="section">短评</h1>
+
+<p>寒假刚开始读的时候觉得这本书又是一本毫无营养不过是换了一种说法的“鸡汤”，毕竟里面的绝大多数内容都或多或少的看到过，然而方法论终归是方法论，最终又能有多少人做到呢？可是读完这本书评分我却给了五星，只因有几章给我带来的不一样的思考，或者按照书中说法就是心智提升。诚然，一本书如果能有部分内容确实有益，大体也就够了吧。</p>
+
+<blockquote>
+  <p>很多学生“既勤奋又懒惰”的怪异现象来自于他们的“时间压力”感受。“没有时间了”，或者“时间不够了”的感受和恐惧，使得他们超乎寻常地勤奋，哪怕是虚假的“勤奋”，恨不能废寝忘食。而同样的感受，也使得他们终日寻找捷径，美其名曰“提高效率”，而实际上却想着“最好不费吹灰之力”——无论哪一种都注定是不现实的，因为，已经“没有时间了”——这确是冷冰冰的现实。</p>
+</blockquote>
+
+<p>实话说这是第一次从对时间认知的角度考虑为什么我们觉得没有时间，而非管理或者效率这些老生长谈的话题，不过确实很有道理不是么？另外本书关于心智的内容我理解为决定我们对待事物的认知和对于问题的处理方法的内在。关于心智的力量作者举了一个「愚蠢的上司」的例子，正好契合之前反思高三每天强烈吐槽老师各种工作是否有使我的心态往不好的方向发展，进而影响了我心态的情况。年后开学这一个月，我发现我远比以前频繁地有反思自己的很多行为，认识了很多自身的局限，也得到了很多不一样的想法。虽然改变很多时候并非那么容易，比如当场道歉难以启口（我总是在明确我对了的时候才不吝啬于道歉;-）但从看不到走向看到已是一个巨大的进步，嗯换个好听的说法就是心智提升了。</p>
+
+<p>事实上很多人不需要方法论完全就可以不断变得更好，而我们看了一本又一本的方法论，徜徉在知乎与朋友圈的鸡汤中却止步不前，很大的原因似乎确实是人与人心智的差别。读了这本书肯定很难给我们直接带来心智提升，但或许可以为我们开启心智的大门。如果你很久没读鸡汤了或者方法论成功学的书了，不妨看一看。</p>
+
+<p>貌似书单还剩一本方法论的书了，读多了还是有点烦，开学还是多读读技术书吧。</p>
+
+<h1 id="section-1">思维导图</h1>
+
+<p>部分章节的简单导图：</p>
+
+<figure>
+        <img src="http://7xqllw.com1.z0.glb.clouddn.com/post-mind.png" />
+</figure>
+
+<h1 id="section-2">摘录</h1>
+
+<p>单独抽离出来的文字很是空洞，随便堆砌了。</p>
+
+<h4 id="section-3">时间焦虑症</h4>
+
+<ul>
+  <li>很多学生“既勤奋又懒惰”的怪异现象来自于他们的“时间压力”感受。“没有时间了”，或者“时间不够了”的感受和恐惧，使得他们超乎寻常地勤奋，哪怕是虚假的“勤奋”，恨不能废寝忘食。而同样的感受，也使得他们终日寻找捷径，美其名曰“提高效率”，而实际上却想着“最好不费吹灰之力”——无论哪一种都注定是不现实的，因为，已经“没有时间了”——这确是冷冰冰的现实。</li>
+  <li>人们普遍相信自己明天会有更多的时间其实是多么可笑</li>
+  <li>选择相反，直接的结果就是时间质量的不同——这不是所谓的“时间管理技巧”可以弥补的。
+    <ul>
+      <li>我知道我现在要学习、要努力，这个没问题。问题在于，学习也好，努力也罢，就好像是投资一样，都是要投入时间、精力，甚至金钱的。如果在我根本不能确定我现在的学习究竟能给我带来怎样的结果的情况下，我就投入时间、精力和金钱，那我不就是连傻瓜都不如了么？所以，你必须告诉我，学这东西究竟有什么用处？没有用的东西我才不会去学呢！</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="section-4">兴趣</h4>
+
+<ul>
+  <li>首先，这些人并不是对正在做的事情没有兴趣，而是没能力把目前正在做的事情做好。最终没有人喜欢自己做不好的事情。
+    <ul>
+      <li>人们总说他们真正感兴趣的是别的事情。可事实上，那应该仅仅是因为他们还没开始做那件事情，所以还没有在那件事情上遭受挫折而已。因为还没有遇到过挫折，还没有证明那件事情他们做不好，所以，那件事儿对他们来讲确实具备很大的吸引力。事实上，当很多人真的放弃原来做的事情，然后去做新的、所谓真正感兴趣的事情的时候，他们最终会发现，这件事想要做好同样困难重重，挫折不断。没有多久，这些人又会因为做不好这件事而失去兴趣，然后开始幻想做另外的事情，并且将其行为“合理化”而后如此声明：“我（才知道）自己真正感兴趣的并不是这个……”（心理学上有个专门的概念，把这种做法称为“Rationalization”。）</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="section-5">认知偏差</h4>
+
+<ul>
+  <li>我们的大脑有个运行机制叫做“选择性输入”。具体表现就是你在很多人身上看到的特征：他们只能听到自己喜欢听的，只能看到自己喜欢看的。</li>
+  <li>人类拥有的普遍的认知偏差之一就是：把成功揽到自己身上，把失败归咎于别人或者坏运气。（心理学上有个专门的名词：Self-serving Bias（自利性偏差）。）</li>
+  <li>如果说记忆本身是葡萄，那么回忆的过程就是发酵。每个人都有努力使自己的历史变得更加清白、更加美好的倾向。</li>
+  <li>见识越少的人越喜欢用自己所有的见识作为判断依据，并且完全不顾自己见识的局限，也不知道自己的见识有局限。
+    <ul>
+      <li>现在美国铁轨之间的距离是4英尺8英吋的原因竟然与两千年前的罗马人的战马的屁股的宽度有关——本来想拿这个做例子告诫学生，今天的错误将必然导致明天的尴尬。可是，今天我为了写文章查资料，偶然发现，这个例子根本就是以讹传讹！</li>
+    </ul>
+  </li>
+  <li>一定要想清楚并记住这件事儿：相信运气其实是缺乏自制力的表现。
+    <ul>
+      <li>人们不喜欢甚至害怕自己控制不了的事情。并且，越是脆弱的人越希望获得控制权；同时，越是意识到自己没有控制权的时候就越害怕。</li>
+    </ul>
+  </li>
+  <li>如果说，一个故事至少有三个版本：你的，我的，和真的。那我这个人估计也至少有三个版本：台下的，台上的，和学生看到的。所以，我要接受这样一个事实：很多的时候，那种喜欢、那种评价其实只不过基于误解。</li>
+</ul>
+
+<h4 id="section-6">其他</h4>
+
+<ul>
+  <li>在日常生活中人们经常有意无意地用亲密的方式提及大家仰望的人物，无论他们与“大人物”是否真的存在私交密往。</li>
+  <li>他们的效率很差。根源在于，他们其实只做简单的事情，而回避那些有难度的工作。</li>
+  <li>一个人遗忘痛苦的能力特别强的一个具体表现就是，这个人会很轻易地原谅自己。</li>
+  <li>事实上，“推迟满足感”是心智成熟的人必备的能力，也是需要挣扎和锻炼才可以习得的能力。
+    <ul>
+      <li>大多数人看法惊人地类似甚至相同：如果有收获的话，那最好要马上有收获；如果没有收获的话，那最好要马上有结果。</li>
+    </ul>
+  </li>
+  <li>如果你连这样愚蠢的考试都无法通过的话，那么愚蠢的不仅仅是考试本身。</li>
+  <li><strong>不要浪费时间去“证明自己”!</strong>
+    <ul>
+      <li>“所有的傻逼都是自证的”，觉得其实颇有一些道理。</li>
+    </ul>
+  </li>
+</ul>
+
+
+                <hr>
+
+                <!-- License -->
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" align="left" /></a>
+                <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC A-S 4.0 International License</a>.
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/2016/03/21/Make-Friends-With-Time"
+                    data-title="不一样的鸡汤"
+                    data-url="http://voleking.github.io/2016/03/21/Make-Friends-With-Time/"
+                    data-images="http://voleking.github.io//img/lantern.jpg"
+                    data-content="短评
+
+寒假刚开始读的时候觉得这本书又是一本毫无营养不过是换了一种说法的“鸡汤”，毕竟里面的绝大多数内容都或多或少的看到过，然而方法论终归是方法论，最终又... | 天舒的博客 | Voleking Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end -->
+                
+
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/02/27/Enjoy-You-Time/" data-toggle="tooltip" data-placement="top" title="告别“想太多，做不到”的瞎忙综合征">
+                        Previous<br>
+                        <span>告别“想太多，做不到”的瞎忙综合征</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2016/03/26/Basic-Algorithms-Revision/" data-toggle="tooltip" data-placement="top" title="Basic Algorithms Revision">
+                        Next<br>
+                        <span>Basic Algorithms Revision</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/2016/03/21/Make-Friends-With-Time"
+                        data-title="不一样的鸡汤"
+                        data-url="http://voleking.github.io/2016/03/21/Make-Friends-With-Time/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container 
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags 
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#ICPC" title="ICPC" rel="2">
+                                    ICPC
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#Reading Note" title="Reading Note" rel="2">
+                                    Reading Note
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog 
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://cnfeat.com/">读立写生</a></li>
+                    
+                        <li><a href="http://azeril.me">Microdust</a></li>
+                    
+                        <li><a href="http://huangxuan.me">Hux Blog</a></li>
+                    
+                        <li><a href="http://blog.yzyzsun.me">孙耀珠</a></li>
+                    
+                </ul>
+                
+            </div>
+            -->
+        </div>
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'Voleking';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/VolekingWong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Sugarole 2016
+                    <br>
+                    Theme © <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- Highlight.js -->
+<script>
+    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+        hljs.initHighlightingOnLoad();
+    })
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        // var $nav = document.querySelector("nav");
+        // if($nav) FastClick.attach($nav);
+
+        // global FastClick!!
+        FastClick.attach(document.body);    
+    })
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-76845166-1';
+    var _gaDomain = 'auto';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

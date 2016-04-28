@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="学生 Acmer 程序员 喜欢尝试 | 这里是 @Voleking 的个人博客，与你一起发现更大的世界。">
+    <meta name="keyword"  content="Sugarole, voleking, Voleking, Voleking Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>搞 ACM 的你伤不起 - 天舒的博客 | Voleking Blog</title>
+
+    <link rel="canonical" href="http://voleking.github.io/2016/02/18/%E6%90%9EACM%E7%9A%84%E4%BD%A0%E4%BC%A4%E4%B8%8D%E8%B5%B7/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+    
+    <!-- 一言 http://hitokoto.us/ -->
+    <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sugarole</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/http://7xqllw.com1.z0.glb.clouddn.com/post-acm.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('http://7xqllw.com1.z0.glb.clouddn.com/post-acm.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#ICPC" title="ICPC">ICPC</a>
+                        
+                    </div>
+                    <h1>搞 ACM 的你伤不起</h1>
+                    
+                    
+                    <h2 class="subheading">我原本只是不甘？</h2>
+                    
+                    <span class="meta">Posted by Voleking on February 18, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<blockquote>
+  <p>来源：http://roba.rushcj.com/?p=548<br />
+RoBa原创，转载请注明出处</p>
+</blockquote>
+
+<p>劳资六年前开始搞ACM啊！！！！！！！！！！<br />
+从此踏上了尼玛不归路啊！！！！！！！！！！！！<br />
+谁特么跟劳资讲算法是程序设计的核心啊！！！！！！<br />
+尼玛除了面试题就没见过用算法的地方啊！！！！！！<br />
+谁再跟劳资讲算法之美算法的力量，劳资一本算法导论拍死你啊！！！！！！！！<br />
+那是搞ACM的入门书啊！！！！特么的入门书就一千多页啊！！！！！！！<br />
+还没有习题答案啊，学完了你特么都不知道自己到底会不会啊有木有！！！！！！<br />
+然后你就得看lrj的黑书啊！！！！！！还是特么的没有习题答案啊！！！！<br />
+那书难的一B啊！！！！人家一个“显然”得出的结论够你想一礼拜啊有木有！！！！<br />
+一个课后题够你想几个月啊有木有！！！！<br />
+然后还有一堆堆的书啊！！！！每一类算法都足够写一本书啊！！！！<br />
+每本都是砖头一样啊！！！！还都特么是英文的啊！！！！<br />
+也有中文翻译版啊！！！！！！翻译得跟屎一样啊！！！！<br />
+你看的时候得把它再变回英文才能懂啊！！！！！！有木有！！！！！！</p>
+
+<p>ACM的题目类型是没有范围的啊！！！！！！<br />
+动态规划有木有！！！！数据结构有木有！！！！<br />
+图论有木有！！！！！！计算几何有木有！！！！！！<br />
+数论有木有！！！！！！要写两三百行的模拟题有木有！！！！！！<br />
+特么连物理题化学题都有啊！！！！！！<br />
+还有理论上就不可做的NP难问题啊！！！！！！<br />
+特么理论上不可做的题也有人能AC啊！！！！坑爹啊！！！！</p>
+
+<p>课本上学的东西完全不给力啊！！！！！！<br />
+你以为学过一个最长公共子串就是懂动态规划了啊！！！！！！<br />
+树型的有木有！！！！状态压缩的有木有！！！！插头的有木有！！！！<br />
+而且特么写出来就超时啊！！！！！！<br />
+你得四边形优化啊！！！！你得斜率优化啊！！！！你得队列优化啊！！！！<br />
+特么恨不得把要算十年的程序优化到一秒啊！！！！<br />
+你以为学过一个二叉搜索树就是懂数据结构了啊！！！！！！<br />
+平衡啊旋转啊红啊黑啊有木有！！！！<br />
+伸展啊随机权重啊合并啊拆分啊有木有！！！！！！<br />
+你以为学过一个Dijkstra最短路就是懂图算法了啊！！！！！！<br />
+特么的图里有几百万个点啊！！！！！！得用堆来优化啊！！！！<br />
+而且边权要是负的就不对了啊！！！！还有环啊！！！！<br />
+而且特么的你根本看不出是最短路问题啊！！！！！！<br />
+为神马最短路算法可以用来解不等式啊！！！！<br />
+还有网络流啊！！！！特么的课本上的算法铁定超时啊！！！！！！<br />
+你得看论文去研究神马Dinic啊SAP啊！！！！！！<br />
+而且你还是根本看不出是网络流啊！！！！！！<br />
+网络流是在图上来求啊！！！！特么的图在哪里啊！！！！<br />
+特么的八竿子打不着的问题都能变成网络流啊！！！！！！</p>
+
+<p>这些你都学会了啊！！！！想参加比赛了啊！！！！发现想拿个成绩非常难啊！！！！！！<br />
+校内选拔赛就好几百人报名啊有木有！！！！！！最后只能剩下十几个啊！！！！<br />
+人家都是竞赛保送的啊！！！！！！中学就学了好几年了有木有！！！！怎么比的过啊！！！！！！<br />
+进了校队以后你就不要想寒暑假了啊！！！！！！<br />
+夏天劳资全身脱光了涂满花露水半夜刷题有木有！！！！！！<br />
+冬天劳资跑遍校园找不到一个开门的食堂有木有！！！！！！<br />
+而且特么老外的在线比赛都在半夜啊！！！！！！！！在机房通宵是常事啊有木有！！！！！！</p>
+
+<p>比赛是三个人啊！！！！但是只有一台电脑啊！！！！！！<br />
+特么的ACM组委会连多买几台电脑都不肯啊！！！！！！<br />
+队友占着机器你就只能干着急啊！！！！！！想把他踹一边儿去啊！！！！！！<br />
+没机器你就得在纸上调试啊！！！！！！你的脑子就是个CPU啊有木有！！！！<br />
+你要是摊上一个啥都不会，连读题都误导你的队友，你就死定了啊！！！！！！<br />
+不怕神一样的对手就怕猪一样的队友啊！！！！</p>
+
+<p>你终于参加区域赛了啊！！！！一百多个队啊！！！！！！<br />
+还有一大堆打星号的高中生们啊！！！！！！都是全国前几名级别的有木有！！！！<br />
+还有一大堆打星号的老不死们啊！！！！！！毕业了还要来诈尸啊！！！！<br />
+一开场那气球呼呼地挂啊！！！！你还没读完题人家已经AC了啊！！！！<br />
+而且最先过的不一定是最简单的啊！！！！人家故意在误导你啊有木有！！！！！！<br />
+比赛要五个小时啊！！！！结束了以后脑子都抽筋了啊！！！！<br />
+人家做七八道题，你连一半都不到啊！！！！！！<br />
+拿个毛的奖啊！！！！去个毛的总决赛啊！！！！！！<br />
+去了总决赛也是被虐啊！！！！！！老毛子们更尼玛不是人啊有木有！！！！！！<br />
+连清华都被虐啊有木有！！！！！！</p>
+
+<p>你拿着一堆Honorable Mention毕业了啊！！！！想找工作啊！！！！<br />
+谁说懂算法很容易找到好工作啊！！！！<br />
+都特么要项目经验有木有！！！！<br />
+劳资成天盯着一个黑乎乎的控制台窗口！！！！哪有时间做项目啊！！！！！！<br />
+同学们都是网站啊桌面程序啊做过一堆啊！！！！<br />
+人家对面试官侃侃而谈啊！！！<br />
+劳资只好说劳资除了算法啥也不会啊！！<br />
+而且其实算法也没学会啊！！！！！坑爹啊！！！！</p>
+
+<p>终于工作了啊！！！！发现算法神马的完全用不上啊！！！！<br />
+稍微复杂点的算法都有现成的库可以用啊！！！！！！<br />
+要懂Shell编程有木有！！！！<br />
+要懂多线程有木有！！！！<br />
+要懂Socket有木有！！！！<br />
+要懂分布式有木有！！！！<br />
+要懂J2EE有木有！！！！要懂设计模式有木有！！！！</p>
+
+<p>要懂以下省略三千字有木有！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！</p>
+
+<p>总之搞ACM的上辈子都是脑细胞死光钻到牛角尖里出不来的天使</p>
+
+
+                <hr>
+
+                <!-- License -->
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" align="left" /></a>
+                <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC A-S 4.0 International License</a>.
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/2016/02/18/搞ACM的你伤不起"
+                    data-title="搞 ACM 的你伤不起"
+                    data-url="http://voleking.github.io/2016/02/18/%E6%90%9EACM%E7%9A%84%E4%BD%A0%E4%BC%A4%E4%B8%8D%E8%B5%B7/"
+                    data-images="http://voleking.github.io/http://7xqllw.com1.z0.glb.clouddn.com/post-acm.jpg"
+                    data-content="
+  来源：http://roba.rushcj.com/?p=548
+RoBa原创，转载请注明出处
+
+
+劳资六年前开始搞ACM啊！！！！！！！！！！
+从... | 天舒的博客 | Voleking Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end -->
+                
+
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/02/07/Sublime-Text-Personal-Setting/" data-toggle="tooltip" data-placement="top" title="Sublime Text 个人配置">
+                        Previous<br>
+                        <span>Sublime Text 个人配置</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2016/02/27/Enjoy-You-Time/" data-toggle="tooltip" data-placement="top" title="告别“想太多，做不到”的瞎忙综合征">
+                        Next<br>
+                        <span>告别“想太多，做不到”的瞎忙综合征</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/2016/02/18/搞ACM的你伤不起"
+                        data-title="搞 ACM 的你伤不起"
+                        data-url="http://voleking.github.io/2016/02/18/%E6%90%9EACM%E7%9A%84%E4%BD%A0%E4%BC%A4%E4%B8%8D%E8%B5%B7/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container 
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags 
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#ICPC" title="ICPC" rel="2">
+                                    ICPC
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#Reading Note" title="Reading Note" rel="2">
+                                    Reading Note
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog 
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://cnfeat.com/">读立写生</a></li>
+                    
+                        <li><a href="http://azeril.me">Microdust</a></li>
+                    
+                        <li><a href="http://huangxuan.me">Hux Blog</a></li>
+                    
+                        <li><a href="http://blog.yzyzsun.me">孙耀珠</a></li>
+                    
+                </ul>
+                
+            </div>
+            -->
+        </div>
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'Voleking';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/VolekingWong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Sugarole 2016
+                    <br>
+                    Theme © <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- Highlight.js -->
+<script>
+    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+        hljs.initHighlightingOnLoad();
+    })
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        // var $nav = document.querySelector("nav");
+        // if($nav) FastClick.attach($nav);
+
+        // global FastClick!!
+        FastClick.attach(document.body);    
+    })
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-76845166-1';
+    var _gaDomain = 'auto';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

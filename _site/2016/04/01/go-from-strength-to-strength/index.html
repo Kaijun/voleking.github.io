@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="学生 Acmer 程序员 喜欢尝试 | 这里是 @Voleking 的个人博客，与你一起发现更大的世界。">
+    <meta name="keyword"  content="Sugarole, voleking, Voleking, Voleking Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>更进一步 - 天舒的博客 | Voleking Blog</title>
+
+    <link rel="canonical" href="http://voleking.github.io/2016/04/01/go-from-strength-to-strength/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+    
+    <!-- 一言 http://hitokoto.us/ -->
+    <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sugarole</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="//img/" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#ICPC" title="ICPC">ICPC</a>
+                        
+                        <a class="tag" href="/tags/#Algorithms" title="Algorithms">Algorithms</a>
+                        
+                    </div>
+                    <h1>更进一步</h1>
+                    
+                    
+                    <h2 class="subheading">《挑战程序设计竞赛》</h2>
+                    
+                    <span class="meta">Posted by Voleking on April 1, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h2 id="basic-algorithm">Basic Algorithm</h2>
+
+<h4 id="sort">Sort</h4>
+
+<ul>
+  <li>
+    <p>Bubble Sort<br />
+<code class="highlighter-rouge">C++ 
+for (int i = 0; i &lt; n; i++)
+  for (int j = 0; j &lt; n - i - 1; j++)
+      if (a[j] &gt; a[j + 1]) swap(a[j], a[j + 1]);
+</code></p>
+  </li>
+  <li>
+    <p>Insertion Sort<br />
+<code class="highlighter-rouge">C++
+for (int i = 1; i &lt; n; i++) {
+  int tmp = a[i], j;
+  for (j = i - 1; j &gt;= 0 &amp;&amp; a[j] &gt; tmp; j--)
+      a[j + 1] = a[j];
+  a[++j] = tmp; 
+}
+</code></p>
+  </li>
+  <li>
+    <p>Selection Sort
+<code class="highlighter-rouge">C++
+for (int i = 0; i &lt; n; i++)
+  for (int j = i + 1; j &lt; n; j++)
+      if (a[i] &gt; a[j]) swap(a[i], a[j])
+</code></p>
+  </li>
+  <li>
+    <p>Merge Sort
+<code class="highlighter-rouge">C++
+int merge_sort(int l, int r) {
+  if (l == r) 
+      return 0;
+  int b[MAX_N];
+  int mid = (l + r) / 2;
+  merge_sort(l, mid);
+  merge_sort(mid + 1, r);
+  int i, j, k;
+  i = l; j = mid + 1; k = l;
+  while (i &lt;= mid &amp;&amp; j &lt;= r) {
+      if (a[i] &lt; a[j]) {
+          b[k] = a[i++];
+      }
+      else {
+          b[k] = a[j++];
+      }
+      k++;
+  }
+  while (i &lt;= mid) {
+      b[k] = a[i++];
+      k++;
+  }
+  while (j &lt;= r) {
+      b[k] = a[j++];
+      k++;
+  }
+  for (int i = l; i &lt;= r; i++)
+      a[i] = b[i];
+  return 0;
+}
+</code></p>
+  </li>
+  <li>
+    <p>Quick Sort
+<code class="highlighter-rouge">C++   
+void quicksort(int a[], int l, int r) {
+  int i = l, j = r, mid = a[(l + r) / 2];
+  while (i &lt;= j) {
+      while (a[i] &lt; mid) i++;
+      while (a[j] &gt; mid) j--;
+      if (i &lt;= j) {
+          swap(a[i], a[j]);
+          i++;j--;
+      }
+  }
+  if (i &lt; r) quicksort(a, i, r);
+  if (l &lt; j) quicksort(a, l, j);        
+  return ;
+}
+</code></p>
+  </li>
+  <li>
+    <p>Heap Sort</p>
+    <ul>
+      <li>见堆的内容</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="knapsack-problem">Knapsack Problem</h4>
+
+<ul>
+  <li>0/1 背包</li>
+</ul>
+
+<script type="math/tex; mode=display">f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])</script>
+
+<pre><code class="language-C++">for (int i = 0; i &lt; n; ++i)
+    for (int v = V; v &gt;= w[i]; v--)
+        f[v] = max(f[v], f[v- w[i]] + c[i]);
+</code></pre>
+
+<ul>
+  <li>完全背包</li>
+</ul>
+
+<script type="math/tex; mode=display">f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])</script>
+
+<pre><code class="language-C++">for (int i = 0; i &lt; n; ++i)
+    for (int v = w[i]; v &lt;= V; ++v)
+        f[v] = max(f[v], f[v- w[i]] + c[i]);
+</code></pre>
+
+<p>注意循环顺序的不同背后思路。</p>
+
+<ul>
+  <li>一个简单的优化：若两件物品 i、j 满足 $w[i] ≤ w[j]$ 且 $c[i] ≥ c[j]$，则讲物品 j 去掉，不用考虑。</li>
+  <li>转化为 01 背包问题求解：
+    <ul>
+      <li>第 i 种物品转化为 $\frac{V}{w[i]}$ 件费用于价值均不变的物品。</li>
+      <li>第 i 种物品拆成费用为 $w[i] * 2^k$，价值为 $c[i] * 2^k$ 的若干件物品其中 k 满足 $w[i] * 2^k &lt; V$</li>
+    </ul>
+  </li>
+  <li>多重背包</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+f[i, v] = max(f[i - 1, v - k * w[i]] + k * c[i] | 0 <= k <= n[i]) %]]></script>
+
+<ul>
+  <li>优化：转化为 01 背包问题
+    <ul>
+      <li>将第 i 件物品分成若干件物品，每件物品的系数分别为：$1,2,4,\ldots,2^{(k - 1)},n[i]-2^k$</li>
+      <li>** 根据 w，v 范围改变 DP 对象，可以考虑针对不同价值计算最小的重量。（ $f[i, j]$，其中 j 代表价值总和）**</li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code class="language-C++">for (int i = 0; i &lt; N; ++i) {
+    int k;
+    for (k = 1 &lt;&lt; 0; k &lt;= n[i] &amp;&amp; w[i] * k &lt;= V; n[i] -= k, k &lt;&lt;= 1) {
+        for (int v = V; v &gt;= w[i] * k; --v) 
+            f[v] = max(f[v], f[v- w[i] * k] + c[i] * k);
+    }
+    k = n[i];
+    if ( k &gt; 0 &amp;&amp; w[i] * k &lt;= V) {
+        for (int v = V; v &gt;= w[i] * k; --v) 
+            f[v] = max(f[v], f[v- w[i] * k] + c[i] * k);
+    }
+}
+</code></pre>
+
+<ul>
+  <li>混合三种背包</li>
+</ul>
+
+<p>  弄清楚上面三种背包后分情况就好</p>
+
+<ul>
+  <li>二维费用背包</li>
+</ul>
+
+<script type="math/tex; mode=display">f[i, v, u] = max(f[i - 1, v, u], f[i - 1, v - a[i], u - b[i]] + c[i])</script>
+
+<p>二维费用可由最多取 m 件等方式隐蔽给出。</p>
+
+<ul>
+  <li>分组背包</li>
+</ul>
+
+<script type="math/tex; mode=display">f[k, v] = max{f[k - 1, v], f[k - 1, v - w[i]] + c[i] | i \in K})</script>
+
+<pre><code class="language-C++">    for (int k = 0; k &lt; K; ++k)
+        for (v = V; v &gt;= 0; --v)
+            for (int i = 0; i &lt;= n[k]; ++i)
+                f[v] = max(f[v], f[v - w[i]] + c[i]);
+</code></pre>
+
+<p>显然可以对每组中物品应用完全背包中“一个简单有效的优化”</p>
+
+<ul>
+  <li>有依赖背包</li>
+</ul>
+
+<p>由 NOIP2006 金明的预算方案引申，对每个附件先做一个 01 背包，再与组件得到一个 $V - w[i] + 1$ 个物品组。<br />
+更一般问题，依赖关系由「森林」形式给出，涉及到树形 DP 以及泛化物品，这里不表。</p>
+
+<ul>
+  <li>背包问题方案总数</li>
+</ul>
+
+<script type="math/tex; mode=display">f[i, v] = sum{f[i - 1, v], f[i - 1, v - w[i]] + c[i]},f[0, 0] = 0</script>
+
+<blockquote>
+  <blockquote>
+    <p>更多内容详见「背包九讲」</p>
+  </blockquote>
+</blockquote>
+
+<hr />
+
+<h2 id="data-structure">Data Structure</h2>
+
+<ul>
+  <li>
+    <p>Heap 
+<code class="highlighter-rouge">C++
+int heap[maxn], sz = 0;
+void push(int x) {
+  int i = sz++;
+  while (i &gt; 0) {
+      int p = (i - 1) / 2;
+      if (heap[p] &lt;= x) break;
+      heap[p] = heap[i];
+      i = p;
+  }
+  heap[i] = x;
+}
+int pop() {
+  int ret = heap[0];
+  int x = heap[--sz];
+  int i = 0;
+  while (i * 2 + 1 &lt; sz) {
+      int a = i * 2 + 1, b = i * 2 + 2;
+      if (b &lt; sz &amp;&amp; heap[b] &lt; heap[a]) a = b;
+      if (heap[a] &gt;= x) break;
+      heap[i] = heap[a];
+      i = a;
+  }
+  heap[i] = x;
+  return ret;
+}
+</code></p>
+  </li>
+  <li>
+    <p>Binary Search Tree
+```C++
+struct node {
+  int val;
+  node *lch, rch;
+};</p>
+  </li>
+</ul>
+
+<p>node *insert(node *p, int x) {
+    if (p == NULL) {
+        node *q = new node;
+        q-&gt;val = x;
+        q-&gt;lch = q-&gt;rch = NULL;
+        return q;
+    } else {
+        if (x &lt; p-&gt;val) p-&gt;lch = insert(p-&gt;lch, x);
+        else p-&gt;rch = insert(p-&gt;rch, x);
+        return p;
+    }
+}
+bool find(node *p, int x) {
+    if (p == NULL) return false;
+    else if (x == p-&gt;val) return true;
+    else if (x &lt; p-&gt;val) return find(p-&gt;lch, x);
+    else return find(p-&gt;rch, x);
+}
+node *remove(node *p, int x) {
+    if (p == NULL) return NULL;
+    else if (x &lt; p-&gt;val) p-&gt;lch = remove(p-&gt;lch, x);
+    else if (x &gt; p-&gt;val) p-&gt;rch = remove(p-&gt;rch, x);
+    else if (p-&gt;lch == NULL) {
+        node *q = p-&gt;rch;
+        delete p;
+        return q;
+    } else if (p-&gt;lch-&gt;rch == NULL) {
+        node *q = p-&gt;lch;
+        q-&gt;rch = p-&gt;rch;
+        delete p;
+        return q;
+    }  else {
+        // 把左儿子子孙中最大的节点提到需要删除的节点上
+        node *q;
+        for (q = p-&gt;lch; q-&gt;rch-&gt;rch != NULL; q = q-&gt;rch);
+        node *r = q-&gt;rch;
+        q-&gt;rch = r-&gt;lch;
+        r-&gt;lch = p-&gt;lch;
+        r-&gt;rch = p-&gt;rch;
+        delete p;
+        return r;
+    }
+    return p;
+}
+```</p>
+
+<ul>
+  <li>Union-find Set<br />
+```C++
+int par[MAX_N];
+int rnk[MAX_N];</li>
+</ul>
+
+<p>void init(int n) {
+    for (int i = 0; i &lt; n; ++i) {
+        par[i] = i;
+        rnk[i] = 0;
+    }
+}
+int find(int x) {
+    return par[x] == x? x : par[x] = find(par[x]);
+}
+bool same(int a, int b) {
+    return find(a) == find(b);
+}
+void unite(int x, int y) {
+    x = find(x);
+    y = find(y);
+    if (x == y) return;
+    if (rnk[x] &lt; rnk[y]) {
+        par[x] = y;
+    } else {
+        par[y] = x;
+        if (rnk[x] == rnk[y]) rnk[x]++;
+    }
+}
+```</p>
+
+<p><strong>当然，更快捷简单的做法，是使用 C++ 的 container。</strong></p>
+
+<h2 id="graph">Graph</h2>
+
+<pre><code class="language-C++">struct edge {
+    int u, v;
+    int dis;
+};
+vector&lt;edge&gt; g[MAX_V];
+vector&lt;edge&gt; es;
+bool vis[MAX_V];
+int d[MAX_N], V, E, pre[MAX_V];
+int cost[MAX_V][MAX_V];
+</code></pre>
+
+<ul>
+  <li>
+    <p>Shortest Way
+<code class="highlighter-rouge">C++
+void dijkstra(int s) {
+  //
+  // fill(d, d + V, INF);
+  // fill(vis, vis + V, false);
+  // d[s] = 0;
+  // while (true) {
+  //     int v = -1;
+  //     for (int u = 0; u &lt; V; ++u) 
+  //         if (!vis[u] &amp;&amp; (v == -1 || d[u] &lt; d[v])) v = u;
+  //     if (v == -1) break;
+  //     vis[v] = true;
+  //     for (int u = 0; u &lt; V; ++u) {
+  //         d[u] = min(d[v] + cost[v][u], d[u]);
+  //     }
+  // }
+  //
+  priority_queue&lt;Pii, vector&lt;Pii&gt;, greater&lt;Pii&gt; &gt; que;// fisrt 是最短距离，second 是顶点编号
+  fill(d, d + V, INF);
+  d[s] = 0;
+  que.push(Pii(0, s));
+  while (!que.empty()) {
+      Pii p = que.top();que.pop();
+      int u = p.second;
+      if (d[u] &lt; p.first) continue;
+      for (int i = 0; i &lt; g[u].size(); i++) {
+          edge e = g[u][i];
+          if (d[e.v] &gt; d[u] + e.dis) {
+              d[e.v] = d[u] + e.dis;
+              que.push(Pii(d[e.v], e.v));
+          }
+      }
+  } 
+}
+void bellman_ford(int s) {
+  fill(d, d + V, INF);
+  d[s] = 0;
+  //
+  // for (int i = 0; i &lt; V; ++i)
+  //     for (int j = 0; j &lt; E; ++j) {
+  //         int u, v;
+  //         u = es[j].u;
+  //         v = es[j].v;
+  //         if (d[u] != INF)
+  //             d[v] = min(d[u] + es[j].dis, d[v]);
+  //         if (d[v] != INF)
+  //             d[u] = min(d[v] + es[j].dis, d[u]);
+  //     }
+  //
+  while (true) {
+      bool update = false;
+      for (int i = 0; i &lt; E; ++i) {
+          edge e = es[i];
+          if (d[e.u] != INF &amp;&amp; d[e.u] + e.dis &lt; d[e.v]) {
+              update = true;
+              d[e.v] = d[e.u] + e.dis;
+          }
+      }
+      if (!update) break;
+  }
+}
+void spfa(int s) {
+  queue&lt;int&gt; que;
+  fill(d, d + V, INF);
+  fill(vis, vis + V, false);
+  d[s] = 0;
+  que.push(s);
+  vis[s] = true;
+  while (!que.empty()) {
+      int u = que.front();
+      que.pop();
+      vis[u] = false;
+      for (int i = 0; i &lt; g[u].size(); ++i) {
+          int v = g[u][i].v;
+          if (d[v] &gt; d[u] + g[u][i].dis) {
+              d[v] = d[u] + g[u][i].dis;
+              if (!vis[v]) {
+                  que.push(v);
+                  vis[v] = true;
+              }
+          }
+      }
+  }
+}
+</code></p>
+  </li>
+  <li>
+    <p>Spanning Tree
+<code class="highlighter-rouge">C++
+int prime() {
+  fill(d, d + V, INF);
+  fill(vis, vis + V, false);
+  d[0] = 0;
+  int res = 0;
+  while (true) {
+      int v = -1;
+      for (int u = 0; u &lt; V; ++u) {
+          if(!vis[u] &amp;&amp; (v == -1 || d[u] &lt; d[v])) v = u;
+      }
+      if (v == -1) break;
+      vis[v] = true;
+      res += d[v];
+      for (int u = 0; u &lt; V; u++)
+          d[u] = min(d[u], cost[v][u]);
+  }
+  return res;
+}
+bool cmp(edge &amp;e1, edge &amp;e2) {
+  return e1.dis &lt; e2.dis;
+}
+int kruskal() {
+  sort(es, es + E, cmp);
+  init(V);
+  int res = 0;
+  for (int i = 0; i &lt; E; ++i) {
+      edge e = es[i];
+      if (!same(e.u, e.v)) {
+          unite(e.u, e.v);
+          res += e.dis;
+      }
+  }
+  return res;
+}
+</code></p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="math-problem">Math Problem</h2>
+
+<pre><code class="language-C++">template&lt;typename T&gt; T gcd(T a, T b) {
+    //return (b)? gcd(b, a  % b) : a;
+    while (b) { T t = a % b; a = b; b = t; } return a;
+}
+template&lt;typename T&gt; T lcm(T a, T b) { 
+    return a / gcd(a, b) * b;
+}
+// find (x, y) s.t. a x + b y = gcd(a, b) = d
+template&lt;typename T&gt; T exGcd(T a, T b, T &amp;x, T &amp;y) { 
+    T d = a; 
+    if (b) { 
+        d = exGcd(b, a % b, y, x); 
+        y -= a / b * x; 
+    } else { 
+        x = 1; y = 0; 
+    } 
+    return d;
+}
+ll qpow(ll x, ll n, ll mod) { 
+    ll res = 1;
+    while (n &gt; 0) {
+        if (n &amp; 1) res = res * x % mod;
+        x = x * x % mod;
+        n &gt;&gt;= 1;
+    }
+    return res;
+    // return b ? qpow(a * a % mod, b &gt;&gt; 1, mod) * (b &amp; 1 ? a : 1) % mod : 1;
+}
+// some function about prime
+bool isPrime(int n) {
+    for (int i = 2; i * i &lt;= n; ++i)
+        if (n % i == 0) return false;
+    return n != 1;
+}
+vector&lt;int&gt; divisor(int n) {
+    vector&lt;int&gt; res;
+    for (int i = 1; i * i &lt;= n; ++i) {
+        if (n % i == 0) 
+            res.push_back(i);
+        if (i != n / i) res.push_back(n / i);
+    }
+    return res;
+}
+map&lt;int, int&gt; primeFactor(int n) {
+    map&lt;int, int&gt; res;
+    for (int i = 2; i * i &lt;= n; ++i) {
+        while (n % i == 0) {
+            ++res[i];
+            n /= i;
+        }
+    }
+    if (n != 1) res[n] = 1;
+    return res;
+}
+int prime[MAX_N];
+bool is_prime[MAX_N + 1];
+int seive(int n) {
+    int p = 0;
+    fill(is_prime, is_prime + n + 1, true);
+    is_prime[0] = is_prime[1] = false;
+    for (int i = 2; i &lt;= n; ++i) 
+        if (is_prime[i]) {
+            prime[p++] = i;
+            for (int j = 2 * i; j &lt;= n; j += i) is_prime[j] = false;
+        }
+    return p;
+}
+// the number of prime in [L, r)
+// 对区间 [l, r）内的整数执行筛法，prime[i - l] = true &lt;=&gt; i 是素数
+bool seg_prime_small[MAX_L];
+bool seg_prime[MAX_SQRT_R];
+void segmentSieve(ll l, ll r) {
+    for (int i = 0; (ll)i * i &lt; r; ++i) seg_prime_small[i] = true;
+    for (int i = 0; i &lt; r - l; ++i) seg_prime[i] = true;
+    for (int i = 2; (ll)i * i &lt; r; ++i) {
+        if (seg_prime_small[i]) {
+            for (int j = 2 * i; (ll)j * j &lt;= r; j += i) seg_prime_small[j] = false;
+            for (ll j = max(2LL, (l + i - 1) / i) * i; j &lt; r; j += i) seg_prime[j - l] = false;
+        }
+    }
+}
+// returning count of nk in range [l, r]
+template&lt;typename T&gt; T mps(T l, T r, T k) { 
+    return ((r - (r % k + k) % k) - (l + (k - l % k) % k)) / k + 1;
+}
+</code></pre>
+
+
+                <hr>
+
+                <!-- License -->
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" align="left" /></a>
+                <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC A-S 4.0 International License</a>.
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/2016/04/01/go-from-strength-to-strength"
+                    data-title="更进一步"
+                    data-url="http://voleking.github.io/2016/04/01/go-from-strength-to-strength/"
+                    data-images="http://voleking.github.io//img/"
+                    data-content="Basic Algorithm
+
+Sort
+
+
+  
+    Bubble Sort
+C++ 
+for (int i = 0; i &lt; n; i++... | 天舒的博客 | Voleking Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end -->
+                
+
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/03/29/tlcl-cn/" data-toggle="tooltip" data-placement="top" title="The Linux Command Line-cn 精总">
+                        Previous<br>
+                        <span>The Linux Command Line-cn 精总</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2016/04/18/Macbook/" data-toggle="tooltip" data-placement="top" title="MacBook 工作环境配置">
+                        Next<br>
+                        <span>MacBook 工作环境配置</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/2016/04/01/go-from-strength-to-strength"
+                        data-title="更进一步"
+                        data-url="http://voleking.github.io/2016/04/01/go-from-strength-to-strength/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container 
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags 
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#Reading Note" title="Reading Note" rel="5">
+                                    Reading Note
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#Sublime Text" title="Sublime Text" rel="2">
+                                    Sublime Text
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#文本编辑器" title="文本编辑器" rel="2">
+                                    文本编辑器
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#ICPC" title="ICPC" rel="3">
+                                    ICPC
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#Algorithms" title="Algorithms" rel="2">
+                                    Algorithms
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog 
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://cnfeat.com/">读立写生</a></li>
+                    
+                        <li><a href="http://azeril.me">Microdust</a></li>
+                    
+                        <li><a href="http://huangxuan.me">Hux Blog</a></li>
+                    
+                        <li><a href="http://blog.yzyzsun.me">孙耀珠</a></li>
+                    
+                </ul>
+                
+            </div>
+            -->
+        </div>
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'Voleking';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/VolekingWong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Voleking">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Sugarole 2016
+                    <br>
+                    Theme © <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- Highlight.js -->
+<script>
+    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+        hljs.initHighlightingOnLoad();
+    })
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        // var $nav = document.querySelector("nav");
+        // if($nav) FastClick.attach($nav);
+
+        // global FastClick!!
+        FastClick.attach(document.body);    
+    })
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-76845166-1';
+    var _gaDomain = 'auto';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

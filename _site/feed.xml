@@ -1,0 +1,1833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sugarole</title>
+    <description>学生 Acmer 程序员 喜欢尝试 | 这里是 @Voleking 的个人博客，与你一起发现更大的世界。</description>
+    <link>http://voleking.github.io/</link>
+    <atom:link href="http://voleking.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 28 Apr 2016 11:28:29 +0800</pubDate>
+    <lastBuildDate>Thu, 28 Apr 2016 11:28:29 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>学习清单</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;写在前面&lt;/h1&gt;
+
+&lt;p&gt;原文是寒假的时候写的，当时本来打算整理一下今年学习的内容，不料想学的东西实在太多。在整理的过程中发现知识有很多相通的地方，大一上这半年也不能说完全没有收获。然而仅仅时隔两个月，便觉得这篇博文实在是粗躁，一来最近捣鼓了不少东西(好像都是那些零碎的旁门左道)，二来觉得当时理的有点乱，于是决定回炉重造。限于眼界与时间关系，暂且这样，以后再不断更新。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;我的态度&lt;/h3&gt;
+
+&lt;p&gt;大概是从知乎上看到的，深以为然。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;很多知识不相关，但是只要感兴趣，都愿意去尝试。&lt;/p&gt;
+
+  &lt;p&gt;曾以为我学的一切并没什么用，事后总能出乎意料。&lt;/p&gt;
+
+  &lt;p&gt;每学习一样新的东西，总能带来些许收获。&lt;br /&gt;
+总而言之，很多东西，不学不耽误正业，学了锦上添花。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;虽然身为程序猿，懒癌已深入膏肓，但折腾算是为数不多的乐趣了。很多东西只有真正去折腾后，才能发现她的美丽与魅力。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;过一个平凡无趣的人生实在太容易了，你可以不读书，不冒险，不运动，不写作，不外出，不折腾……但是人生最后悔的事情就是：我本可以。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;能够持续学习大概是挨踢行业的一大乐趣吧。&lt;/p&gt;
+
+&lt;h4 id=&quot;just-go&quot;&gt;Just Go！&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Learning step by step.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;acm-&quot;&gt;！！！ACM 算法&lt;/h1&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Done&lt;/code&gt;《Free Pascal 语言与基础算法》（复习基础算法）&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Learning&lt;/code&gt;《算法艺术与信息学竞赛:算法竞赛入门经典(第2版)》&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Learning&lt;/code&gt;《图灵程序设计丛书:挑战程序设计竞赛(第2版)》&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;online-judge&quot;&gt;Online Judge&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://train.usaco.org/usacogate&quot;&gt;usaco&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://acm.hdu.edu.cn&quot;&gt;HDU&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php&quot;&gt;Uva&lt;/a&gt;（配合老刘的书）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://codeforces.com&quot;&gt;Codefores&lt;/a&gt;（比赛练手速）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.topcoder.com&quot;&gt;TopCoder&lt;/a&gt;(跟上面类似)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://acm.hust.edu.cn&quot;&gt;HUSTOJ&lt;/a&gt;（Vjudge 很好用嘛）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;进阶&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://poj.org&quot;&gt;POJ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://acm.sgu.ru&quot;&gt;SGU&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.spoj.com&quot;&gt;SPOJ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;cs-start-guide&quot;&gt;CS Start Guide&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;启蒙阶段&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;计算机科学导论（到现在都抽不出时间随便看看orz）&lt;/li&gt;
+  &lt;li&gt;Python (《Python 核心编程2》)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Done&lt;/code&gt; C 语言入门（&amp;lt; The C Primer Plus &amp;gt; 挺好，就是太厚）&lt;/li&gt;
+  &lt;li&gt;&amp;lt; Hacker’s Delight &amp;gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;入门&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;What and How&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;编程能力 &lt;script type=&quot;math/tex&quot;&gt;F=(X,Y) (X&gt;Y)&lt;/script&gt;&lt;br /&gt;
+    $X$ = 思考解决方案的时间
+    $Y$ = 用于实现代码的时间&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;系统基础
+    &lt;ul&gt;
+      &lt;li&gt;&amp;lt; Structure and Interpretation of Computer Programs &amp;gt; (SICP)&lt;/li&gt;
+      &lt;li&gt;&amp;lt; The element of Computing Systems &amp;gt;&lt;/li&gt;
+      &lt;li&gt;&amp;lt; Computer Systems A Programmer’s Perspective &amp;gt;&lt;/li&gt;
+      &lt;li&gt;&amp;lt; The C Program Language &amp;gt; (K&amp;amp;R)&lt;/li&gt;
+      &lt;li&gt;UNIX 哲学：KISS-Keep it Simple,Stupid.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Trying&lt;/code&gt; 命令行，配置文件，脱离IDE&lt;/li&gt;
+          &lt;li&gt;Emacs Vim&lt;/li&gt;
+          &lt;li&gt;《UNIX 编程艺术》 折腾UNIX系统&lt;/li&gt;
+          &lt;li&gt;《鸟哥的 Linux 私房菜》 《Linux shell 脚本攻略》&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;算法思想
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Pass&lt;/code&gt; &amp;lt; Data Structure and Algorithm Analysis &amp;gt;&lt;/li&gt;
+      &lt;li&gt;&amp;lt; Introduction to Algorithms &amp;gt;&lt;/li&gt;
+      &lt;li&gt;&amp;lt; Programming Pearls &amp;gt;&lt;/li&gt;
+      &lt;li&gt;&amp;lt; The Practice of Programming &amp;gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;语法
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Learning&lt;/code&gt; &amp;lt; C++ Primer &amp;gt;
+        &lt;ul&gt;
+          &lt;li&gt;&amp;lt; Effective CPP &amp;gt; 《深度探索C++对象型》《程序设计语言实践之路》&amp;lt; The Design and Evolution of CPP &amp;gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&amp;lt; The Pragmatic Programmer &amp;gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;section-5&quot;&gt;其他零碎的内容&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Done&lt;/code&gt; Markdown
+    &lt;ul&gt;
+      &lt;li&gt;寒假想写博客才学的，网上教程太多了，我看是这个 &lt;a href=&quot;http://azeril.me/blog/Markdown-Syntax.html&quot;&gt;Markdown 简明语法参考&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;在线阅读编辑器推荐&lt;a href=&quot;https://www.zybuluo.com&quot;&gt;作业部落&lt;/a&gt;，本地 Sublime Text + Markdown Editing + OmniMarkupPreviewer 很好很强大&lt;/li&gt;
+      &lt;li&gt;其实用多了发现 Markdown 也就是一种轻量级标记语言，方便归方便，局限也挺大，要是不爽学了 Python 可以尝试的自己写解释器，不过 Html 才是王道。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Done&lt;/code&gt; Git
+    &lt;ul&gt;
+      &lt;li&gt;廖雪峰的 &lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;Git 教程&lt;/a&gt;写的挺好，也可以选择这篇&lt;a href=&quot;http://www.jianshu.com/p/6d1ce5b65523&quot;&gt;让 Git 不再难学&lt;/a&gt;，还有三个用户体验很棒的Git学习网站作为补充&lt;a href=&quot;http://stackvoid.com/interactive-git-tutorials/&quot;&gt; Git Tutorials&lt;/a&gt;。&lt;/li&gt;
+      &lt;li&gt;上面内容花两天过一遍正常使用基本差不多了，如果特别感兴趣，不妨看看 &amp;lt; Pro Git &amp;gt; 这本书。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Done&lt;/code&gt; Github
+    &lt;ul&gt;
+      &lt;li&gt;大名鼎鼎，用就好了，不过能 Github 干什么？知乎上那个高票的答案写的特别好，这里是&lt;a href=&quot;https://www.zhihu.com/question/20070065&quot;&gt;传送门&lt;/a&gt;，另外有本入门的书《GitHub 入门与实践》，看不看都行。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/OpenMindClub/gitbook-zh&quot;&gt;Gitbook&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;GitBook 是一个基于 Node.js 的命令行工具，可使用 Github/Git 和 Markdown 来制作精美的电子书，很多开源书的选择。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Done&lt;/code&gt; Jekyll 搭建个人博客
+    &lt;ul&gt;
+      &lt;li&gt;后期不断维护，抽空看看官方文档。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Done&lt;/code&gt; Mac + iTerm + Sublime
+    &lt;ul&gt;
+      &lt;li&gt;有空还是看看文档吧&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Learning&lt;/code&gt; &lt;strong&gt;&lt;a href=&quot;http://billie66.github.io/TLCL/index.html&quot;&gt;Command Line Interface&lt;/a&gt;&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Vim + Tmux + zsh 文本三巨头！
+        &lt;ol&gt;
+          &lt;li&gt;&lt;a href=&quot;http://macshuo.com/?p=676&quot;&gt;oh-my-zsh&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://tangosource.com/blog/a-tmux-crash-course-tips-and-tweaks/&quot;&gt;A Tmux crash course: tips and tweaks&lt;/a&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Iterm2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Learning&lt;/code&gt; &lt;strong&gt;Vi/Vim&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://coolshell.cn/articles/5426.html/comment-page-1#comments&quot;&gt;简明 Vim 练级攻略&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python
+    &lt;ul&gt;
+      &lt;li&gt;廖雪峰的 &lt;a href=&quot;http://www.liaoxuefeng.com/article/001432619295115c918a094d8954bd493037b03d27bf9a9000&quot;&gt;Python 教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/OpenMindClub/python-basic/blob/master/SUMMARY.md&quot;&gt;开智课堂&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/29372574&quot;&gt;Python 练手项目&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://wiki.python.org/moin/PythonBooks&quot;&gt;Offical_Guide&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;正则表达式
+    &lt;ul&gt;
+      &lt;li&gt;《精通正则表达式》&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PHP/SQL&lt;/li&gt;
+  &lt;li&gt;Office
+    &lt;ul&gt;
+      &lt;li&gt;Word Excel PPT&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;LaTex&lt;/li&gt;
+  &lt;li&gt;Photoshop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gitbook.com/book/frank-the-obscure/pythoncamp0/details&quot;&gt;OpenMind&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;section-6&quot;&gt;前端&lt;/h1&gt;
+
+&lt;p&gt;看过《黑客与画家》的应该有印象 Paul Graham 对 Web App 的极力推崇，感觉确实以后 Web App 是潮流，捣鼓东西看到的技术博客博客其实基本都是从事 font end（颜值高但经常有问题找不到解决方案），fond end 是大坑，不过还是要学学的，大二大三抽空研究下。&lt;/p&gt;
+
+&lt;p&gt;Introduction:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTML5&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+  &lt;li&gt;jQuery&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Reference:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.w3school.com.cn/index.html&quot;&gt;w3school&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codecademy.com&quot;&gt;codecademy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://getbootstrap.com&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.runoob.com&quot;&gt;runoob&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;v30attachv30pdf&quot;&gt;&lt;a href=&quot;/attach/知道创宇研发技能表v3.0.pdf&quot;&gt;知道创宇研发技能表v3.0&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;里面有很多东西想学，有些完全不知道是什么，就先不整理了。&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 28 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://voleking.github.io/2016/04/28/Learning-List/</link>
+        <guid isPermaLink="true">http://voleking.github.io/2016/04/28/Learning-List/</guid>
+        
+        <category>学习</category>
+        
+        <category>规划</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Basic Algorithms Revision</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;说实话，真心觉得入门书和白书结构安排和讲解都有点奇怪，于是把高中的这本《Free Pascal 语言与基础算法》（真心是非常赞的一本基础算法书）拿出来重新复习一遍基础算法。寒假都去弄博客了，结果到开学第四周才弄完，简直💊。本来想边复习边总结然后分享给大家的，但是发现按照我的理解最多贴几个自己看的懂的版子就好，但是要弄到给别人看的程度内容则要几何倍的膨胀，最后就成了这个高不成低不就的四不像。因为寒假还没看 Ｃ＋＋ ，所以绝大多数内容都是由 Ｃ 完成的，导致代码显得比较臃肿。V0.0 大概就这样吧，如果以后用空再完善。另外白书和入门书没剩多少新内容了，只剩题了Orz。立个 flag 这学期一定要刷完!( ・ˍ・)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.zybuluo.com/Voleking/note/319106&quot;&gt;更好阅读效果&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;basic-algorithms&quot;&gt;Basic Algorithms&lt;/h1&gt;
+
+&lt;h2 id=&quot;sort&quot;&gt;Sort&lt;/h2&gt;
+
+&lt;p&gt;STL 大法好，从此排序一行搞！&lt;br /&gt;
+不过各种排序代码也简单，很多方法背后的思想挺经典的，就大致打了打。没准有水题像「车厢调度」用到框架～(第一次在 CF 上做到一到类似的题还想了一下)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bubble Sort&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 0; i &amp;lt; n; i++)
+    for (int j = 0; j &amp;lt; n - i - 1; j++)
+        if (a[j] &amp;gt; a[j + 1]) {
+            int temp =  a[j];
+            a[j] = a[j + 1];
+            a[j + 1] = temp;
+        } 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Insertion Sort&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 1; i &amp;lt; n; i++) {
+    int tmp = a[i], j;
+    for (j = i - 1; j &amp;gt;= 0 &amp;amp;&amp;amp; a[j] &amp;gt; tmp; j--)
+        a[j + 1] = a[j];
+    a[++j] = tmp; 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Selection Sort&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 0; i &amp;lt; n; i++)
+    for (int j = i + 1; j &amp;lt; n; j++)
+        if (a[i] &amp;gt; a[j]) {
+            int temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Merge Sort&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;int mersgesort(int a[], int b[], int c[], int an, int bn) {
+    int i = 0, j = 0, k = 0;
+    while (i &amp;lt; an &amp;amp;&amp;amp; j &amp;lt; bn) {
+        if (a[i] &amp;lt; b[j]) {
+            c[k++] = a[i++];
+        }
+        else {
+            c[k++] = b[j++];
+        }
+    }
+    while (i &amp;lt; an) 
+        c[k++] = a[i++];
+    while (j &amp;lt; bn)
+        c[k++] = b[j++];
+    return k;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Quick Sort&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;void quicksort(int a[], int l, int r) {
+    int i = l, j = r, mid = a[(l + r) / 2];
+    while (i &amp;lt;= j) {
+        while (a[i] &amp;lt; mid) i++;
+        while (a[j] &amp;gt; mid) j--;
+        if (i &amp;lt;= j) {
+            int tmp = a[i];
+            a[i] = a[j];
+            a[j] = tmp;
+            i++;
+            j--;
+        }
+    }
+    if (i &amp;lt; r) quicksort(a, i, r);
+    if (l &amp;lt; j) quicksort(a, l, j);        
+    return ;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Heap Sort
+    &lt;ul&gt;
+      &lt;li&gt;见堆的内容&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problems&quot;&gt;Problems&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;车厢重组（冒泡排序思想，选择排序框架完成）&lt;/li&gt;
+  &lt;li&gt;士兵站队&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;recurrence&quot;&gt;Recurrence&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;棋盘格数&lt;br /&gt;
+n＊m 方格棋盘: &lt;br /&gt;
+  包含正方形个数 $\sum_{i=0}^{min(n,m)-1} (n-i)*(m-i)$&lt;/p&gt;
+
+    &lt;p&gt;包含长方形个数(乘法原理，含正方形) ${\sum_{i=1}^n i}*{\sum_{i=1}^m i}$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;common-recurrence-relations&quot;&gt;Common recurrence relations&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fibonacci&lt;/li&gt;
+  &lt;li&gt;Hanoi&lt;/li&gt;
+  &lt;li&gt;平面分隔&lt;/li&gt;
+  &lt;li&gt;Catalan&lt;/li&gt;
+  &lt;li&gt;Stirling&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;recursion&quot;&gt;Recursion&lt;/h2&gt;
+
+&lt;p&gt;主要是理解思想，几道简单的练习题：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;进制转换&lt;/li&gt;
+  &lt;li&gt;Hanoi汉诺塔 移动过程（双色汉诺塔）&lt;/li&gt;
+  &lt;li&gt;2 的幂次方（NOIP1998）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dfs&quot;&gt;DFS&lt;/h2&gt;
+
+&lt;h3 id=&quot;module&quot;&gt;Module&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;int dfs(int step, ...parameter list) {
+    if success {
+        print;
+        return 0;
+    }
+    for (;;) 
+        if satisfied {
+            save condition;
+            dfs(step++, ...parameter list);
+            //recover precondintion;
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;problems-1&quot;&gt;Problems&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;排列，组合，自然数拆分&lt;/li&gt;
+  &lt;li&gt;马的遍历，迷宫问题&lt;/li&gt;
+  &lt;li&gt;最佳调度，图的 m 着色问题，部落卫队&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bfs&quot;&gt;BFS&lt;/h2&gt;
+
+&lt;h3 id=&quot;module-1&quot;&gt;Module&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;void bfs() {
+    初始化，初始状态存入队列；
+    队列首指针 head = 0，尾指针 tail = 1；
+    while (head &amp;lt; tail) {
+        if 当前节点为目标节点 
+            输出并退出；
+        for (;;) {
+            if satisfied &amp;amp; unreached {
+                存入新节点;
+                tail++;
+            }
+        }     
+        head++;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;相比与 DFS，BFS 常用于求最优解。&lt;/p&gt;
+
+&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;最少转弯问题&lt;/li&gt;
+  &lt;li&gt;细胞&lt;/li&gt;
+  &lt;li&gt;Children of the Candy Corn&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;greedy-algorithm&quot;&gt;Greedy Algorithm&lt;/h2&gt;
+
+&lt;p&gt;思想：局部最优推导整体最优。常需要排序等预处理。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;大胆猜测，细心验证&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;problems-2&quot;&gt;Problems&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;排队打水&lt;/li&gt;
+  &lt;li&gt;均分纸牌&lt;/li&gt;
+  &lt;li&gt;删数问题&lt;/li&gt;
+  &lt;li&gt;拦截导弹（最大不上升＆最大上升）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;divide-and-conquer-algorithm&quot;&gt;Divide And Conquer Algorithm&lt;/h2&gt;
+
+&lt;h3 id=&quot;problems-3&quot;&gt;Problems&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;循环比赛日程表&lt;/li&gt;
+  &lt;li&gt;取余运算 （a * b % k = (a % k) * (b % k) % k）&lt;/li&gt;
+  &lt;li&gt;黑白棋子移动&lt;/li&gt;
+  &lt;li&gt;光荣的梦想（mergesort 求逆序对，Ps 车厢调度）&lt;/li&gt;
+  &lt;li&gt;小车问题&lt;/li&gt;
+  &lt;li&gt;麦森数（高精度+快速幂）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dp&quot;&gt;DP&lt;/h2&gt;
+
+&lt;p&gt;在多阶段决策问题中，各阶段采取的决策，一般来说与阶段有关的，决策依赖于当前状态，又随即引起状态的转移，一个决策序列就是在变化的状态中产生出来的，故有“动态”的含义，我们称解决多阶段决策最优化过程为动态规划程序设计方法。&lt;/p&gt;
+
+&lt;p&gt;基本概念于模型构成：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;阶段和阶段变量&lt;/li&gt;
+  &lt;li&gt;状态和状态变量&lt;/li&gt;
+  &lt;li&gt;决策、决策变量和决策允许集合&lt;/li&gt;
+  &lt;li&gt;策略和最优策略&lt;/li&gt;
+  &lt;li&gt;状态转移方程&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;需满足条件:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;最优化原则&lt;/li&gt;
+  &lt;li&gt;无后效性原则&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;knapsack-problem&quot;&gt;Knapsack Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;0/1 背包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])&lt;/script&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 0; i &amp;lt; n; ++i)
+    for (int v = V; v &amp;gt;= w[i]; v--)
+        f[v] = max(f[v], f[v- w[i]] + c[i]);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完全背包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])&lt;/script&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 0; i &amp;lt; n; ++i)
+    for (int v = w[i]; v &amp;lt;= V; ++v)
+        f[v] = max(f[v], f[v- w[i]] + c[i]);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意循环顺序的不同背后思路。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一个简单的优化：若两件物品 i、j 满足 $w[i] ≤ w[j]$ 且 $c[i] ≥ c[j]$，则讲物品 j 去掉，不用考虑。&lt;/li&gt;
+  &lt;li&gt;转化为 01 背包问题求解：
+    &lt;ul&gt;
+      &lt;li&gt;第 i 种物品转化为 $\frac{V}{w[i]}$ 件费用于价值均不变的物品。&lt;/li&gt;
+      &lt;li&gt;第 i 种物品拆成费用为 $w[i] * 2^k$，价值为 $c[i] * 2^k$ 的若干件物品其中 k 满足 $w[i] * 2^k &amp;lt; V$&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;多重背包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+f[i, v] = max(f[i - 1, v - k * w[i]] + k * c[i] | 0 &lt;= k &lt;= n[i]) %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;优化：转化为 01 背包问题
+    &lt;ul&gt;
+      &lt;li&gt;将第 i 件物品分成若干件物品，每件物品的系数分别为：$1,2,4,\ldots,2^{(k - 1)},n[i]-2^k$&lt;/li&gt;
+      &lt;li&gt;** 根据 w，v 范围改变 DP 对象，可以考虑针对不同价值计算最小的重量。（ $f[i, j]$，其中 j 代表价值总和）**&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 0; i &amp;lt; N; ++i) {
+    int k;
+    for (k = 1 &amp;lt;&amp;lt; 0; k &amp;lt;= n[i] &amp;amp;&amp;amp; w[i] * k &amp;lt;= V; n[i] -= k, k &amp;lt;&amp;lt;= 1) {
+        for (int v = V; v &amp;gt;= w[i] * k; --v) 
+            f[v] = max(f[v], f[v- w[i] * k] + c[i] * k);
+    }
+    k = n[i];
+    if ( k &amp;gt; 0 &amp;amp;&amp;amp; w[i] * k &amp;lt;= V) {
+        for (int v = V; v &amp;gt;= w[i] * k; --v) 
+            f[v] = max(f[v], f[v- w[i] * k] + c[i] * k);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;混合三种背包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;  弄清楚上面三种背包后分情况就好&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;二维费用背包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f[i, v, u] = max(f[i - 1, v, u], f[i - 1, v - a[i], u - b[i]] + c[i])&lt;/script&gt;
+
+&lt;p&gt;二维费用可由最多取 m 件等方式隐蔽给出。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;分组背包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f[k, v] = max(f[k - 1, v], f[k - 1, v - w[i]] + c[i] | i \in K)&lt;/script&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;    for (int k = 0; k &amp;lt; K; ++k)
+        for (v = V; v &amp;gt;= 0; --v)
+            for (int i = 0; i &amp;lt;= n[k]; ++i)
+                f[v] = max(f[v], f[v - w[i]] + c[i]);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;显然可以对每组中物品应用完全背包中“一个简单有效的优化”&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;有依赖背包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;由 NOIP2006 金明的预算方案引申，对每个附件先做一个 01 背包，再与组件得到一个 $V - w[i] + 1$ 个物品组。&lt;br /&gt;
+更一般问题，依赖关系由「森林」形式给出，涉及到树形 DP 以及泛化物品，这里不表。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;背包问题方案总数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f[i, v] = sum(f[i - 1, v], f[i - 1, v - w[i]] + c[i]),f[0, 0] = 0&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;更多内容详见「背包九讲」&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;several-simple-optimization-method&quot;&gt;Several simple optimization method&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;每次扩展只与上次状态有关，使用 &lt;strong&gt;滚动数组&lt;/strong&gt; a[i &amp;amp; 1]&lt;/li&gt;
+  &lt;li&gt;通过变量之间关系 &lt;strong&gt;降维&lt;/strong&gt; （传纸条）。&lt;/li&gt;
+  &lt;li&gt;做两遍避免起点遍历（能量项链）。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;basic-dp-problem&quot;&gt;Basic DP Problem&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;最长不下降子序列（拦截导弹、友好城市、合唱队形）
+    &lt;ul&gt;
+      &lt;li&gt;注：可以通过二分查找将复杂度优化到 $O(NlogN)$&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;石子归并、乘积最大、编辑距离、方格取数、低价购买、最长公共子序列、复制书稿、橱窗布置、对抗赛、单词划分、饥饿的牛、护卫队、数字游戏、能量项链、传纸条、垃圾陷阱、守望者的逃离、矩阵取数游戏……&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;记忆化搜索代替动规&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;滑雪&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;data-structure&quot;&gt;Data Structure&lt;/h1&gt;
+
+&lt;h2 id=&quot;stacklifo&quot;&gt;Stack——LIFO&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Push&lt;/li&gt;
+  &lt;li&gt;Pop&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;problem-1&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;任意进制转换&lt;/li&gt;
+  &lt;li&gt;括号匹配&lt;/li&gt;
+  &lt;li&gt;表达式计算$\left(+ - * / ()\right)$&lt;/li&gt;
+  &lt;li&gt;车厢调度&lt;/li&gt;
+  &lt;li&gt;前中后缀表达式转换&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;listfifo&quot;&gt;List——FIFO&lt;/h2&gt;
+
+&lt;p&gt;head：队头指针；tail：尾指针。&lt;br /&gt;
+优化——循环队列：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail = (tail + 1) / n;  
+if (head == tail) 队列已满;  
+else Q[tail] = X;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;problem-2&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;面积(换个角度看待问题)&lt;/li&gt;
+  &lt;li&gt;家庭问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tree&quot;&gt;Tree&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;基本概念
+    &lt;ul&gt;
+      &lt;li&gt;结点、根、结点的度（树的度）、层次、森林、路径（对于任意两个不同的结点，如果从一个结点出发，自伤而下沿着树中连着结点的线段能到达另一结点）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;树的遍历
+    &lt;ol&gt;
+      &lt;li&gt;先序遍历&lt;/li&gt;
+      &lt;li&gt;后序遍历&lt;/li&gt;
+      &lt;li&gt;层次遍历&lt;/li&gt;
+      &lt;li&gt;叶结点遍历&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;binary-tree&quot;&gt;Binary Tree&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;基本概念
+    &lt;ul&gt;
+      &lt;li&gt;完全二叉树&lt;/li&gt;
+      &lt;li&gt;满二叉树&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;二叉树遍历
+    &lt;ul&gt;
+      &lt;li&gt;先序遍历（对应前缀表示、波兰式）&lt;/li&gt;
+      &lt;li&gt;中序遍历(中缀表示)&lt;/li&gt;
+      &lt;li&gt;后序遍历（后缀表示、逆波兰式）&lt;/li&gt;
+      &lt;li&gt;给定中序和其他一种遍历就可以确定一个二叉树&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;普通树转二叉树
+    &lt;ul&gt;
+      &lt;li&gt;第一个儿子左结点&lt;/li&gt;
+      &lt;li&gt;兄弟右结点&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;树的计数问题
+    &lt;ul&gt;
+      &lt;li&gt;递归：B0 = 1， Bn = ∑BiBn-i-1&lt;/li&gt;
+      &lt;li&gt;Bn = C(n,2n)/(n + 1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heap&quot;&gt;Heap&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;void put(int x) {
+    a[++len] = x;
+    int p = len;
+    while (p != 1 &amp;amp;&amp;amp; a[p] &amp;lt; a[p / 2]) {
+        int tmp = a[p];
+        a[p] = a[p / 2];
+        a[p / 2] = tmp;
+        p /= 2;
+    }
+    return ;
+}
+int get() {
+    int num = a[1];
+    a[1] = a[len--];
+    int fa = 1, son = 0;
+    while (fa * 2 &amp;lt;= len) {
+        if (fa * 2 + 1 &amp;gt; len || a[fa * 2] &amp;lt; a[fa * 2 + 1])
+            son = fa * 2;
+        else
+            son = fa * 2 + 1;
+        if (a[fa] &amp;gt; a[son]) {
+            int tmp = a[fa];
+            a[fa] = a[son];
+            a[son] = tmp;
+            fa = son;
+        }
+        else
+            break;
+    }
+    return num;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;void sift(int i) {
+    Data tmp = a[i];
+    while (i * 2 &amp;lt;= len) {
+        if (i * 2 + 1 &amp;gt; len || a[i * 2].fish &amp;gt; a[i * 2 + 1].fish)
+            i = i * 2;
+        else
+            i = i * 2 + 1;
+        if (tmp.fish &amp;lt; a[i].fish)
+            a[i / 2] = a[i];
+        else {
+            i /= 2;
+            break;
+        }
+    }
+    a[i] = tmp;
+}
+// 建堆
+for (int i = 1; i &amp;lt;= n / 2; ++i)
+    hp.sift(i);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;problem-3&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;合并果子&lt;/li&gt;
+  &lt;li&gt;鱼塘钓鱼&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;graph-theory&quot;&gt;Graph Theory&lt;/h1&gt;
+
+&lt;p&gt;简单定义与概念：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;边与点的集合&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;有向图&lt;/strong&gt;，&lt;strong&gt;无向图&lt;/strong&gt;，&lt;strong&gt;结点的度&lt;/strong&gt;（&lt;strong&gt;入度&lt;/strong&gt;、&lt;strong&gt;出度&lt;/strong&gt;），&lt;strong&gt;权值&lt;/strong&gt;，&lt;strong&gt;连通&lt;/strong&gt;，&lt;strong&gt;回路&lt;/strong&gt;（&lt;strong&gt;环&lt;/strong&gt;），&lt;strong&gt;完全图&lt;/strong&gt;（&lt;strong&gt;稠密图&lt;/strong&gt;、&lt;strong&gt;稀疏图&lt;/strong&gt;），&lt;strong&gt;强连通分量&lt;/strong&gt;（有向图中任意两点都连通的最大子图）&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;欧拉回路&lt;/strong&gt;（一笔画问题）&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;哈米尔顿环&lt;/strong&gt;（不重复走过所有路径的回路）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;图的存储与遍历：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;存储
+    &lt;ol&gt;
+      &lt;li&gt;二位数组邻接矩阵存储&lt;/li&gt;
+      &lt;li&gt;数组模拟邻接表存储&lt;/li&gt;
+      &lt;li&gt;链式存储&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;遍历
+    &lt;ol&gt;
+      &lt;li&gt;DFS&lt;/li&gt;
+      &lt;li&gt;BFS&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;shortest-path-algorithm&quot;&gt;Shortest Path Algorithm&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Floyed-Warshall——$O(N^3)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;init: dis[u][v] = w[u][v]() or INT_MAX / 3 //防止判断时超出整数范围
+for (int k = 1; k &amp;lt;= n; ++k)
+    for (int i = 1; i &amp;lt;= n; ++i)
+        for (int j = 1; i &amp;lt;= n; ++j)
+            dis[i][j] = min(dis[i][k] + dis[k][j], dis[i][j]);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果规定每条边只走一次，可以求出负权回路的最短路径。修改循环顺序。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dijkstra  $O(N^2)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;算法描述（蓝白点思想）：&lt;br /&gt;
+设起点为 s，dis[v] 表示从 s 到 v 的最短路径，pre[v] 为 v 的前驱节点，用来输出路径。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$init: dis[v] = ∞ (v ≠ s); dis[s] = 0; pre[s] = 0;$&lt;/li&gt;
+  &lt;li&gt;$for(int\text{ }i = 1; i &amp;lt;= n; ++i)$
+    &lt;ol&gt;
+      &lt;li&gt;在没有被访问过的点中找一个顶点 u 使得 dis[u] 是最小的。&lt;/li&gt;
+      &lt;li&gt;u 标记为已确定最短路径。&lt;/li&gt;
+      &lt;li&gt;更新 u 与每个未确定最短路的顶点 v 的距离
+        &lt;ul&gt;
+          &lt;li&gt;$dis[v] = min(dis[u] + w[u][v], dis[v])$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;memset(vis, 0, sizeof(vis));
+for (int i = 1; i &amp;lt;= n; ++i) {
+    dis[i] = (i != s)? w[s][i] : 0;
+}
+for (int i = 1; i &amp;lt;= n; ++i) {
+    double mmin = DBL_MAX / 3;
+    int k = 0;
+    for (int j = 1; j &amp;lt;= n; ++j)
+        if (!vis[j] &amp;amp;&amp;amp; dis[j] &amp;lt; mmin) {
+            mmin = dis[j];
+            k = j;
+        }
+    if (!k) break;
+    vis[k] = 1;
+    for (int j = 1; j &amp;lt;= n; ++j) {
+        dis[j] = min(dis[k] + w[k][j],dis[j]);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bellman-Ford $O(NE)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;算法实现：&lt;br /&gt;
+设起点为 s，dis[v] 表示从 s 到 v 的最短路径，pre[v] 为 v 的前驱节点，用来输出路径。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;init: dis[v] = ∞ (v ≠ s); dis[s] = 0; pre[s] = 0;
+for(int i = 1; i &amp;lt; N; ++i)
+    for (int j = 1; j &amp;lt;= E; ++j)
+        if (dis[u] + w[j] &amp;lt; dis[v]) {
+            dis[v] = dis[u] + w[j];
+            pre[v] = u;id
+        }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以处理存在负边权的情况，但无法处理存在负权回路的情况。若算法完成后，还出现某条边使得：$dis[u] + w &amp;lt; dis[v]$，则存在负权回路。如果一开始将 d 初始化为0，那么可以找出所有负圈。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SPFA $O(kE)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;对 Bellman-Ford 算法的一种队列实现，减小冗余计算。&lt;/p&gt;
+
+&lt;p&gt;主要思想：&lt;br /&gt;
+初始时将起点加入队列，每次从队列中取出一个元素，并对与它相邻的点进行修改，如果某个相邻的点修改成功，则将其入队（已经v入队的无需入队）。直到队列为空是算法结束。注意一个点可以多次入队，使用循环队列可以使队列长度只需开到 $2 * n + 5$。另外需要用邻接表储存。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 1; i &amp;lt;= n; ++i) {
+    dis[i] = (i != s)? DBL_MAX / 3 : 0;
+}
+memset(vis, 0, sizeof(vis));
+vis[s] = true;
+que.push(s);
+while (!que.empty()) {
+    int u = que.front();
+    que.pop();
+    vis[u] = false;
+    for (int i = 1; i &amp;lt;= adj[u][0]; ++i) {
+        int v = adj[u][i];
+        if (dis[v] &amp;gt; dis[u] + w[u][v]) {
+            dis[v] = dis[u] + w[u][v];
+            if (!vis[v]) {
+                que.push(v);
+                vis[v] = true;
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;problem-4&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;牛的旅行&lt;/li&gt;
+  &lt;li&gt;香甜的黄油&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;connectivity-of-graphs&quot;&gt;Connectivity of Graphs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;判断是否连通
+    &lt;ol&gt;
+      &lt;li&gt;Floyed 算法&lt;/li&gt;
+      &lt;li&gt;DFS 遍历&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;最小环问题（找出一个环各边权值和最小)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int k = 1; k &amp;lt;= n; ++k) {
+    for (int i = 1; i &amp;lt; k; ++i)
+        for (int j = i + 1; j &amp;lt; k; ++j)
+            ans = min(dis[i][j] + w[i][k] + w[k][j])
+    for (int i = 1; i &amp;lt;= n; ++i)
+        for (int j = 1; j &amp;lt;= n; ++j)
+            dis[i][j] = min(dis[i][k] + dis[k][j], dis[i][j]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;求有向图的强连通分量&lt;/p&gt;
+
+    &lt;p&gt;Kosaraju 算法可以求有向图中强连通分量，描述如下：&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;第一次对图 G 进行 DFS 遍历，并在遍历过程中，记录每个点退出顺序。&lt;/li&gt;
+      &lt;li&gt;倒装每一条边的方向，构造出一个反图 G’。然后按照退出顺序的逆序对对反图进行第二次 DFS 遍历，每次遍历得到的点属于一个强连通分量。&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problem-5&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;p&gt;有趣的一道题：刻录光盘&lt;/p&gt;
+
+&lt;h2 id=&quot;union-find-set&quot;&gt;Union-find set&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;int find(int x) {
+    return (f[x] == x)? x : f[x] = find(f[x]);
+};
+int merge(int a, int b) {
+    int fa = find(a);
+    int fb = find(b);
+    if (fa != fb)
+    f[fa] = fb;
+    // f[find(a)] = find(b);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;problem-6&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;格子游戏&lt;/li&gt;
+  &lt;li&gt;团伙（拆点思想）&lt;/li&gt;
+  &lt;li&gt;打击犯罪（逆着搞一遍）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;spanning-tree&quot;&gt;Spanning tree&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prime——$O(N^2)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;算法描述：&lt;br /&gt;
+以 1 为起点生成最小生成树，min[v] 表示蓝点 v 与白点相连的最小边权。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for (int i = 1; i &amp;lt;= n; ++i) {
+    int k = 0, mmin = INT_MAX;
+    for (int j = 1; j &amp;lt;= n; ++j)
+        if (!visit[j] &amp;amp;&amp;amp; dis[j] &amp;lt; mmin) {
+            mmin = dis[j];
+            k = j;
+        }
+    visit[k] = true;
+    total += di0s[k];
+    for (int j = 1; j &amp;lt;= n; ++j) if (!visit[j])
+        dis[j] = min(g[k][j], dis[j]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kruskal——$O(ElogE)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;算法描述：
+按边排序，并查集维护&lt;/p&gt;
+
+&lt;h2 id=&quot;topological-sorting-and-critical-path&quot;&gt;Topological Sorting and Critical Path&lt;/h2&gt;
+
+&lt;p&gt;用有向无环图表示一个工程中每个子工程的先后关系称为“AOV 网”，把一条有向边起点的活动称为终点活动的「前驱活动」，同理终点的活动称为起点活动的「后继活动」。只有一个活动全部的前驱全部完成之后，这个活动才能进行。&lt;/p&gt;
+
+&lt;h2 id=&quot;topological-sorting&quot;&gt;Topological Sorting&lt;/h2&gt;
+
+&lt;p&gt;算法描述：&lt;br /&gt;
+1. 选择一个入度为 0 的顶点并输出；
+2. 然后从 AOV 网中删除此顶点及以此结点为起点的所有关联边（更新终点的入度）；
+3. 重复 1，2 两步直到不存在入度为 0 的顶点为止；
+4. 若输出的顶点小于网络中的顶点数，则有回路，否则输出结点序列为拓扑序列。&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-7&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;奖金&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;critical-path&quot;&gt;Critical Path&lt;/h2&gt;
+
+&lt;p&gt;一个工程的每项活动先后关系及所需时间通过带边权的有向无环图表示，则该网络称为“AOE 网”。为了估算某个工程的时间，需要找出影响工程完成时间的主要活动。其中源点和汇点分别表示工程的开始和结束。&lt;/p&gt;
+
+&lt;p&gt;算法描述：&lt;br /&gt;
+用拓扑排序顺序依次计算所有时间最早发生时间(其中事件 j 是事件 k 的直接前驱事件):
+&lt;script type=&quot;math/tex&quot;&gt;earliest[1] = 0&lt;/script&gt; 
+&lt;script type=&quot;math/tex&quot;&gt;earliest[k] = max(earliest[j] + dis[j][k])&lt;/script&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 26 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://voleking.github.io/2016/03/26/Basic-Algorithms-Revision/</link>
+        <guid isPermaLink="true">http://voleking.github.io/2016/03/26/Basic-Algorithms-Revision/</guid>
+        
+        <category>ICPC</category>
+        
+        <category>Algorithms</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>不一样的鸡汤</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;短评&lt;/h1&gt;
+
+&lt;p&gt;寒假刚开始读的时候觉得这本书又是一本毫无营养不过是换了一种说法的“鸡汤”，毕竟里面的绝大多数内容都或多或少的看到过，然而方法论终归是方法论，最终又能有多少人做到呢？可是读完这本书评分我却给了五星，只因有几章给我带来的不一样的思考，或者按照书中说法就是心智提升。诚然，一本书如果能有部分内容确实有益，大体也就够了吧。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;很多学生“既勤奋又懒惰”的怪异现象来自于他们的“时间压力”感受。“没有时间了”，或者“时间不够了”的感受和恐惧，使得他们超乎寻常地勤奋，哪怕是虚假的“勤奋”，恨不能废寝忘食。而同样的感受，也使得他们终日寻找捷径，美其名曰“提高效率”，而实际上却想着“最好不费吹灰之力”——无论哪一种都注定是不现实的，因为，已经“没有时间了”——这确是冷冰冰的现实。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;实话说这是第一次从对时间认知的角度考虑为什么我们觉得没有时间，而非管理或者效率这些老生长谈的话题，不过确实很有道理不是么？另外本书关于心智的内容我理解为决定我们对待事物的认知和对于问题的处理方法的内在。关于心智的力量作者举了一个「愚蠢的上司」的例子，正好契合之前反思高三每天强烈吐槽老师各种工作是否有使我的心态往不好的方向发展，进而影响了我心态的情况。年后开学这一个月，我发现我远比以前频繁地有反思自己的很多行为，认识了很多自身的局限，也得到了很多不一样的想法。虽然改变很多时候并非那么容易，比如当场道歉难以启口（我总是在明确我对了的时候才不吝啬于道歉;-）但从看不到走向看到已是一个巨大的进步，嗯换个好听的说法就是心智提升了。&lt;/p&gt;
+
+&lt;p&gt;事实上很多人不需要方法论完全就可以不断变得更好，而我们看了一本又一本的方法论，徜徉在知乎与朋友圈的鸡汤中却止步不前，很大的原因似乎确实是人与人心智的差别。读了这本书肯定很难给我们直接带来心智提升，但或许可以为我们开启心智的大门。如果你很久没读鸡汤了或者方法论成功学的书了，不妨看一看。&lt;/p&gt;
+
+&lt;p&gt;貌似书单还剩一本方法论的书了，读多了还是有点烦，开学还是多读读技术书吧。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;思维导图&lt;/h1&gt;
+
+&lt;p&gt;部分章节的简单导图：&lt;/p&gt;
+
+&lt;figure&gt;
+        &lt;img src=&quot;http://7xqllw.com1.z0.glb.clouddn.com/post-mind.png&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;摘录&lt;/h1&gt;
+
+&lt;p&gt;单独抽离出来的文字很是空洞，随便堆砌了。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;时间焦虑症&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;很多学生“既勤奋又懒惰”的怪异现象来自于他们的“时间压力”感受。“没有时间了”，或者“时间不够了”的感受和恐惧，使得他们超乎寻常地勤奋，哪怕是虚假的“勤奋”，恨不能废寝忘食。而同样的感受，也使得他们终日寻找捷径，美其名曰“提高效率”，而实际上却想着“最好不费吹灰之力”——无论哪一种都注定是不现实的，因为，已经“没有时间了”——这确是冷冰冰的现实。&lt;/li&gt;
+  &lt;li&gt;人们普遍相信自己明天会有更多的时间其实是多么可笑&lt;/li&gt;
+  &lt;li&gt;选择相反，直接的结果就是时间质量的不同——这不是所谓的“时间管理技巧”可以弥补的。
+    &lt;ul&gt;
+      &lt;li&gt;我知道我现在要学习、要努力，这个没问题。问题在于，学习也好，努力也罢，就好像是投资一样，都是要投入时间、精力，甚至金钱的。如果在我根本不能确定我现在的学习究竟能给我带来怎样的结果的情况下，我就投入时间、精力和金钱，那我不就是连傻瓜都不如了么？所以，你必须告诉我，学这东西究竟有什么用处？没有用的东西我才不会去学呢！&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-4&quot;&gt;兴趣&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先，这些人并不是对正在做的事情没有兴趣，而是没能力把目前正在做的事情做好。最终没有人喜欢自己做不好的事情。
+    &lt;ul&gt;
+      &lt;li&gt;人们总说他们真正感兴趣的是别的事情。可事实上，那应该仅仅是因为他们还没开始做那件事情，所以还没有在那件事情上遭受挫折而已。因为还没有遇到过挫折，还没有证明那件事情他们做不好，所以，那件事儿对他们来讲确实具备很大的吸引力。事实上，当很多人真的放弃原来做的事情，然后去做新的、所谓真正感兴趣的事情的时候，他们最终会发现，这件事想要做好同样困难重重，挫折不断。没有多久，这些人又会因为做不好这件事而失去兴趣，然后开始幻想做另外的事情，并且将其行为“合理化”而后如此声明：“我（才知道）自己真正感兴趣的并不是这个……”（心理学上有个专门的概念，把这种做法称为“Rationalization”。）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-5&quot;&gt;认知偏差&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我们的大脑有个运行机制叫做“选择性输入”。具体表现就是你在很多人身上看到的特征：他们只能听到自己喜欢听的，只能看到自己喜欢看的。&lt;/li&gt;
+  &lt;li&gt;人类拥有的普遍的认知偏差之一就是：把成功揽到自己身上，把失败归咎于别人或者坏运气。（心理学上有个专门的名词：Self-serving Bias（自利性偏差）。）&lt;/li&gt;
+  &lt;li&gt;如果说记忆本身是葡萄，那么回忆的过程就是发酵。每个人都有努力使自己的历史变得更加清白、更加美好的倾向。&lt;/li&gt;
+  &lt;li&gt;见识越少的人越喜欢用自己所有的见识作为判断依据，并且完全不顾自己见识的局限，也不知道自己的见识有局限。
+    &lt;ul&gt;
+      &lt;li&gt;现在美国铁轨之间的距离是4英尺8英吋的原因竟然与两千年前的罗马人的战马的屁股的宽度有关——本来想拿这个做例子告诫学生，今天的错误将必然导致明天的尴尬。可是，今天我为了写文章查资料，偶然发现，这个例子根本就是以讹传讹！&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一定要想清楚并记住这件事儿：相信运气其实是缺乏自制力的表现。
+    &lt;ul&gt;
+      &lt;li&gt;人们不喜欢甚至害怕自己控制不了的事情。并且，越是脆弱的人越希望获得控制权；同时，越是意识到自己没有控制权的时候就越害怕。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如果说，一个故事至少有三个版本：你的，我的，和真的。那我这个人估计也至少有三个版本：台下的，台上的，和学生看到的。所以，我要接受这样一个事实：很多的时候，那种喜欢、那种评价其实只不过基于误解。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-6&quot;&gt;其他&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在日常生活中人们经常有意无意地用亲密的方式提及大家仰望的人物，无论他们与“大人物”是否真的存在私交密往。&lt;/li&gt;
+  &lt;li&gt;他们的效率很差。根源在于，他们其实只做简单的事情，而回避那些有难度的工作。&lt;/li&gt;
+  &lt;li&gt;一个人遗忘痛苦的能力特别强的一个具体表现就是，这个人会很轻易地原谅自己。&lt;/li&gt;
+  &lt;li&gt;事实上，“推迟满足感”是心智成熟的人必备的能力，也是需要挣扎和锻炼才可以习得的能力。
+    &lt;ul&gt;
+      &lt;li&gt;大多数人看法惊人地类似甚至相同：如果有收获的话，那最好要马上有收获；如果没有收获的话，那最好要马上有结果。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如果你连这样愚蠢的考试都无法通过的话，那么愚蠢的不仅仅是考试本身。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;不要浪费时间去“证明自己”!&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;“所有的傻逼都是自证的”，觉得其实颇有一些道理。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 21 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://voleking.github.io/2016/03/21/Make-Friends-With-Time/</link>
+        <guid isPermaLink="true">http://voleking.github.io/2016/03/21/Make-Friends-With-Time/</guid>
+        
+        <category>Reading Note</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>告别“想太多，做不到”的瞎忙综合征</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;时间不够用？&lt;/h1&gt;
+
+&lt;p&gt;老实说，大学之前还真几乎没有觉得时间不够用过，毕竟作业什么的至少提前半个月就刷完了，小考小玩大考大玩也是各种浪，时常还洋洋得意于自己时间掌控能力。然而清楚的记得刚上大一前三个月简直分身乏术，每天像一个永不停歇的齿轮奔波于各项事物，晚上也常常因为各种事情拖到一两点才睡，第二天还有早课。与曾经想象的轻松愉悦的大学生活大相迳庭。不过朋友圈中「大学忙成狗」的吐槽以及「让我回到高三」的调侃一度给了我一个错误的信号，似乎这一切并不是我本身的问题，相反确实是从原先主要关注学习到现在关注生活方方面面的外部转变所导致的。&lt;/p&gt;
+
+&lt;p&gt;可是别人口中闲暇的大学生活究竟去哪了呢？直到我无意读到《哪有没有时间这回事》才发现忙的假象从来都是我们自身的原因，而市面上反人性反自然的时间管理类丛书鲜有效果也自然可以理解，&lt;strong&gt;自然才是自律者最好的状态&lt;/strong&gt;，而大学确实人生为数不多的拥有大块时间的阶段。&lt;/p&gt;
+
+&lt;p&gt;下面是书中的一些主要内容的总结。如果不能吸引你捧读此书那一定是我的问题，强烈建议买来看两遍以上！&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;三种清单合理优化时间分配&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;为什么日程表永远是挂在墙上的——日常任务清单&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我们规划的越认真细致，就越难以执行。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;一直很反感细分到小时的规划却又说不上原因，似乎我知道自己肯定做不到，所以一直对市面上时间管理类的书很是不屑。作者在书中给出了解释，「规划得越认真越细致就越难以执行越受挫。若尝试以小时为单位规划并试图执行就会发现，一通电话、一个会议、一会懈怠就可以轻易的摧毁整张时间表。考量的越少，变数越大，缺乏弹性，把工作任务安排在严苛的工作表中，一旦出现干扰由于“空隙太少”，就会影响到整张时间表。」然而事实上许多时间管理仍然充斥者时间表的想法，但毕竟柳比歇夫只有一个。&lt;/p&gt;
+
+&lt;p&gt;相反书中给出了替代方案： &lt;strong&gt;日常任务清单&lt;/strong&gt; （时间段清单）。按照 &lt;strong&gt;时间&lt;/strong&gt;、&lt;strong&gt;地点&lt;/strong&gt;、&lt;strong&gt;物品&lt;/strong&gt;、&lt;strong&gt;环境&lt;/strong&gt;、&lt;strong&gt;他人&lt;/strong&gt;和&lt;strong&gt;身心状态&lt;/strong&gt; 六要素理出那些每天都做或每周都做两三次的事情（以及希望做到的），成为我们的日常任务清单。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;人脑并不能有效处理每天十几项事物，列出来有处于减少焦虑&lt;/li&gt;
+  &lt;li&gt;不断优化&lt;/li&gt;
+  &lt;li&gt;划开界限（这个时间段的事情就在这个时间段解决，绝不拖到下个时间段，让一天的混乱变得有层次秩序）&lt;/li&gt;
+  &lt;li&gt;八分饱&lt;/li&gt;
+  &lt;li&gt;仪式感（人为什么要过年呢？其实那天和其他日子没有什么不同，但就是者“辞旧迎新”的感觉，让人的状态好起来，憧憬并积极地面对未来）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;避免贵人多忘事——碎片清单&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;碎片时代，我们常常你以为自己被微信打败，被微博绑架，被杂物缠身，被碎片信息撕得粉碎，其实你是没懂碎片化时代的正确打开方式&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;面对碎片化信息，我们的大脑极其脆弱，有效的方法就是借助外物——&lt;strong&gt;碎片清单&lt;/strong&gt;，为大脑免于直接面对每天海量的信息、事情、想法等各种碎片的侵袭。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;记什么：
+    &lt;ol&gt;
+      &lt;li&gt;信息：有价值的信息&lt;/li&gt;
+      &lt;li&gt;事情：代办事项（想做或需做）&lt;/li&gt;
+      &lt;li&gt;想法：想做什么、改变什么、尝试什么&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;工具：手机——随身。推荐一款交互很赞颜值很高的小众 App：Swipes&lt;/li&gt;
+  &lt;li&gt;When：念头产生后立刻记&lt;/li&gt;
+  &lt;li&gt;How：内容简短，足够提醒想起即可&lt;/li&gt;
+  &lt;li&gt;意义：减小压力、大脑焦虑，知道事情在那里，可以按自己的节奏找更合适的时间处理。「邮件我可以不立刻回，信息我也不必立刻回，提示我可以当时不管，这些干扰只是飞过来的碎片，通过碎片清单缓冲它们对我的冲击，使我可以按照自己的节奏找到更合适的时间处理它们」&lt;/li&gt;
+  &lt;li&gt;处理：
+    &lt;ul&gt;
+      &lt;li&gt;可以不做吗？&lt;/li&gt;
+      &lt;li&gt;可以以后做吗？&lt;/li&gt;
+      &lt;li&gt;可以找人帮忙吗？&lt;/li&gt;
+      &lt;li&gt;可以现在做吗？&lt;/li&gt;
+      &lt;li&gt;有确切的时间点吗？&lt;/li&gt;
+      &lt;li&gt;接下来做什么？&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;别让计划永远停留在计划——每日任务清单&lt;/h2&gt;
+
+&lt;p&gt;从碎片清单跳出需要处理的事情放入每日任务清单。&lt;br /&gt;
+执行计划：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;时间段清单&lt;/li&gt;
+  &lt;li&gt;任务清单&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;完成不了计划？&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;执行力建立在对自己和任务都有充足了解和足够客观评价上&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;所以 &lt;strong&gt;任务清单必须包含有效思考——具体做什么，步骤，耗时，而不能将碎片清单的事物直接移到任务清单上&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;工作会自觉占满一个人所有可用时间。如果一个人给自己安排了充裕的时间去完成一项工作，他就会放慢节奏或者增加其他项目使用掉所有的时间。工作膨胀出来的复杂性回事工作显得很重要，在这种弹性很大的环境中，人并不会感到轻松；相反，人会应为工作拖沓，膨胀而苦闷、劳累，从而感到精疲力竭。&lt;/p&gt;
+
+  &lt;p&gt;“完成xxx”是任务的结果而非过程。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;于是有效的计划一定是包含了对于 &lt;em&gt;任务执行过程&lt;/em&gt; 的思考&lt;/strong&gt; ，通常，人们都倾向于在执行任务时才被迫思考过程，如此一来，执行任务时的负担就太重了。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;任务优先级是个伪命题&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重要紧急&lt;/li&gt;
+  &lt;li&gt;重要不紧急&lt;/li&gt;
+  &lt;li&gt;不重要紧急&lt;/li&gt;
+  &lt;li&gt;不重要不紧急&lt;br /&gt;
+很多时候我们其实并不能分清。&lt;br /&gt;
+做任务的顺序：自然就好。优先级是计算机程序的概念。&lt;strong&gt;不过要反思是否有始终选择完成简单事情优先的倾向。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;「当我写这篇文章时，想起看了一半的电影，忍不住想要看几眼。如果我的脑子有那些要事有限的原则舒服着，此时我就会很难受——不看，难受；看了，也难受。觉得自己做了错事，觉得自己败给了自己的懒惰。但是要事没有这束缚，看了，高兴，就当作是写作过程给自己的小奖励；没看，我也高兴，这要我可以继续高效地写作，写完再看就是给自己更大的奖励。当我开心而不拧巴是，我就有可能管住自己，即使看了也能及时停止，回到写作中去」&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;愉悦、不拧巴，使自然才能更好的自律。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;碎片化专注&lt;/h3&gt;
+
+&lt;p&gt;总会有 dirty work，所以不必谈如何喜欢你的工作。&lt;br /&gt;
+人玩游戏是很容易投入的，为什么？有目标，有规则，还有及时反馈（编程也是😄）。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-8&quot;&gt;什么算是专注？&lt;/h4&gt;
+&lt;p&gt;是在电脑前面一动不动吗？常常见过不少这样的家伙，一上午屁股都不抬一下，但他们往往工作效率最低，谁知道他们坐在哪儿时脑子里想的是什么呢？&lt;br /&gt;
+&lt;strong&gt;大脑思考过程没有中断&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;How&lt;/strong&gt; ：事先消除刺激碎片，用纸笔思考，重复 专注→放空 的过程，直到专注不下去。
+    &lt;ul&gt;
+      &lt;li&gt;放空：不需要投入思考的动作，例如喝水、上洗手间、伸懒腰。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;解释：人碰到困难时就会焦虑，知难而上那是大道理，人本能上都是倾向于逃避自然、困难的，并且回自然地以最低成本且不自责的方式——想点别的来缓解焦虑。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;更进一步：番茄工作法（最基础），禅修，冥想——关注内省自我。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-9&quot;&gt;早睡早起和收获的晚间&lt;/h1&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;我们为什么要早起？&lt;/h3&gt;
+
+&lt;p&gt;因为：&lt;br /&gt;
+    1. 早上可以把一天大半的事情完成。&lt;br /&gt;
+    2. 高效率的早上可以带来愉悦的一天，也可以有更多的时间娱乐玩耍。&lt;br /&gt;
+    3. 个人体会尝试一周就会发现好处，早上就把一天大部分事情完成的感觉真的很赞&amp;lt;(￣︶￣)↗。 &lt;br /&gt;
+### How to do it？&lt;/p&gt;
+
+&lt;p&gt;首先要记住：&lt;br /&gt;
+1. 睡眠要质量而不要时长。&lt;br /&gt;
+2. 大约每个四个小时，人就会迎来一次低潮，这就是该休息的时候了。&lt;strong&gt;所以上午困了其实并不是我们早起导致的。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;其实我们可以：&lt;br /&gt;
+  &lt;strong&gt;用早睡倒逼早起&lt;/strong&gt;&lt;br /&gt;
+  &lt;strong&gt;把最想做的事情放到早起后&lt;/strong&gt;&lt;br /&gt;
+相信每个人都曾遇到过当天有事早上自动醒的情况，所以个人觉得早起只是想不想的问题。（kd栋那种人另说😄，书中有一种 wake &amp;amp; up 的方法挺有意思的，但个人来说没必要，初高中每天六点习惯了）&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;午间可以做一些机械重复的体力活，或者碎片清单中的简单任务。  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;section-11&quot;&gt;晚上做什么？&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;晚间抽出 2 个小时用来阅读、进修、思考或者与家人沟通。&lt;/li&gt;
+  &lt;li&gt;晚上是用来放松和促进睡眠的，一天一定有更合适的时间去刷朋友圈，各种信息刺激在这个阶段都应该避免。&lt;/li&gt;
+  &lt;li&gt;睡前准备第二天，进行任务安排。&lt;/li&gt;
+  &lt;li&gt;当然从实际角度来讲，身为学生晚上可能更多的是写写作业学学习一类的。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;section-12&quot;&gt;杜绝“晚睡强迫症”&lt;/h3&gt;
+
+&lt;p&gt;即使无所事事也不提前睡觉，总会不自觉地拖到夜深人静的某个时候才能睡着。&lt;br /&gt;
+深层原因：出于对白天生活的无声抗议，晚睡族往往压力比较大，晚上需要依靠亢奋来缓解心理疲惫（还有习惯性晚睡）。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-13&quot;&gt;自我观察——记录耗时和打卡&lt;/h1&gt;
+
+&lt;h3 id=&quot;section-14&quot;&gt;记录什么？&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;学习柳比歇夫记录每天做事的耗时，越精确越好，可以帮助我们感知时间，从而更好的把握时间。&lt;/li&gt;
+  &lt;li&gt;打卡——坚持某件事情时唯一需要坚持的事情
+    &lt;ul&gt;
+      &lt;li&gt;内容：
+        &lt;ol&gt;
+          &lt;li&gt;对事件的记录&lt;/li&gt;
+          &lt;li&gt;对于思考和感受的记录&lt;/li&gt;
+          &lt;li&gt;基于特定领域的记录&lt;/li&gt;
+          &lt;li&gt;成长与成就&lt;/li&gt;
+          &lt;li&gt;对于日程安排的记录&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;※至少每周回顾&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-15&quot;&gt;意义&lt;/h3&gt;
+&lt;p&gt;打卡可以更加真实的反应自己的过去，有意识的记录自己，更为根本的目的是为了了解自己。频繁的回顾，深邃的思考方式，在总结过去为将来做准备。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-16&quot;&gt;习惯不是简单的重复&lt;/h1&gt;
+
+&lt;h4 id=&quot;section-17&quot;&gt;习惯培养的阶段：&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;探索尝试期（寻找适合自己的，用做什么替代）&lt;/li&gt;
+  &lt;li&gt;行为固化期（没必要把每天的规矩定死）&lt;/li&gt;
+  &lt;li&gt;稳定期&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;警惕那些“每天 5 分钟”解决问题的方法。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;人知道一件事情应该做是一回事，做到了又是另一回事，能够在漫漫人生长路上坚持并且持续做到则是非常困难的事情。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;长期积累所形成的差距令人望尘莫及。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;人总是高估了自己一年所能作出的成就，而低估自己十年所能取得的成就。所有巨大的成就都是由时间来放大的。做你应做的事，由时间来放大。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;section-18&quot;&gt;聚焦可操作的行为&lt;/h3&gt;
+
+&lt;h4 id=&quot;section-19&quot;&gt;概念具体化&lt;/h4&gt;
+
+&lt;p&gt;把目标转化为具体行为，例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;锻炼身体 → 平板支撑&lt;/li&gt;
+  &lt;li&gt;读书学习 → 尝试总结&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-20&quot;&gt;创造行为发生的条件&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;确定时间&lt;br /&gt;
+“有空的时候就做”这话等于没说，“有空”是个假象的状态，这么忙碌的时代谁觉得自己有空呢？真有空的时候有无数的事情在争抢你想要培养习惯的时间，看看手机、喝杯咖啡、和朋友聊聊、上上网或者发发呆。所以把习惯插入到时间段中，或者与其他事情建立多古诺般联系，让已有的事情成为习惯的触发器。&lt;/li&gt;
+  &lt;li&gt;抵制诱惑&lt;br /&gt;
+抵制诱惑的最好方法就是不去接触。我们无法不做什么，「听说过粉色的大象吗？说的就是越压抑你就越想。不做某事就要找到一个更为积极的行为去替代，比如你要坚持的是读书，而不是不看手机，因为不看手机这事儿你压根坚持不住。」&lt;/li&gt;
+  &lt;li&gt;其他
+    &lt;ol&gt;
+      &lt;li&gt;舒适的环境&lt;/li&gt;
+      &lt;li&gt;有趣的物品&lt;/li&gt;
+      &lt;li&gt;轻松的身心状态&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;section-21&quot;&gt;不断调整&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;习惯并非简单的重复，每天背 50 个单词是件很愚蠢的事情。&lt;/strong&gt;我们需要的是不断根据实际情况进行微调整。其实概率思维是人类认识的死穴，人们都害怕不确定性。于是一天的没能坚持导致前功尽弃的例子比比皆是。所以“三天打鱼，两天晒网”其实很不错。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-22&quot;&gt;后记&lt;/h1&gt;
+
+&lt;p&gt;大学以前从没有认真思考过时间管理这些内容，以前总是很是不屑的。现在发现有些东西做不做，怎么看待差别真的很大，按李笑来（《把时间当朋友》作者）的说法心智提升了？另外貌似读书总结的速度跟不上阅读的速度，而且后面的总结逻辑还是挺混乱的，最开始只是把有感触的句子堆积了一番，第二次才简单理了理。还是有待提高啊&lt;/p&gt;
+</description>
+        <pubDate>Sat, 27 Feb 2016 00:00:00 +0800</pubDate>
+        <link>http://voleking.github.io/2016/02/27/Enjoy-You-Time/</link>
+        <guid isPermaLink="true">http://voleking.github.io/2016/02/27/Enjoy-You-Time/</guid>
+        
+        <category>时间管理</category>
+        
+        <category>Reading Note</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>搞 ACM 的你伤不起</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;来源：http://roba.rushcj.com/?p=548&lt;br /&gt;
+RoBa原创，转载请注明出处&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;劳资六年前开始搞ACM啊！！！！！！！！！！&lt;br /&gt;
+从此踏上了尼玛不归路啊！！！！！！！！！！！！&lt;br /&gt;
+谁特么跟劳资讲算法是程序设计的核心啊！！！！！！&lt;br /&gt;
+尼玛除了面试题就没见过用算法的地方啊！！！！！！&lt;br /&gt;
+谁再跟劳资讲算法之美算法的力量，劳资一本算法导论拍死你啊！！！！！！！！&lt;br /&gt;
+那是搞ACM的入门书啊！！！！特么的入门书就一千多页啊！！！！！！！&lt;br /&gt;
+还没有习题答案啊，学完了你特么都不知道自己到底会不会啊有木有！！！！！！&lt;br /&gt;
+然后你就得看lrj的黑书啊！！！！！！还是特么的没有习题答案啊！！！！&lt;br /&gt;
+那书难的一B啊！！！！人家一个“显然”得出的结论够你想一礼拜啊有木有！！！！&lt;br /&gt;
+一个课后题够你想几个月啊有木有！！！！&lt;br /&gt;
+然后还有一堆堆的书啊！！！！每一类算法都足够写一本书啊！！！！&lt;br /&gt;
+每本都是砖头一样啊！！！！还都特么是英文的啊！！！！&lt;br /&gt;
+也有中文翻译版啊！！！！！！翻译得跟屎一样啊！！！！&lt;br /&gt;
+你看的时候得把它再变回英文才能懂啊！！！！！！有木有！！！！！！&lt;/p&gt;
+
+&lt;p&gt;ACM的题目类型是没有范围的啊！！！！！！&lt;br /&gt;
+动态规划有木有！！！！数据结构有木有！！！！&lt;br /&gt;
+图论有木有！！！！！！计算几何有木有！！！！！！&lt;br /&gt;
+数论有木有！！！！！！要写两三百行的模拟题有木有！！！！！！&lt;br /&gt;
+特么连物理题化学题都有啊！！！！！！&lt;br /&gt;
+还有理论上就不可做的NP难问题啊！！！！！！&lt;br /&gt;
+特么理论上不可做的题也有人能AC啊！！！！坑爹啊！！！！&lt;/p&gt;
+
+&lt;p&gt;课本上学的东西完全不给力啊！！！！！！&lt;br /&gt;
+你以为学过一个最长公共子串就是懂动态规划了啊！！！！！！&lt;br /&gt;
+树型的有木有！！！！状态压缩的有木有！！！！插头的有木有！！！！&lt;br /&gt;
+而且特么写出来就超时啊！！！！！！&lt;br /&gt;
+你得四边形优化啊！！！！你得斜率优化啊！！！！你得队列优化啊！！！！&lt;br /&gt;
+特么恨不得把要算十年的程序优化到一秒啊！！！！&lt;br /&gt;
+你以为学过一个二叉搜索树就是懂数据结构了啊！！！！！！&lt;br /&gt;
+平衡啊旋转啊红啊黑啊有木有！！！！&lt;br /&gt;
+伸展啊随机权重啊合并啊拆分啊有木有！！！！！！&lt;br /&gt;
+你以为学过一个Dijkstra最短路就是懂图算法了啊！！！！！！&lt;br /&gt;
+特么的图里有几百万个点啊！！！！！！得用堆来优化啊！！！！&lt;br /&gt;
+而且边权要是负的就不对了啊！！！！还有环啊！！！！&lt;br /&gt;
+而且特么的你根本看不出是最短路问题啊！！！！！！&lt;br /&gt;
+为神马最短路算法可以用来解不等式啊！！！！&lt;br /&gt;
+还有网络流啊！！！！特么的课本上的算法铁定超时啊！！！！！！&lt;br /&gt;
+你得看论文去研究神马Dinic啊SAP啊！！！！！！&lt;br /&gt;
+而且你还是根本看不出是网络流啊！！！！！！&lt;br /&gt;
+网络流是在图上来求啊！！！！特么的图在哪里啊！！！！&lt;br /&gt;
+特么的八竿子打不着的问题都能变成网络流啊！！！！！！&lt;/p&gt;
+
+&lt;p&gt;这些你都学会了啊！！！！想参加比赛了啊！！！！发现想拿个成绩非常难啊！！！！！！&lt;br /&gt;
+校内选拔赛就好几百人报名啊有木有！！！！！！最后只能剩下十几个啊！！！！&lt;br /&gt;
+人家都是竞赛保送的啊！！！！！！中学就学了好几年了有木有！！！！怎么比的过啊！！！！！！&lt;br /&gt;
+进了校队以后你就不要想寒暑假了啊！！！！！！&lt;br /&gt;
+夏天劳资全身脱光了涂满花露水半夜刷题有木有！！！！！！&lt;br /&gt;
+冬天劳资跑遍校园找不到一个开门的食堂有木有！！！！！！&lt;br /&gt;
+而且特么老外的在线比赛都在半夜啊！！！！！！！！在机房通宵是常事啊有木有！！！！！！&lt;/p&gt;
+
+&lt;p&gt;比赛是三个人啊！！！！但是只有一台电脑啊！！！！！！&lt;br /&gt;
+特么的ACM组委会连多买几台电脑都不肯啊！！！！！！&lt;br /&gt;
+队友占着机器你就只能干着急啊！！！！！！想把他踹一边儿去啊！！！！！！&lt;br /&gt;
+没机器你就得在纸上调试啊！！！！！！你的脑子就是个CPU啊有木有！！！！&lt;br /&gt;
+你要是摊上一个啥都不会，连读题都误导你的队友，你就死定了啊！！！！！！&lt;br /&gt;
+不怕神一样的对手就怕猪一样的队友啊！！！！&lt;/p&gt;
+
+&lt;p&gt;你终于参加区域赛了啊！！！！一百多个队啊！！！！！！&lt;br /&gt;
+还有一大堆打星号的高中生们啊！！！！！！都是全国前几名级别的有木有！！！！&lt;br /&gt;
+还有一大堆打星号的老不死们啊！！！！！！毕业了还要来诈尸啊！！！！&lt;br /&gt;
+一开场那气球呼呼地挂啊！！！！你还没读完题人家已经AC了啊！！！！&lt;br /&gt;
+而且最先过的不一定是最简单的啊！！！！人家故意在误导你啊有木有！！！！！！&lt;br /&gt;
+比赛要五个小时啊！！！！结束了以后脑子都抽筋了啊！！！！&lt;br /&gt;
+人家做七八道题，你连一半都不到啊！！！！！！&lt;br /&gt;
+拿个毛的奖啊！！！！去个毛的总决赛啊！！！！！！&lt;br /&gt;
+去了总决赛也是被虐啊！！！！！！老毛子们更尼玛不是人啊有木有！！！！！！&lt;br /&gt;
+连清华都被虐啊有木有！！！！！！&lt;/p&gt;
+
+&lt;p&gt;你拿着一堆Honorable Mention毕业了啊！！！！想找工作啊！！！！&lt;br /&gt;
+谁说懂算法很容易找到好工作啊！！！！&lt;br /&gt;
+都特么要项目经验有木有！！！！&lt;br /&gt;
+劳资成天盯着一个黑乎乎的控制台窗口！！！！哪有时间做项目啊！！！！！！&lt;br /&gt;
+同学们都是网站啊桌面程序啊做过一堆啊！！！！&lt;br /&gt;
+人家对面试官侃侃而谈啊！！！&lt;br /&gt;
+劳资只好说劳资除了算法啥也不会啊！！&lt;br /&gt;
+而且其实算法也没学会啊！！！！！坑爹啊！！！！&lt;/p&gt;
+
+&lt;p&gt;终于工作了啊！！！！发现算法神马的完全用不上啊！！！！&lt;br /&gt;
+稍微复杂点的算法都有现成的库可以用啊！！！！！！&lt;br /&gt;
+要懂Shell编程有木有！！！！&lt;br /&gt;
+要懂多线程有木有！！！！&lt;br /&gt;
+要懂Socket有木有！！！！&lt;br /&gt;
+要懂分布式有木有！！！！&lt;br /&gt;
+要懂J2EE有木有！！！！要懂设计模式有木有！！！！&lt;/p&gt;
+
+&lt;p&gt;要懂以下省略三千字有木有！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！&lt;/p&gt;
+
+&lt;p&gt;总之搞ACM的上辈子都是脑细胞死光钻到牛角尖里出不来的天使&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Feb 2016 00:00:00 +0800</pubDate>
+        <link>http://voleking.github.io/2016/02/18/%E6%90%9EACM%E7%9A%84%E4%BD%A0%E4%BC%A4%E4%B8%8D%E8%B5%B7/</link>
+        <guid isPermaLink="true">http://voleking.github.io/2016/02/18/%E6%90%9EACM%E7%9A%84%E4%BD%A0%E4%BC%A4%E4%B8%8D%E8%B5%B7/</guid>
+        
+        <category>ICPC</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sublime Text 个人配置</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;前言&lt;/h1&gt;
+
+&lt;p&gt;作为本人第一款上手的文本编辑器（目前也是唯一一个😅），Sublime Text 满足了我对于文本编辑器的大部分期望：精简、迅速、&lt;strong&gt;跨品台&lt;/strong&gt;、插件丰富、&lt;strong&gt;高度可定制化&lt;/strong&gt;。唯一的遗憾大概是从前年起开发者就一直放羊，最后一次更新还是去年三月。希望是在憋大招，又或者以后能开源。&lt;/p&gt;
+
+&lt;p&gt;个人觉得新手用 IDE 可以使其专注于语言本身，但像我这样有一定基础的又不满足于使用臃肿 IDE 来单文件编程。学习曲线低，容易上手（当时不选 Vim 其实是因为颜值太低🙈）的 Sublime Text 便成了我的选择。从最开始连 C 都不知如何编译输入到现在可以简单定制，博客笔记都在上面写。Sublime Text 让我卸了 MacDown，以后还有望卸了 Evernote(已卸)。&lt;/p&gt;
+
+&lt;p&gt;这几天又配置了一遍（仅仅是因为一个小问题不爽卸了😢）网上介绍 Sublime text 文章千千万，不如自己写一遍。声明这篇文章是写给我的自己的，十分简略，环境是 Mac，当然如果能给你带来帮助我也是很开心的。&lt;/p&gt;
+
+&lt;h1 id=&quot;install&quot;&gt;Install&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sublimetext.com/2&quot;&gt;Sublime Text 2&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.sublimetext.com/3&quot;&gt;Sublime Text 3 beta&lt;/a&gt;（Recommend）&lt;/p&gt;
+
+&lt;h1 id=&quot;build-system&quot;&gt;Build System&lt;/h1&gt;
+
+&lt;p&gt;最开始用 sublime text 就是打算用来编译 c 与 cpp 的，结果控制台不能输入，即程序无法从 stdin 读入用户输入。着实郁闷了好久，再加上暑假时对 shell 和 Jason 都一窍不通（现在还是orz），搜索许久才在知乎上找到勉强满意的方案。后来一次无意谷歌到孙耀珠的博客，终于在他的帮助下把 c, cpp, html, md, py, java 的 build system 都弄好了，感激不尽。&lt;/p&gt;
+
+&lt;p&gt;解决方案：&lt;/p&gt;
+
+&lt;h3 id=&quot;c--c&quot;&gt;C / C++&lt;/h3&gt;
+&lt;p&gt;我们可以点击 Tools &amp;gt; Build System &amp;gt; New Build System… 新建自己的配置文件 G++.sublime-build，填入以下内容：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;shell_cmd&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;g++ -o \&quot;${file_path}/${file_base_name}.out\&quot; \&quot;${file}\&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;file_regex&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;working_dir&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;${file_path}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;selector&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;source.c++&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;variants&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Run&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;shell_cmd&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;g++ -o \&quot;${file_path}/${file_base_name}.out\&quot; \&quot;${file}\&quot; &amp;amp;&amp;amp; open \&quot;${file_path}/${file_base_name}.out\&quot;&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;实际上这就是一个 JSON，相关资料可以参阅 Sublime Text Unofficial Documentation。相应地，C 的配置文件可以新建一个 C.sublime-build，将原先所有的 g++ 替换为 gcc 即可。 
+注：加 “.out” 是为了在 SideBar 忽略可执行文件，无后缀名实在不知道怎么表示。&lt;/p&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
+&lt;p&gt;安装 SublimeREPL 即可，快捷键设置见后文。&lt;/p&gt;
+
+&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;
+&lt;p&gt;仿照 C / C++ 的方法自定义  Build System：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;shell_cmd&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;open -a Safari.app \&quot;${file}\&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;working_dir&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;${file_path}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;selector&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;source.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;variants&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Run&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;shell_cmd&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;open -a \&quot;/Applications/Google Chrome.app\&quot; \&quot;${file}\&quot;&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;按下 ⌘B 和 ⇧⌘B 会分别在 Safari 和 Chrome 中打开当前 HTML，这样便可以快捷地预览设计中的页面。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Updated on April 25，2016&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;build system 时 html 选 automatic 按 command + B 不行，必须选 html。而 c/c++ 则可以。
+大概是需要创建一个新的 .tmLanguage 文件，关联 .html / .htm 扩展名，再在 HTML.sublime-build 指定刚才创建好的 scopeName，比如 “selector”: “source.html”。
+可以参考&lt;a href=&quot;http://stackoverflow.com/questions/14136024/sublime-text-2-build-system-custom-selector&quot;&gt;这里&lt;/a&gt;，暂时懒得研究( ・ˍ・)。&lt;/p&gt;
+
+&lt;h3 id=&quot;markdown&quot;&gt;Markdown&lt;/h3&gt;
+&lt;p&gt;同样安装 package ，具体见 Package 部分以及快捷键设置。&lt;/p&gt;
+
+&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
+&lt;p&gt;类似，但 Terminal 不会弹出，不算完美，待研究。&lt;/p&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+
+&lt;p&gt;关于 Sublime Text 参考资料觉得看下面这个就基本上够了，跟着过一遍&lt;br /&gt;
+&lt;a href=&quot;https://docs.sublimetext.info/en/latest/index.html&quot;&gt;Sublime Text Unofficial Documentation&lt;/a&gt;  &lt;br /&gt;
+如果英文不好或者想看快点&lt;br /&gt;
+&lt;a href=&quot;http://sublime-text.readthedocs.org/en/latest/customization/customization.html&quot;&gt;Sublime Text 非官方文档（中文版）&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;package&quot;&gt;Package&lt;/h1&gt;
+&lt;p&gt;适当的 Package 可以让 Sublime Text 更强大更高效：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://packagecontrol.io&quot;&gt;Package Control&lt;/a&gt;：必装神器，package 的包管理器&lt;/li&gt;
+  &lt;li&gt;Alignment：代码自动对齐&lt;/li&gt;
+  &lt;li&gt;ConvertToUTF8：自动转换各种非UTF8格式（GBK兼容）&lt;/li&gt;
+  &lt;li&gt;Codecs33：为了让ConvertToUTF8更好的工作&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.emmet.io&quot;&gt;Emmet&lt;/a&gt;：原名 Zen Coding ，还没学前端～&lt;/li&gt;
+  &lt;li&gt;Evernote：用 Sublime Text 在 Evernote 上记笔记，要先授权。&lt;/li&gt;
+  &lt;li&gt;Git：集成 git 常用功能。&lt;/li&gt;
+  &lt;li&gt;Github Tools：待研究。&lt;/li&gt;
+  &lt;li&gt;MarkdownEditing：在 Sublime 中编辑 MarkDown 文件，并自动使用 Color Theme&lt;/li&gt;
+  &lt;li&gt;OmniMarkupPreviwer：在浏览器中即时预览 MarkDown 文件效果&lt;/li&gt;
+  &lt;li&gt;SideBarEnhancements：增强 SideBar 功能&lt;/li&gt;
+  &lt;li&gt;Sublime Input：另一种解决控制台无法 Input 的方法&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/SublimeLinter/SublimeLinter-for-ST2/blob/sublime-text-3/README.md&quot;&gt;SublimeLinter&lt;/a&gt;：代码校验插件，找出错误或编写不规范的代码，尚未配置&lt;/li&gt;
+  &lt;li&gt;SublimeREPL：目前编译 python，调用 ipython 用&lt;/li&gt;
+  &lt;li&gt;Table Editor：编辑 md 更加方便加入表格&lt;/li&gt;
+  &lt;li&gt;Terminal：在当前目录打开 Terminal&lt;/li&gt;
+  &lt;li&gt;Theme - Spacegray：好看的主题！！！&lt;/li&gt;
+  &lt;li&gt;Material Theme：更丰富的主题！！！&lt;/li&gt;
+  &lt;li&gt;WakaTime：记录 Coding 时间，装13用。需网上注册找到 API 输入&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;刚使用 Sublime Text 各处找看起来狂拽酷炫吊炸天的 Package，最后都不会用或是没用。几次重新配置后断舍离了一番，只留下了一些要用或是符合我学习期望的。另外神器（Package Control）在手，要用再装嘛&lt;/p&gt;
+
+&lt;h1 id=&quot;personalization&quot;&gt;Personalization&lt;/h1&gt;
+
+&lt;p&gt;图标换了这个：&lt;/p&gt;
+&lt;center&gt;
+        &lt;img src=&quot;http://7xqllw.com1.z0.glb.clouddn.com/Sublime%20Text.png&quot; title=&quot;Logo&quot; width=&quot;100&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;目前使用 Theme - Spacegray（比那什么最受欢迎的 Soda Theme 好看多了，不爽咬我呀，口亨），配色不甚满意，字体未换。效果如下：&lt;/p&gt;
+
+&lt;figure&gt;
+        &lt;img src=&quot;http://7xqllw.com1.z0.glb.clouddn.com/post-sublime-text.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Updated on April 25，2016&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;上周换了新的功能更加丰富的 &lt;a href=&quot;http://equinusocio.github.io/material-theme/&quot;&gt;Material Theme&lt;/a&gt; (图片加载不出来的话可能是被 q 了，最近访问 Github 也越来越慢了)&lt;/p&gt;
+
+&lt;figure&gt;
+        &lt;img src=&quot;https://camo.githubusercontent.com/1ff3f31c6a43cdf5f02e2d54a5afee6802abff23/687474703a2f2f657175696e75736f63696f2e6769746875622e696f2f6d6174657269616c2d7468656d652f6173736574732f6d756c74692e6a7067&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+        &lt;img src=&quot;https://camo.githubusercontent.com/6e29c4974bd477a61274666886fcbd8ae2775024/687474703a2f2f692e696d6775722e636f6d2f4c566852396a712e706e67&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;key-bindings&quot;&gt;Key Bindings&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+    //编译 *.py 
+    {
+        &quot;keys&quot;: [&quot;f5&quot;],
+        &quot;caption&quot;: &quot;SublimeREPL: Python - RUN current file&quot;,
+        &quot;command&quot;: &quot;run_existing_window_command&quot;,
+        &quot;args&quot;: {
+            &quot;id&quot;: &quot;repl_python_run&quot;,
+            &quot;file&quot;: &quot;config/Python/Main.sublime-menu&quot;
+        }
+    },
+    //自动对齐
+    {
+        &quot;keys&quot;:[&quot;ctrl+alt+a&quot;],
+        &quot;command&quot;:&quot;alignment&quot;
+
+    },
+    //md 即时预览
+    {
+        &quot;keys&quot;: [&quot;super+b&quot;], &quot;command&quot;: &quot;omni_markup_preview&quot;,
+        &quot;context&quot;: [{&quot;key&quot;: &quot;omnimarkup_is_enabled&quot;, &quot;operator&quot;: &quot;equal&quot;, &quot;operand&quot;: &quot;&quot;}]
+    },
+    {
+        &quot;keys&quot;: [&quot;super+alt+x&quot;], &quot;command&quot;: &quot;omni_markup_export&quot;,
+        &quot;context&quot;: [{&quot;key&quot;: &quot;omnimarkup_is_enabled&quot;, &quot;operator&quot;: &quot;equal&quot;, &quot;operand&quot;: &quot;&quot;}]
+    },
+    {
+        &quot;keys&quot;: [&quot;ctrl+alt+c&quot;], &quot;command&quot;: &quot;omni_markup_export&quot;,
+        &quot;args&quot;: { &quot;clipboard_only&quot;: true },
+        &quot;context&quot;: [{&quot;key&quot;: &quot;omnimarkup_is_enabled&quot;, &quot;operator&quot;: &quot;equal&quot;, &quot;operand&quot;: &quot;&quot;}]
+    }
+]
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;未完待续&lt;/h1&gt;
+
+&lt;p&gt;虽然有些方案很麻烦，但用弄好了还是很爽的，对于我来说折腾也是一种乐趣。什么时候 Sublime Text 用顺了就是尝试 Vim 和 Emacs 的时候了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Updated on April 25，2016&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;开始转 Vim 以及接触 GNU Readline 了。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;参考文档&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.yzyzsun.me/sublime-text-for-mac/&quot;&gt;Sublime Text for Mac 使用配置&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 07 Feb 2016 00:00:00 +0800</pubDate>
+        <link>http://voleking.github.io/2016/02/07/Sublime-Text-Personal-Setting/</link>
+        <guid isPermaLink="true">http://voleking.github.io/2016/02/07/Sublime-Text-Personal-Setting/</guid>
+        
+        <category>Sublime Text</category>
+        
+        <category>文本编辑器</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hello 2016!</title>
+        <description>&lt;h1 id=&quot;hello-blog&quot;&gt;Hello Blog&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这是我的第一篇博客。&lt;/p&gt;
+
+  &lt;p&gt;前几天弄好了大体框架，期间找图换背景强迫症各种不满意。于是另 fork 了一个，终于改的看的过去了。
+感激涕零。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;2016 年，总算有个地方可以好好写点东西了。&lt;/p&gt;
+
+&lt;p&gt;作为一个程序员，Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。然而前端东西都不懂，所以一直拖到了现在。&lt;/p&gt;
+
+&lt;p&gt;因为完全没有基础，弄了近一周的时间，期间多多少少了解了 Jekyll, Github, Git, Html, Css 以及其它一些有关的知识。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;特别鸣谢：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://blog.yzyzsun.me&quot;&gt;孙耀珠&lt;/a&gt;：Sublime Text 配置介绍什么的帮助真的很大，也让我知道了 Gitbub + Jekyll ＋ markdown 可以搭建个人博客，让我有了意向。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://huangxuan.me&quot;&gt;黄玄&lt;/a&gt;：最终 fork 他的啦，改了一些，作品好赞！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://azeril.me&quot;&gt;azeril&lt;/a&gt;：最开始是看的他的博客学习搭建的，第一版也是 fork 他的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://cnfeat.com&quot;&gt;cnfeat&lt;/a&gt;：他是 fork👆的啦，配置的介绍也帮到我不少，每天一千字真的好腻害。翻他博文的时候意外发现他14年从东莞来到了珠海，瞬间觉得好亲切。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://yaoguangming.com&quot;&gt;么广明&lt;/a&gt;： kindle伴侣网站建设者及 Q 群群主，感谢搭建这么好的一个平台供大家交流。在我搭建遇到困难时还提供了 Hexo 另一种选择，最后想想前面 99 步都走了，最后一步还是走下去吧。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;还有各种 tools and services：&lt;br /&gt;
+    &lt;em&gt;Jekyll，Github，Git，Google，Clean Blog Theme，Duoshuo，Markdown……&lt;/em&gt;&lt;br /&gt;
+不一个个贴链接了。&lt;/p&gt;
+
+&lt;p&gt;至于搭建方法，上面链接博客的博文中都有，当然每个人尝试都会遇到一些不一样的问题，欢迎交流。&lt;/p&gt;
+
+&lt;h1 id=&quot;bye-2015&quot;&gt;Bye 2015&lt;/h1&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;高考&lt;/h4&gt;
+&lt;p&gt;引用一个暑假挺火的一段：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我们12年入学，&lt;br /&gt;
+15年毕业。&lt;/p&gt;
+
+  &lt;p&gt;经历的却是1314&lt;/p&gt;
+
+  &lt;p&gt;我觉得这个故事棒呆了😊&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;虽然高考真的是滑铁卢般，让我知道了什么叫世事无常。
+但半年的时间最起码让我学会了坦然以对，以及给出“意料之外，情理之中”的总结。什么时候有空再详细写写吧，刚出成绩知乎上发表的那个不是很理智。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;大学&lt;/h4&gt;
+&lt;p&gt;简单回顾一下大一第一学期，以及写博的动机：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;尽量少看朋友圈（偶尔还是看看的🙈，只不过屏蔽了一堆人）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;删了所有新浪微博，删的过程中觉得自己以前也挺傻挺好玩的2333&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;百度贴吧帖子还在删除中（每天只能删30个要死呦！！！你个卖假药的，怒摔）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;虽然不可避免的被裹挟进了这个碎片洪流，却已心生反感，努力避免。&lt;/p&gt;
+
+&lt;p&gt;这半年来很多时候有很多想法，于是自然而然地就想写写博客，先是大学以来从阮一峰，Matrix67，programthink 等大神的博客中学到了很多东西，动辄五年十年博客历史很有厚重感，心神向往。&lt;/p&gt;
+
+&lt;p&gt;然后再次鸣谢上面提到的所有人最终促成了这个博客的诞生，真心感谢。&lt;/p&gt;
+
+&lt;h1 id=&quot;hello-2016&quot;&gt;Hello 2016&lt;/h1&gt;
+
+&lt;p&gt;其实 16 年 1 月眨眼也就过去了，数数农历新年也近在眼前了，似乎小学六年读完后来的初中高中三年一下子就过去了，大学的第一学期感觉过得更快了。&lt;/p&gt;
+
+&lt;p&gt;很高兴能在年初搭建好这个博客，展望 2016 区域赛一定要拿几个银牌，多学习，多读书，GPA 高点Orz。&lt;/p&gt;
+
+&lt;p&gt;暂时这么多。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;一些想法&lt;/h1&gt;
+
+&lt;p&gt;这个博客主要用于分享技术，记录生活，抒发感悟。很多时候都想写写东西，但目前肯定做不到每天千字，尽量多写，&lt;strong&gt;顺心意&lt;/strong&gt; 就好，哪怕因为什么原因放下了，相信最终也会捡起。很赞同《哪有没有时间这回事》作者的观点 &lt;strong&gt;让自律者自由&lt;/strong&gt; 以及 &lt;strong&gt;不拧巴才是最好的状态。&lt;/strong&gt; （强烈推荐，有时间写书评)&lt;/p&gt;
+
+&lt;h1 id=&quot;eof&quot;&gt;EOF&lt;/h1&gt;
+
+</description>
+        <pubDate>Sun, 31 Jan 2016 00:00:00 +0800</pubDate>
+        <link>http://voleking.github.io/2016/01/31/Hello-2016/</link>
+        <guid isPermaLink="true">http://voleking.github.io/2016/01/31/Hello-2016/</guid>
+        
+        <category>生活</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
