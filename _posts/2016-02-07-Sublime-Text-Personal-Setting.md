@@ -158,7 +158,8 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
         <img src="https://camo.githubusercontent.com/6e29c4974bd477a61274666886fcbd8ae2775024/687474703a2f2f692e696d6775722e636f6d2f4c566852396a712e706e67">
 </figure>
 
-# Key Bindings
+# Key Bindings #
+
 ```
 [
     //编译 *.py 
@@ -195,7 +196,76 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
 
 ```
 
+# Setting #
 
+```Jason
+{
+    "always_show_minimap_viewport": true,
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/User/SublimeLinter/Material-Theme-OceanicNext (SL).tmTheme",
+    "enable_tab_scrolling": false,
+    "file_exclude_patterns":
+    [
+        "*.out",
+        "*.pyc",
+        "*.pyo",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb",
+        ".DS_Store",
+        "*.class",
+        "*.psd",
+        "*.db",
+        "*.sublime-workspace"
+    ],
+    "font_options":
+    [
+        "gray_antialias"
+    ],
+    "font_size": 14,
+    "highlight_line": false,
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
+    "material_theme_accent_cyan": true,
+    "material_theme_accent_indigo": true,
+    "material_theme_accent_pink": true,
+    "material_theme_bold_tab": false,
+    "material_theme_compact_panel": true,
+    "material_theme_compact_sidebar": true,
+    "material_theme_contrast_mode": true,
+    "material_theme_disable_fileicons": true,
+    "material_theme_disable_folder_animation": false,
+    "material_theme_disable_tree_indicator": true,
+    "material_theme_panel_separator": false,
+    "material_theme_small_statusbar": true,
+    "material_theme_small_tab": false,
+    "material_theme_tabs_autowidth": true,
+    "material_theme_tabs_separatior": false,
+    "overlay_scroll_bars": "enabled",
+    "theme": "Material-Theme.sublime-theme",
+    "material_theme_tree_headings": true,
+    "update_check": true,
+    "vintageous_use_ctrl_keys": true
+}
+
+```
 
 #  未完待续
 
