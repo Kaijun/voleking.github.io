@@ -26,7 +26,7 @@ STL 大法好，从此排序一行搞！
 
 + Bubble Sort  
 
-```C++ 
+``` 
 for (int i = 0; i < n; i++)
     for (int j = 0; j < n - i - 1; j++)
         if (a[j] > a[j + 1]) {
@@ -38,7 +38,7 @@ for (int i = 0; i < n; i++)
 
 + Insertion Sort  
 
-```C++
+```
 for (int i = 1; i < n; i++) {
     int tmp = a[i], j;
     for (j = i - 1; j >= 0 && a[j] > tmp; j--)
@@ -49,7 +49,7 @@ for (int i = 1; i < n; i++) {
 
 + Selection Sort
 
-```C++
+```
 for (int i = 0; i < n; i++)
     for (int j = i + 1; j < n; j++)
         if (a[i] > a[j]) {
@@ -61,7 +61,7 @@ for (int i = 0; i < n; i++)
 
 + Merge Sort
 
-```C++
+```
 int mersgesort(int a[], int b[], int c[], int an, int bn) {
     int i = 0, j = 0, k = 0;
     while (i < an && j < bn) {
@@ -82,7 +82,7 @@ int mersgesort(int a[], int b[], int c[], int an, int bn) {
 
 + Quick Sort
 
-```C++   
+```   
 void quicksort(int a[], int l, int r) {
     int i = l, j = r, mid = a[(l + r) / 2];
     while (i <= j) {
@@ -149,7 +149,7 @@ n＊m 方格棋盘:
 
 ### Module ###
 
-```C++   
+```   
 int dfs(int step, ...parameter list) {
     if success {
         print;
@@ -266,7 +266,7 @@ void bfs() {
 
 $$f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])$$
 
-```C++
+```
 for (int i = 0; i < n; ++i)
     for (int v = V; v >= w[i]; v--)
         f[v] = max(f[v], f[v- w[i]] + c[i]);
@@ -276,7 +276,7 @@ for (int i = 0; i < n; ++i)
 
 $$f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])$$
 
-```C++
+```
 for (int i = 0; i < n; ++i)
     for (int v = w[i]; v <= V; ++v)
         f[v] = max(f[v], f[v- w[i]] + c[i]);
@@ -297,7 +297,7 @@ $$f[i, v] = max(f[i - 1, v - k * w[i]] + k * c[i] | 0 <= k <= n[i])$$
     * 将第 i 件物品分成若干件物品，每件物品的系数分别为：$1,2,4,\ldots,2^{(k - 1)},n[i]-2^k$
     * ** 根据 w，v 范围改变 DP 对象，可以考虑针对不同价值计算最小的重量。（ $f[i, j]$，其中 j 代表价值总和）**
 
-```C++
+```
 for (int i = 0; i < N; ++i) {
     int k;
     for (k = 1 << 0; k <= n[i] && w[i] * k <= V; n[i] -= k, k <<= 1) {
@@ -326,7 +326,7 @@ $$f[i, v, u] = max(f[i - 1, v, u], f[i - 1, v - a[i], u - b[i]] + c[i])$$
 
 $$f[k, v] = max(f[k - 1, v], f[k - 1, v - w[i]] + c[i] | i \in K)$$
 
-```C++
+```
     for (int k = 0; k < K; ++k)
         for (v = V; v >= 0; --v)
             for (int i = 0; i <= n[k]; ++i)
@@ -429,7 +429,7 @@ head：队头指针；tail：尾指针。
 
 ### Heap ###
 
-```C++
+```
 void put(int x) {
     a[++len] = x;
     int p = len;
@@ -463,7 +463,7 @@ int get() {
 }
 ```
 
-```C++
+```
 void sift(int i) {
     Data tmp = a[i];
     while (i * 2 <= len) {
@@ -516,7 +516,7 @@ for (int i = 1; i <= n / 2; ++i)
 
 * Floyed-Warshall——$O(N^3)$
 
-```C++
+```
 init: dis[u][v] = w[u][v]() or INT_MAX / 3 //防止判断时超出整数范围
 for (int k = 1; k <= n; ++k)
     for (int i = 1; i <= n; ++i)
@@ -538,7 +538,7 @@ for (int k = 1; k <= n; ++k)
     3. 更新 u 与每个未确定最短路的顶点 v 的距离
         * $dis[v] = min(dis[u] + w[u][v], dis[v])$
 
-```C++
+```
 memset(vis, 0, sizeof(vis));
 for (int i = 1; i <= n; ++i) {
     dis[i] = (i != s)? w[s][i] : 0;
@@ -564,7 +564,7 @@ for (int i = 1; i <= n; ++i) {
 算法实现：  
 设起点为 s，dis[v] 表示从 s 到 v 的最短路径，pre[v] 为 v 的前驱节点，用来输出路径。   
 
-```C++
+```
 init: dis[v] = ∞ (v ≠ s); dis[s] = 0; pre[s] = 0;
 for(int i = 1; i < N; ++i)
     for (int j = 1; j <= E; ++j)
@@ -583,7 +583,7 @@ for(int i = 1; i < N; ++i)
 主要思想：  
 初始时将起点加入队列，每次从队列中取出一个元素，并对与它相邻的点进行修改，如果某个相邻的点修改成功，则将其入队（已经v入队的无需入队）。直到队列为空是算法结束。注意一个点可以多次入队，使用循环队列可以使队列长度只需开到 $2 * n + 5$。另外需要用邻接表储存。
 
-```C++
+```
 for (int i = 1; i <= n; ++i) {
     dis[i] = (i != s)? DBL_MAX / 3 : 0;
 }
@@ -620,7 +620,7 @@ while (!que.empty()) {
     2. DFS 遍历  
 * 最小环问题（找出一个环各边权值和最小)  
    
-```C++ 
+``` 
 for (int k = 1; k <= n; ++k) {
     for (int i = 1; i < k; ++i)
         for (int j = i + 1; j < k; ++j)
@@ -644,7 +644,7 @@ for (int k = 1; k <= n; ++k) {
 
 ## Union-find set ##
 
-```C++
+```
 int find(int x) {
     return (f[x] == x)? x : f[x] = find(f[x]);
 };
@@ -670,7 +670,7 @@ int merge(int a, int b) {
 算法描述：  
 以 1 为起点生成最小生成树，min[v] 表示蓝点 v 与白点相连的最小边权。
 
-```C++
+```
 for (int i = 1; i <= n; ++i) {
     int k = 0, mmin = INT_MAX;
     for (int j = 1; j <= n; ++j)

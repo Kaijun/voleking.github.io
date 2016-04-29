@@ -198,7 +198,7 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
 
 # Setting #
 
-```Jason
+```
 {
     "always_show_minimap_viewport": true,
     "bold_folder_labels": true,
