@@ -9,7 +9,7 @@ This is a blog created by Voleking. The blog is live at [Voleking](https://volek
 - [x] Mathjax Support
 - [x] draft
 - [ ] To-Do-List
-- [ ] Code Syntax Highlighting
+- [x] Code Syntax Highlighting
 - [ ] 删除线
 - [ ] [Flowchart](http://adrai.github.io/flowchart.js/)
 - [ ] [Js-sequence-diagrams](http://bramp.github.io/js-sequence-diagrams/)
