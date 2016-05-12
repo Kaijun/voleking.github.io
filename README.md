@@ -10,7 +10,7 @@ This is a blog created by Voleking. The blog is live at [Voleking](https://volek
 - [x] draft
 - [ ] To-Do-List
 - [x] Code Syntax Highlighting
-- [ ] 删除线
+- [x] ~~<del>删除线<del>~~（似乎本来就支持 o r z）
 - [ ] [Flowchart](http://adrai.github.io/flowchart.js/)
 - [ ] [Js-sequence-diagrams](http://bramp.github.io/js-sequence-diagrams/)
 - [ ] Back-to-Top
