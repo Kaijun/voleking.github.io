@@ -136,6 +136,7 @@ _Learning step by step._
     * [Offical_Guide](https://wiki.python.org/moin/PythonBooks)  
 + 正则表达式  
     * 《精通正则表达式》  
++ GCC + Makefile + gdb + Valgrind
 + PHP/SQL  
 + Office  
     * Word Excel PPT  

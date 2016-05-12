@@ -60,7 +60,7 @@ System Preferences → Keyboard → Modified Key
 
 基本设置主要还是看个人喜好吧，少数派「一日一技」有时还不错可以订阅一下。
 
-# Software Recommand #
+# Software Recommanded #
 
 #### Alternote ####
 
