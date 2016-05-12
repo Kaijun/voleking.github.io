@@ -14,7 +14,7 @@
 
     > git add file
     > git checkout -- <file>
-
+    
     > git commit -m "desciption"
     > git commit --amend
     > git reset HEAD <file>...
@@ -57,12 +57,12 @@
 # branch
 
     > git checkout -b <branch_name>
-    Switched to a new branch '<branch_name>'
-    g
+    Switched to a new branch <branch_name>
+    
     > git branch <branch_name>
     > git checkout <branch_name>
     Switched to branch '<branch_name>'
-
+    
     > git branch
     > git branch -f <branch_name> <ref>
     > git merge <branch_name>
@@ -97,7 +97,7 @@
     > git push/fetch origin :<branch-name>
 	> git checkout -b branch-name origin/branch-name
     > git fakeTeamwork 
-
+    
     > git branch --set-upstream/-u branch-name origin/branch-name
 
 # tag
