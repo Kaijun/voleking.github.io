@@ -6,6 +6,7 @@ date:       2016-04-01
 author:     "Voleking"
 header-img: "/img/"
 catalog:    false
+mathjax:    true
 tags:
     -  ICPC
     -  Algorithms
@@ -129,7 +130,7 @@ $$f[i, v] = max(f[i - 1, v - k * w[i]] + k * c[i] | 0 <= k <= n[i])$$
 
 + 优化：转化为 01 背包问题  
     * 将第 i 件物品分成若干件物品，每件物品的系数分别为：$1,2,4,\ldots,2^{(k - 1)},n[i]-2^k$
-    * ** 根据 w，v 范围改变 DP 对象，可以考虑针对不同价值计算最小的重量。（ $f[i, j]$，其中 j 代表价值总和）**
+    * ** 根据 w，v 范围改变 DP 对象，可以考虑针对不同价值计算最小的重量。（ $f[i][j]$，其中 j 代表价值总和）**
 
 ```C++
 for (int i = 0; i < N; ++i) {
@@ -527,5 +528,58 @@ void segmentSieve(ll l, ll r) {
 // returning count of nk in range [l, r]
 template<typename T> T mps(T l, T r, T k) { 
     return ((r - (r % k + k) % k) - (l + (k - l % k) % k)) / k + 1;
+}
+```
+
+# string #
+
+最小最大表示法：
+```C++
+int getMinString(const string &s) {  
+    int len = (int)s.length();
+    int i = 0, j = 1, k = 0;  
+    while(i < len && j < len && k < len) {
+        int t = s[(i+k)%len] - s[(j+k)%len];
+        if(t == 0) k++;
+        else {
+            if(t > 0) i += k + 1;//getMaxString: t < 0
+            else j += k + 1;
+            if(i==j) j++;
+            k = 0;
+        }
+    }
+    return min(i,j);
+}
+```
+
+KMP
+```C++
+int nxt[MAX_N];
+void getNext(const string &str) {
+    int len = str.length();
+    int j = 0, k;
+    k = nxt[0] = -1;
+    while (j < len) {
+        if (k == -1 || str[j] == str[k]) 
+            nxt[++j] = ++k;
+        else k = nxt[k];
+    }
+}
+int kmp(const string &tar, const string &pat) {
+    getNext(pat);
+    int num, j, k;
+    int lenT = tar.length(), lenP = pat.length();
+    num = j = k = 0;
+    while (j < lenT) {
+        if(k == -1 || tar[j] == pat[k])
+            j++, k++;
+        else k = nxt[k];
+        if(k == lenP) {
+            // res = max(res, j - lenP);
+            k = nxt[k];
+            ++num;
+        }
+    }
+    return num;//lenP - res - 1;
 }
 ```
