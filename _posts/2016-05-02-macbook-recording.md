@@ -8,12 +8,12 @@ header-img: "http://7xqllw.com1.z0.glb.clouddn.com/post-macbook.jpg"
 tags:
     -  MacOS
     -  Tools
-    -  Record
+    -  Recording
 ---
 
 # 写在前面 #
 
-用了半年多的 MacBook，越来越喜欢 MacOs（据说快改名？）了，压根不想转回 Windows 阵营，一来有非常多极度优秀的应用，二来类 Unix 系统各种捣鼓各种嗨，就是内容实在太多，着实记不下来折腾了什么，经常弄崩许久才能复原（我该用 Time Machine 的，只是一直懒得买移动硬盘），故撰此文权当记录。
+用了半年多的 MacBook，越来越喜欢 MacOs（据说快改名？）了，压根不想转回 Windows 阵营，一来有非常多极度优秀的应用，二来类 Unix 系统各种捣鼓各种嗨，就是内容实在太多，着实记不下来折腾了什么，经常弄崩许久才能复原（我该用 Time Machine 的，~~只是一直懒得买移动硬盘~~），故撰此文权当记录。
 
 # Basics Settings #
 
@@ -168,7 +168,7 @@ Calibre是一款电子图书管理软件，其提供的“一站式”的电子�
 
 #### QQ WeChat ####
 
-国情，不解释
+没什么好介绍的了
 
 #### Xcode ####
 
@@ -194,7 +194,7 @@ Calibre是一款电子图书管理软件，其提供的“一站式”的电子�
 
 #### brew list ####
 
-autojump, git, aria2, hub, libevent, makedepend, openssl, tig, reattach-to-user-namespace, readline, tmux, wget
+aria2, autojump, reattach-to-user-namespace, tig, tmux, wget, zsh-syntax-highlighting
 
 #### gem list ####
 

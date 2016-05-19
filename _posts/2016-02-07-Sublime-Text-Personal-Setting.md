@@ -118,7 +118,8 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
 + Git：集成 git 常用功能。 
 + Github Tools：待研究。  
 + MarkdownEditing：在 Sublime 中编辑 MarkDown 文件，并自动使用 Color Theme  
-+ OmniMarkupPreviwer：在浏览器中即时预览 MarkDown 文件效果  
++ OmniMarkupPreviwer：在浏览器中即时预览 MarkDown 文件效果 
+    + `        "extensions": ["tables", "strikeout", "fenced_code", "codehilite", "toc", "extra", "meta"]` 
 + SideBarEnhancements：增强 SideBar 功能
 + Sublime Input：另一种解决控制台无法 Input 的方法
 + [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter-for-ST2/blob/sublime-text-3/README.md)：代码校验插件，找出错误或编写不规范的代码，尚未配置
@@ -129,7 +130,7 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
 + Material Theme：更丰富的主题！！！ 
 + WakaTime：记录 Coding 时间，装13用。需网上注册找到 API 输入
 
-刚使用 Sublime Text 各处找看起来狂拽酷炫吊炸天的 Package，最后都不会用或是没用。几次重新配置后断舍离了一番，只留下了一些要用或是符合我学习期望的。另外神器（Package Control）在手，要用再装嘛
+刚使用 Sublime Text 各处找看起来狂拽酷炫吊炸天的 Package，最后都不会用或是没用。几次重新配置后断舍离了一番，只留下了一些要用或是符合我学习期望的。另外 Package Control 在手，要用再装嘛
 
 
 
@@ -258,13 +259,12 @@ build system 时 html 选 automatic 按 command + B 不行，必须选 html。�
     "material_theme_small_tab": false,
     "material_theme_tabs_autowidth": true,
     "material_theme_tabs_separatior": false,
+    "material_theme_tree_headings": true,
     "overlay_scroll_bars": "enabled",
     "theme": "Material-Theme.sublime-theme",
-    "material_theme_tree_headings": true,
     "update_check": true,
     "vintageous_use_ctrl_keys": true
 }
-
 ```
 
 #  未完待续
