@@ -5,6 +5,7 @@ subtitle:   "《Free Pascal 语言与基础算法》小结"
 date:       2016-03-26
 author:     "Voleking"
 header-img: "http://7xqllw.com1.z0.glb.clouddn.com/post-Algorithms.jpg"
+mathjax:    true
 tags:
     - ICPC
     - Algorithms
