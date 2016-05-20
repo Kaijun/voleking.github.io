@@ -99,7 +99,7 @@ _Learning step by step._
     * < The Practice of Programming >  
 3. 语法  
     * `Learning` < C++ Primer >  
-        - < Effective CPP > 《深度探索C++对象型》《程序设计语言实践之路》< The Design and Evolution of CPP >  
+        - < Effective CPP > 《深度探索 C++ 对象型》《程序设计语言实践之路》< The Design and Evolution of CPP >  
     * < The Pragmatic Programmer >
 
 
