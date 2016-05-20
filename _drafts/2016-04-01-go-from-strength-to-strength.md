@@ -17,14 +17,14 @@ tags:
 #### Sort ####
 
 + Bubble Sort  
-```C++ 
+```c++ 
 for (int i = 0; i < n; i++)
     for (int j = 0; j < n - i - 1; j++)
         if (a[j] > a[j + 1]) swap(a[j], a[j + 1]);
 ```
 
 + Insertion Sort  
-```C++
+```c++
 for (int i = 1; i < n; i++) {
     int tmp = a[i], j;
     for (j = i - 1; j >= 0 && a[j] > tmp; j--)
@@ -34,14 +34,14 @@ for (int i = 1; i < n; i++) {
 ```
 
 + Selection Sort
-```C++
+```c++
 for (int i = 0; i < n; i++)
     for (int j = i + 1; j < n; j++)
         if (a[i] > a[j]) swap(a[i], a[j])
 ```
 
 + Merge Sort
-```C++
+```c++
 int merge_sort(int l, int r) {
     if (l == r) 
         return 0;
@@ -75,7 +75,7 @@ int merge_sort(int l, int r) {
 ```
 
 + Quick Sort
-```C++   
+```c++   
 void quicksort(int a[], int l, int r) {
     int i = l, j = r, mid = a[(l + r) / 2];
     while (i <= j) {
@@ -101,7 +101,7 @@ void quicksort(int a[], int l, int r) {
 
 $$f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])$$
 
-```C++
+```c++
 for (int i = 0; i < n; ++i)
     for (int v = V; v >= w[i]; v--)
         f[v] = max(f[v], f[v- w[i]] + c[i]);
@@ -111,7 +111,7 @@ for (int i = 0; i < n; ++i)
 
 $$f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])$$
 
-```C++
+```c++
 for (int i = 0; i < n; ++i)
     for (int v = w[i]; v <= V; ++v)
         f[v] = max(f[v], f[v- w[i]] + c[i]);
@@ -132,7 +132,7 @@ $$f[i, v] = max(f[i - 1, v - k * w[i]] + k * c[i] | 0 <= k <= n[i])$$
     * 将第 i 件物品分成若干件物品，每件物品的系数分别为：$1,2,4,\ldots,2^{(k - 1)},n[i]-2^k$
     * ** 根据 w，v 范围改变 DP 对象，可以考虑针对不同价值计算最小的重量。（ $f[i][j]$，其中 j 代表价值总和）**
 
-```C++
+```c++
 for (int i = 0; i < N; ++i) {
     int k;
     for (k = 1 << 0; k <= n[i] && w[i] * k <= V; n[i] -= k, k <<= 1) {
@@ -161,7 +161,7 @@ $$f[i, v, u] = max(f[i - 1, v, u], f[i - 1, v - a[i], u - b[i]] + c[i])$$
 
 $$f[k, v] = max{f[k - 1, v], f[k - 1, v - w[i]] + c[i] | i \in K})$$
 
-```C++
+```c++
     for (int k = 0; k < K; ++k)
         for (v = V; v >= 0; --v)
             for (int i = 0; i <= n[k]; ++i)
@@ -186,7 +186,7 @@ $$f[i, v] = sum{f[i - 1, v], f[i - 1, v - w[i]] + c[i]},f[0, 0] = 0$$
 ## Data Structure ##
 
 * Heap 
-```C++
+```c++
 int heap[maxn], sz = 0;
 void push(int x) {
     int i = sz++;
@@ -215,7 +215,7 @@ int pop() {
 ```
 
 * Binary Search Tree
-```C++
+```c++
 struct node {
     int val;
     node *lch, rch;
@@ -268,7 +268,7 @@ node *remove(node *p, int x) {
 ```
 
 * Union-find Set  
-```C++
+```c++
 int par[MAX_N];
 int rnk[MAX_N];
 
@@ -301,7 +301,7 @@ void unite(int x, int y) {
 
 ## Graph ##
 
-```C++
+```c++
 struct edge {
     int u, v;
     int dis;
@@ -314,7 +314,7 @@ int cost[MAX_V][MAX_V];
 ```
 
 * Shortest Way
-```C++
+```c++
 void dijkstra(int s) {
     //
     // fill(d, d + V, INF);
@@ -401,7 +401,7 @@ void spfa(int s) {
 ```
 
 * Spanning Tree
-```C++
+```c++
 int prime() {
     fill(d, d + V, INF);
     fill(vis, vis + V, false);
@@ -442,7 +442,7 @@ int kruskal() {
 
 ## Math Problem ##
 
-```C++
+```c++
 template<typename T> T gcd(T a, T b) {
     //return (b)? gcd(b, a  % b) : a;
     while (b) { T t = a % b; a = b; b = t; } return a;
@@ -534,7 +534,7 @@ template<typename T> T mps(T l, T r, T k) {
 # string #
 
 最小最大表示法：
-```C++
+```c++
 int getMinString(const string &s) {  
     int len = (int)s.length();
     int i = 0, j = 1, k = 0;  
@@ -553,7 +553,7 @@ int getMinString(const string &s) {
 ```
 
 KMP
-```C++
+```c++
 int nxt[MAX_N];
 void getNext(const string &str) {
     int len = str.length();
