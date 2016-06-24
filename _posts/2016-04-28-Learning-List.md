@@ -133,7 +133,8 @@ _Learning step by step._
     * 廖雪峰的 [Python 教程](http://www.liaoxuefeng.com/article/001432619295115c918a094d8954bd493037b03d27bf9a9000)  
     * [开智课堂](https://github.com/OpenMindClub/python-basic/blob/master/SUMMARY.md)  
     * [Python 练手项目](https://www.zhihu.com/question/29372574)  
-    * [Offical_Guide](https://wiki.python.org/moin/PythonBooks)  
+    * [Offical_Guide](https://wiki.python.org/moin/PythonBooks)
++ wiki
 + 正则表达式  
     * 《精通正则表达式》  
 + GCC + Makefile + gdb + Valgrind
