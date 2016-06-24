@@ -79,8 +79,8 @@ _Learning step by step._
 **What and How**
 
 编程能力 $$F=(X,Y) (X>Y)$$  
-    $X$ = 思考解决方案的时间
-    $Y$ = 用于实现代码的时间
+    *X* = 思考解决方案的时间
+    *Y* = 用于实现代码的时间
 
 1. 系统基础   
     * < Structure and Interpretation of Computer Programs > (SICP)  
@@ -93,7 +93,7 @@ _Learning step by step._
         - 《UNIX 编程艺术》 折腾UNIX系统   
         - 《鸟哥的 Linux 私房菜》 《Linux shell 脚本攻略》
 2. 算法思想  
-    * `Pass` < Data Structure and Algorithm Analysis >  
+    * `Passed` < Data Structure and Algorithm Analysis >  
     * < Introduction to Algorithms >
     * < Programming Pearls >  
     * < The Practice of Programming >  
