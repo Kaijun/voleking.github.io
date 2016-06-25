@@ -15,6 +15,7 @@ This is a blog created by Voleking. The blog is live at [Voleking](https://volek
 - [ ] [Js-sequence-diagrams](http://bramp.github.io/js-sequence-diagrams/)
 - [ ] Back-to-Top
 - [ ] Footnote
+- [ ] [in-site-search](http://jekyll.tips)
 - [ ] Icon
 - [ ] 参考 rpsh/rpsh.github.io 任平生的学习笔记细节修改
 - [ ] 夜间模式
