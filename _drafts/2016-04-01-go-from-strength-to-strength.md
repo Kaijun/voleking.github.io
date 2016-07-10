@@ -95,6 +95,19 @@ void quicksort(int a[], int l, int r) {
 + Heap Sort  
     * 见堆的内容
 
+#### LIS ####
+
+```c++
+int lis[MAX_N], a[MAX_N];
+void solve(int n) {
+    int dp[MAX_N];
+    fill(dp, dp + n, INF);
+    for (int i = 0; i < n; ++i)
+        *lower_bound(dp, dp + n, a[i]) = a[i];// lds: -a[i]; ln: upper_bound
+    printf("%ld\n", lower_bound(dp, dp + n, INF) - dp);
+}
+```
+
 #### Knapsack Problem ####
 
 * 0/1 背包
@@ -531,6 +544,7 @@ template<typename T> T mps(T l, T r, T k) {
 }
 ```
 
++ Moebius 
 ```c++
 int mu[MAX_N];
 void moebius() {
@@ -604,3 +618,21 @@ int kmp(const string &tar, const string &pat) {
     return num;//lenP - res - 1;
 }
 ```
+
+# Set #
+
+```c++
+// 子集枚举
+int sub = sup;
+do {
+    sub = (sub - 1) & sup;
+} while (sub != sup); // -1 & sup = sup;
+
+// 势为 k 的集合枚举
+int comb = (1 << k) - 1;
+while (comb < 1 << n) {
+    int x = comb & -comb, y = comb + x;
+    comb = ((comb & ~y) / x >> 1) | y;
+}
+```
+
