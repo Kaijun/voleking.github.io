@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "更进一步"
-subtitle:   "《挑战程序设计竞赛》"
+subtitle:   "《挑战程序设计竞赛》Summary"
 date:       2016-04-01
 author:     "Voleking"
 header-img: "/img/"
@@ -12,82 +12,92 @@ tags:
     -  Algorithms
 ---
 
+# Tips #
+
+1. 位移运算范围为 int
+2. pow 返回浮点数可能会导致误差，慎用！！！
+3. 样例数用 long long 可能会 TLE
+4. 多组数据记得初始化
+5. 小心过程量 overflow
+6. Type convertions
+7. 图未清零
+8. 在取余的情况下，要避免减法运算的结果出现负数 (...+ MOD) % MOD;
+9.  
+
 ## Basic Algorithm ##
 
-#### Sort ####
+
+### Sort ###
 
 + Bubble Sort  
 ```c++ 
-for (int i = 0; i < n; i++)
-    for (int j = 0; j < n - i - 1; j++)
-        if (a[j] > a[j + 1]) swap(a[j], a[j + 1]);
+for (int i = 0; i < N; i++)
+    for (int j = 0; j < N - i - 1; j++)
+        if (A[j] > A[j + 1]) swap(A[j], A[j + 1]);
 ```
 
 + Insertion Sort  
 ```c++
-for (int i = 1; i < n; i++) {
-    int tmp = a[i], j;
-    for (j = i - 1; j >= 0 && a[j] > tmp; j--)
-        a[j + 1] = a[j];
-    a[++j] = tmp; 
+for (int i = 1; i < N; i++) {
+    int tmp = A[i], j;
+    for (j = i - 1; j >= 0 && A[j] > tmp; j--)
+        A[j + 1] = A[j];
+    A[++j] = tmp; 
 }
 ```
 
 + Selection Sort
 ```c++
-for (int i = 0; i < n; i++)
-    for (int j = i + 1; j < n; j++)
-        if (a[i] > a[j]) swap(a[i], a[j])
+for (int i = 0; i < N; i++)
+    for (int j = i + 1; j < N; j++)
+        if (A[i] > A[j]) swap(A[i], A[j])
 ```
 
 + Merge Sort
 ```c++
-int merge_sort(int l, int r) {
-    if (l == r) 
-        return 0;
-    int b[MAX_N];
+void merge_sort(int A[], int l, int r) {
+    if (l >= r) return ;
     int mid = (l + r) / 2;
-    merge_sort(l, mid);
-    merge_sort(mid + 1, r);
+    merge_sort(A, l, mid);
+    merge_sort(A, mid + 1, r); 
     int i, j, k;
     i = l; j = mid + 1; k = l;
     while (i <= mid && j <= r) {
-        if (a[i] < a[j]) {
-            b[k] = a[i++];
+        if (A[i] < A[j]) {
+            B[k] = A[i++];
         }
         else {
-            b[k] = a[j++];
+            B[k] = A[j++];
         }
         k++;
     }
     while (i <= mid) {
-        b[k] = a[i++];
+        B[k] = A[i++];
         k++;
     }
     while (j <= r) {
-        b[k] = a[j++];
+        B[k] = A[j++];
         k++;
     }
-    for (int i = l; i <= r; i++)
-        a[i] = b[i];
-    return 0;
+    memcpy(A, B, r - l + 1);
+    return ; 
 }
 ```
 
 + Quick Sort
 ```c++   
-void quicksort(int a[], int l, int r) {
-    int i = l, j = r, mid = a[(l + r) / 2];
+void quicksort(int A[], int l, int r) {
+    int i = l, j = r, mid = A[(r - l) / 2 + l];
     while (i <= j) {
-        while (a[i] < mid) i++;
-        while (a[j] > mid) j--;
+        while (A[i] < mid) i++;
+        while (A[j] > mid) j--;
         if (i <= j) {
-            swap(a[i], a[j]);
-            i++;j--;
+            swap(A[i], A[j]);
+            ++i; --j;
         }
     }
-    if (i < r) quicksort(a, i, r);
-    if (l < j) quicksort(a, l, j);        
+    if (i < r) quicksort(A, i, r);
+    if (l < j) quicksort(A, l, j);        
     return ;
 }
 ```
@@ -95,16 +105,19 @@ void quicksort(int a[], int l, int r) {
 + Heap Sort  
     * 见堆的内容
 
+
+### DP ###
+
 #### LIS ####
 
 ```c++
-int lis[MAX_N], a[MAX_N];
-void solve(int n) {
+int dp[MAX_N], A[MAX_N];
+long lis(int n) {
     int dp[MAX_N];
     fill(dp, dp + n, INF);
     for (int i = 0; i < n; ++i)
-        *lower_bound(dp, dp + n, a[i]) = a[i];// lds: -a[i]; ln: upper_bound
-    printf("%ld\n", lower_bound(dp, dp + n, INF) - dp);
+        *lower_bound(dp, dp + n, A[i]) = A[i];// lds: -A[i]; ln: upper_bound
+    return lower_bound(dp, dp + n, INF) - dp;
 }
 ```
 
@@ -112,22 +125,22 @@ void solve(int n) {
 
 * 0/1 背包
 
-$$f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])$$
+$$f[i, j] = max(f[i - 1, j], f[i - 1, j - w[i]] + v[i])$$
 
 ```c++
-for (int i = 0; i < n; ++i)
-    for (int v = V; v >= w[i]; v--)
-        f[v] = max(f[v], f[v- w[i]] + c[i]);
+for (int i = 0; i < N; ++i)
+    for (int j = W; j >= w[i]; --j)
+        f[j] = max(f[j - w[i]] + c[i], f[j]);
 ```
 
 * 完全背包
 
-$$f[i, v] = max(f[i - 1, v], f[i - 1, v - w[i]] + c[i])$$
+$$f[i, j] = max(f[i - 1, j], f[i - 1, j - w[i]] + j[i])$$
 
 ```c++
-for (int i = 0; i < n; ++i)
-    for (int v = w[i]; v <= V; ++v)
-        f[v] = max(f[v], f[v- w[i]] + c[i]);
+for (int i = 0; i < N; ++i)
+    for (int j = w[i]; j <= W; ++j)
+        f[j] = max(f[j - w[i]] + c[i], f[v]);
 ```
 
 注意循环顺序的不同背后思路。  
@@ -139,7 +152,7 @@ for (int i = 0; i < n; ++i)
 
 * 多重背包
 
-$$f[i, v] = max(f[i - 1, v - k * w[i]] + k * c[i] | 0 <= k <= n[i])$$
+$$f[i, j] = max(f[i - 1, j - w[i] * k] + v[i] * k | 0 <= k <= m[i])$$
 
 + 优化：转化为 01 背包问题  
     * 将第 i 件物品分成若干件物品，每件物品的系数分别为：$1,2,4,\ldots,2^{(k - 1)},n[i]-2^k$
@@ -147,15 +160,13 @@ $$f[i, v] = max(f[i - 1, v - k * w[i]] + k * c[i] | 0 <= k <= n[i])$$
 
 ```c++
 for (int i = 0; i < N; ++i) {
-    int k;
-    for (k = 1 << 0; k <= n[i] && w[i] * k <= V; n[i] -= k, k <<= 1) {
-        for (int v = V; v >= w[i] * k; --v) 
-            f[v] = max(f[v], f[v- w[i] * k] + c[i] * k);
-    }
-    k = n[i];
-    if ( k > 0 && w[i] * k <= V) {
-        for (int v = V; v >= w[i] * k; --v) 
-            f[v] = max(f[v], f[v- w[i] * k] + c[i] * k);
+    int num = m[i];
+    for (int k = 1; num > 0; k <<= 1) {
+        int mul = min(k, num);
+        for (int j = W; j >= w[i] * mul; --j) {
+            f[j] = max(f[j - w[i] * mul] + v[i] * mul, f[j]);
+        }
+        num -= mul;
     }
 }
 ```
@@ -166,19 +177,19 @@ for (int i = 0; i < N; ++i) {
 
 * 二维费用背包
 
-$$f[i, v, u] = max(f[i - 1, v, u], f[i - 1, v - a[i], u - b[i]] + c[i])$$
+$$f[i, j, k] = max(f[i - 1, j, k], f[i - 1, j - a[i], k - b[i]] + c[i])$$
 
 二维费用可由最多取 m 件等方式隐蔽给出。  
 
 * 分组背包
 
-$$f[k, v] = max{f[k - 1, v], f[k - 1, v - w[i]] + c[i] | i \in K})$$
+$$f[k, j] = max{f[k - 1, j], f[k - 1, j - w[i]] + v[i] | i \in K})$$
 
 ```c++
-    for (int k = 0; k < K; ++k)
-        for (v = V; v >= 0; --v)
-            for (int i = 0; i <= n[k]; ++i)
-                f[v] = max(f[v], f[v - w[i]] + c[i]);
+for (int k = 0; k < K; ++k)
+    for (j = W; j >= 0; --j)
+        for (int i = 0; i <= m[k]; ++i)
+            f[j] = max(f[j - w[i]] + v[i], f[j]);
 ```
 
 显然可以对每组中物品应用完全背包中“一个简单有效的优化”  
@@ -190,19 +201,59 @@ $$f[k, v] = max{f[k - 1, v], f[k - 1, v - w[i]] + c[i] | i \in K})$$
 
 * 背包问题方案总数
 
-$$f[i, v] = sum{f[i - 1, v], f[i - 1, v - w[i]] + c[i]},f[0, 0] = 0$$
+$$f[i, j] = sum{f[i - 1, j], f[i - 1, j - w[i]] + v[i]},f[0, 0] = 0$$
 
 >>更多内容详见「背包九讲」
 
+#### Maximum Subarray Sum ####
+```c++
+int max_subarray_sum(int A[], int n) {
+    int res, cur;
+    if (!A || n <= 0) return 0; 
+    res = cur = a[0];
+    for (int i = 0; i < n; ++i) {
+        if (cur < 0) cur = a[i];
+        else cur += a[i];
+        res = max(cur, res);
+    }
+    return res;
+}
+```
+
+### Set ###
+
+```c++
+// 子集枚举
+int sub = sup;
+do {
+    sub = (sub - 1) & sup;
+} while (sub != sup); // -1 & sup = sup;
+
+// 势为 k 的集合枚举
+int comb = (1 << k) - 1;
+while (comb < 1 << n) {
+    int x = comb & -comb, y = comb + x;
+    comb = ((comb & ~y) / x >> 1) | y;
+}
+
+do {
+
+} while (next_permutation(A, A + N));
+```
+
+
 ---
+
+
 
 ## Data Structure ##
 
 * Heap 
 ```c++
-int heap[maxn], sz = 0;
+int heap[MAX_N], sz = 0;
 void push(int x) {
     int i = sz++;
+
     while (i > 0) {
         int p = (i - 1) / 2;
         if (heap[p] <= x) break;
@@ -312,77 +363,51 @@ void unite(int x, int y) {
 
 **当然，更快捷简单的做法，是使用 C++ 的 container。**
 
+
+
 ## Graph ##
 
 ```c++
 struct edge {
-    int u, v;
-    int dis;
+    int from;
+    int to, dis;
 };
-vector<edge> g[MAX_V];
+vector<edge> G[MAX_V];
 vector<edge> es;
 bool vis[MAX_V];
-int d[MAX_N], V, E, pre[MAX_V];
+int dist[MAX_N], V, E, pre[MAX_V];
 int cost[MAX_V][MAX_V];
 ```
 
 * Shortest Way
 ```c++
 void dijkstra(int s) {
-    //
-    // fill(d, d + V, INF);
-    // fill(vis, vis + V, false);
-    // d[s] = 0;
-    // while (true) {
-    //     int v = -1;
-    //     for (int u = 0; u < V; ++u) 
-    //         if (!vis[u] && (v == -1 || d[u] < d[v])) v = u;
-    //     if (v == -1) break;
-    //     vis[v] = true;
-    //     for (int u = 0; u < V; ++u) {
-    //         d[u] = min(d[v] + cost[v][u], d[u]);
-    //     }
-    // }
-    //
     priority_queue<Pii, vector<Pii>, greater<Pii> > que;// fisrt 是最短距离，second 是顶点编号
-    fill(d, d + V, INF);
-    d[s] = 0;
-    que.push(Pii(0, s));
+    fill(dist, dist + V, INF);
+    dist[s] = 0; que.push(Pii(0, s));
     while (!que.empty()) {
-        Pii p = que.top();que.pop();
-        int u = p.second;
-        if (d[u] < p.first) continue;
-        for (int i = 0; i < g[u].size(); i++) {
-            edge e = g[u][i];
-            if (d[e.v] > d[u] + e.dis) {
-                d[e.v] = d[u] + e.dis;
-                que.push(Pii(d[e.v], e.v));
+        Pii p = que.top(); que.pop();
+        int v = p.second;
+        if (dist[v] < p.first) continue;
+        for (int i = 0; i < G[v].size(); i++) {
+            edge e = G[v][i];
+            if (dist[e.to] > dist[v] + e.dis) {
+                dist[e.to] = dist[v] + e.dis;
+                que.push(Pii(dist[e.to], e.to));
             }
         }
     } 
 }
 void bellman_ford(int s) {
-    fill(d, d + V, INF);
-    d[s] = 0;
-    //
-    // for (int i = 0; i < V; ++i)
-    //     for (int j = 0; j < E; ++j) {
-    //         int u, v;
-    //         u = es[j].u;
-    //         v = es[j].v;
-    //         if (d[u] != INF)
-    //             d[v] = min(d[u] + es[j].dis, d[v]);
-    //         if (d[v] != INF)
-    //             d[u] = min(d[v] + es[j].dis, d[u]);
-    //     }
-    //
+    fill(dist, dist + V, INF);
+    dist[s] = 0;
     while (true) {
         bool update = false;
         for (int i = 0; i < E; ++i) {
             edge e = es[i];
-            if (d[e.u] != INF && d[e.u] + e.dis < d[e.v]) {
+            if (dist[e.from] != INF && dist[e.from] + e.dis < dist[e.to]) {
                 update = true;
-                d[e.v] = d[e.u] + e.dis;
+                dist[e.to] = dist[e.from] + e.dis;
             }
         }
         if (!update) break;
@@ -390,22 +415,19 @@ void bellman_ford(int s) {
 }
 void spfa(int s) {
     queue<int> que;
-    fill(d, d + V, INF);
+    fill(dist, dist + V, INF);
     fill(vis, vis + V, false);
-    d[s] = 0;
-    que.push(s);
-    vis[s] = true;
+    dist[s] = 0; que.push(s); vis[s] = true;
     while (!que.empty()) {
-        int u = que.front();
-        que.pop();
-        vis[u] = false;
-        for (int i = 0; i < g[u].size(); ++i) {
-            int v = g[u][i].v;
-            if (d[v] > d[u] + g[u][i].dis) {
-                d[v] = d[u] + g[u][i].dis;
-                if (!vis[v]) {
-                    que.push(v);
-                    vis[v] = true;
+        int v = que.front(); que.pop();
+        vis[v] = false;
+        for (int i = 0; i < G[v].size(); ++i) {
+            int u = G[v][i].to;
+            if (dist[u] > dist[v] + G[v][i].dis) {
+                dist[u] = dist[v] + G[v][i].dis;
+                if (!vis[u]) {
+                    que.push(u);
+                    vis[u] = true;
                 }
             }
         }
@@ -416,34 +438,55 @@ void spfa(int s) {
 * Spanning Tree
 ```c++
 int prime() {
-    fill(d, d + V, INF);
+    fill(dist, dist + V, INF);
     fill(vis, vis + V, false);
-    d[0] = 0;
+    dist[0] = 0;
     int res = 0;
     while (true) {
         int v = -1;
         for (int u = 0; u < V; ++u) {
-            if(!vis[u] && (v == -1 || d[u] < d[v])) v = u;
+            if(!vis[u] && (v == -1 || dist[u] < dist[v])) v = u;
         }
         if (v == -1) break;
         vis[v] = true;
-        res += d[v];
+        res += dist[v];
         for (int u = 0; u < V; u++)
-            d[u] = min(d[u], cost[v][u]);
+            dist[u] = min(dist[u], cost[v][u]);
     }
+    /*
+    priority_queue<Pii, vector<Pii>, greater<Pii> > que;
+    int res;
+    fill(dist, dist + V, INF);
+    fill(vis, vis + V, false);
+    res = dist[0] = 0;
+    que.push(Pii(0, s));
+    while (!que.empty()) {
+        Pii p = que.top(); que.pop();
+        int v = p.second;
+        if (used[v] || dist[v] < p.first) continue;
+        res += dist[v];
+        for (int i = 0; i < G[v].size(); ++i) {
+            edge e = g[v][i];
+            if (dist[e.to] > e.dis) {
+                dist[e.to] = e.dis;
+                que.push(Pii(dist[e.to], e.to));
+            }
+        }
+    }
+    */
     return res;
 }
 bool cmp(edge &e1, edge &e2) {
     return e1.dis < e2.dis;
 }
 int kruskal() {
-    sort(es, es + E, cmp);
+    sort(es.begin(), es.end(), cmp);
     init(V);
     int res = 0;
     for (int i = 0; i < E; ++i) {
         edge e = es[i];
-        if (!same(e.u, e.v)) {
-            unite(e.u, e.v);
+        if (!same(e.from, e.to)) {
+            unite(e.from, e.to);
             res += e.dis;
         }
     }
@@ -451,7 +494,10 @@ int kruskal() {
 }
 ```
 
+
 --- 
+
+
 
 ## Math Problem ##
 
@@ -464,17 +510,34 @@ template<typename T> T lcm(T a, T b) {
     return a / gcd(a, b) * b;
 }
 // find (x, y) s.t. a x + b y = gcd(a, b) = d
-template<typename T> T exGcd(T a, T b, T &x, T &y) { 
+template<typename T> T exgcd(T a, T b, T &x, T &y) { 
     T d = a; 
     if (b) { 
-        d = exGcd(b, a % b, y, x); 
+        d = exgcd(b, a % b, y, x); 
         y -= a / b * x; 
     } else { 
         x = 1; y = 0; 
     } 
     return d;
 }
-ll qpow(ll x, ll n, ll mod) { 
+template<typename T> T mod_inverse(T a, T m) {
+    T x, y;
+    exgcd(a, m, x, y);
+    return (m + x % m) % m;
+}
+
+ll CRT(vector<ll> &a, vector<ll> &m) {
+    ll M = 1LL, res = 0;
+    for (int i = 0; i < m.size(); ++i)
+        M *= m[i];
+    for (int i = 0; i < m.size(); ++i) {
+        ll Mi, Ti;
+        Mi = M / m[i]; Ti = mod_inverse(Mi, mi);
+        res = (res + a[i] * (Mi * Ti) % M) % M;
+    }
+    return res;
+}
+ll mod_pow(ll x, ll n, ll mod) { 
     ll res = 1;
     while (n > 0) {
         if (n & 1) res = res * x % mod;
@@ -484,8 +547,9 @@ ll qpow(ll x, ll n, ll mod) {
     return res;
     // return b ? qpow(a * a % mod, b >> 1, mod) * (b & 1 ? a : 1) % mod : 1;
 }
+
 // some function about prime
-bool isPrime(int n) {
+bool isprime(int n) {
     for (int i = 2; i * i <= n; ++i)
         if (n % i == 0) return false;
     return n != 1;
@@ -500,7 +564,7 @@ vector<int> divisor(int n) {
     }
     return res;
 }
-map<int, int> primeFactor(int n) {
+map<int, int> prime_factor(int n) {
     map<int, int> res;
     for (int i = 2; i * i <= n; ++i) {
         while (n % i == 0) {
@@ -512,29 +576,29 @@ map<int, int> primeFactor(int n) {
     return res;
 }
 int prime[MAX_N];
-bool is_prime[MAX_N + 1];
+bool isPrime[MAX_N + 1];
 int seive(int n) {
     int p = 0;
-    fill(is_prime, is_prime + n + 1, true);
-    is_prime[0] = is_prime[1] = false;
+    fill(isPrime, isPrime + n + 1, true);
+    isPrime[0] = isPrime[1] = false;
     for (int i = 2; i <= n; ++i) 
-        if (is_prime[i]) {
+        if (isPrime[i]) {
             prime[p++] = i;
-            for (int j = 2 * i; j <= n; j += i) is_prime[j] = false;
+            for (int j = 2 * i; j <= n; j += i) isPrime[j] = false;
         }
     return p;
 }
 // the number of prime in [L, r)
 // 对区间 [l, r）内的整数执行筛法，prime[i - l] = true <=> i 是素数
-bool seg_prime_small[MAX_L];
-bool seg_prime[MAX_SQRT_R];
-void segmentSieve(ll l, ll r) {
-    for (int i = 0; (ll)i * i < r; ++i) seg_prime_small[i] = true;
-    for (int i = 0; i < r - l; ++i) seg_prime[i] = true;
+bool segPrimeSmall[MAX_L];
+bool segPrime[MAX_SQRT_R];
+void segment_sieve(ll l, ll r) {
+    for (int i = 0; (ll)i * i < r; ++i) segPrimeSmall[i] = true;
+    for (int i = 0; i < r - l; ++i) segPrime[i] = true;
     for (int i = 2; (ll)i * i < r; ++i) {
-        if (seg_prime_small[i]) {
-            for (int j = 2 * i; (ll)j * j <= r; j += i) seg_prime_small[j] = false;
-            for (ll j = max(2LL, (l + i - 1) / i) * i; j < r; j += i) seg_prime[j - l] = false;
+        if (segPrimeSmall[i]) {
+            for (int j = 2 * i; (ll)j * j <= r; j += i) segPrimeSmall[j] = false;
+            for (ll j = max(2LL, (l + i - 1) / i) * i; j < r; j += i) segPrime[j - l] = false;
         }
     }
 }
@@ -566,7 +630,7 @@ void moebius() {
 }
 ```
 
-# string #
+# String #
 
 最小最大表示法：
 ```c++
@@ -616,23 +680,6 @@ int kmp(const string &tar, const string &pat) {
         }
     }
     return num;//lenP - res - 1;
-}
-```
-
-# Set #
-
-```c++
-// 子集枚举
-int sub = sup;
-do {
-    sub = (sub - 1) & sup;
-} while (sub != sup); // -1 & sup = sup;
-
-// 势为 k 的集合枚举
-int comb = (1 << k) - 1;
-while (comb < 1 << n) {
-    int x = comb & -comb, y = comb + x;
-    comb = ((comb & ~y) / x >> 1) | y;
 }
 ```
 
